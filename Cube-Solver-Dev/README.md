@@ -1,6 +1,6 @@
 # Cube Solver Dev
 
-Kociemba two-phase로 푼 해를 **정확 검색으로 한 번 더 다듬는(rephase)** 큐브 솔버 실험 프로젝트이다.
+Kociemba two-phase로 푼 해를 **정확 검색으로 한 번 더 다듬는(rephase)** Cube Solver 실험 프로젝트이다.
 
 > **English summary.** Rubik's Cube solvers built around Kociemba's two-phase algorithm, plus a post-processing step called *rephase*: windows around the phase boundary (then sliding over the whole solution) are re-solved exactly, and a window is replaced only if a strictly shorter equivalent sequence exists — so the move count never grows. `rephase/` is a Python/C version on top of the pip `kociemba` solver; `stemil-rephase/` is a C++ version on top of the third-party [stemil two-phase-solver](https://github.com/stemil01/two-phase-solver), extended with 6-way orientation search and an exact (IDA\*) reference solver. On 200 scrambles where rephase actually helped, the 6-way solver averages **17.52** moves vs 20.05 (stemil), 20.89 (kociemba) and ~20.6 (kociemba + symmetry), and equals a proven lower bound (= optimal) in 85/200 cases. Third-party code is **not** included — see [NOTICE.md](NOTICE.md).
 
@@ -41,7 +41,7 @@ Kociemba two-phase는 큐브를 두 단계로 푼다. Phase 1에서 G1이라는 
 | 구현 | 설명 |
 |---|---|
 | [`rephase/`](rephase) | pip `kociemba` 위에 올린 Python/C 구현. Phase 경계 수선 |
-| [`stemil-rephase/`](stemil-rephase) | 외부 솔버 stemil(큰 pruning table) 위에 올린 C++ 구현. 경계·sliding rephase, **6방향 동시 탐색**, 후보 rephase, 최적해(IDA\*) 검증기, 비교 실험 도구 |
+| [`stemil-rephase/`](stemil-rephase) | 외부 Solver stemil(큰 pruning table) 위에 올린 C++ 구현. 경계·sliding rephase, **6방향 동시 탐색**, 후보 rephase, 최적해(IDA\*) 검증기, 비교 실험 도구 |
 | [`benchmarks/`](benchmarks) | 같은 seed 200건 비교 결과와 이전 실험 기록 |
 
 ### 1.3 한눈에 보는 결과
