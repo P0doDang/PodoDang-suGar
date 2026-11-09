@@ -1,0 +1,11 @@
+build/
+.venv/
+__pycache__/
+*.pyc
+*.so
+twophase_tables/
+*.egg-info/
+# 6way comparison: scratch dirs and raw scan chunks (large, regenerable)
+stemil-rephase/compare/stemil_work/
+stemil-rephase/compare/stemil_regen/
+stemil-rephase/compare/out*/

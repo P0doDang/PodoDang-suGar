@@ -1,0 +1,3 @@
+[submodule "third_party/stemil"]
+	path = third_party/stemil
+	url = https://github.com/stemil01/two-phase-solver
