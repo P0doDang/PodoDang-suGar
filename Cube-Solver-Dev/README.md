@@ -41,8 +41,11 @@ Kociemba two-phase는 큐브를 두 단계로 푼다. Phase 1에서 G1이라는 
 | 구현 | 설명 |
 |---|---|
 | [`rephase/`](rephase) | pip `kociemba` 위에 올린 Python/C 구현. Phase 경계 수선 |
-| [`stemil-rephase/`](stemil-rephase) | 외부 Solver stemil(큰 pruning table) 위에 올린 C++ 구현. 경계·sliding rephase, **6방향 동시 탐색**, 후보 rephase, 최적해(IDA\*) 검증기, 비교 실험 도구 |
+| [`stemil-rephase/`](stemil-rephase) — **기본판** `stemil_rephase` | 외부 Solver [stemil](https://github.com/stemil01/two-phase-solver)(큰 pruning table) 위에 올린 C++ 구현. 단일 스레드로 stemil을 풀고 경계·sliding rephase를 적용한다 |
+| [`stemil-rephase/`](stemil-rephase) — **확장판** `stemil_rephase_6way` | 기본판에 **6방향 동시 탐색**, 후보 rephase, `--phase1-mode ida`, 최적해(IDA\*) 검증기, 비교 실험 도구를 더한 것이다 |
 | [`benchmarks/`](benchmarks) | 같은 seed 200건 비교 결과와 이전 실험 기록 |
+
+> **용어.** `stemil_rephase`는 기본판이고 `stemil_rephase_6way`는 그 확장판이다. 이 저장소에서는 두 버전이 `stemil-rephase/` 한 폴더, **같은 바이너리**에 들어 있고 옵션으로 구분한다. 확장 옵션을 끄면(`--orientations 1 --candidates 1`, 기본값) 기본판과 같은 경로로 동작한다. 아래 결과표의 **6way**는 `--orientations 6 --candidates 1 --phase1-mode ida --windows 8` 조합, 곧 확장판을 가리킨다.
 
 ### 1.3 한눈에 보는 결과
 
@@ -50,7 +53,7 @@ rephase가 해를 실제로 줄인 큐브 200개로 비교했다(자세한 조�
 
 | 알고리즘 | 평균 move | 메모리 |
 |---|---:|---:|
-| **6way + rephase** (이 프로젝트) | **17.52** | 2,097 MiB |
+| **6way + rephase** (`stemil_rephase_6way`, 이 프로젝트) | **17.52** | 2,097 MiB |
 | stemil (원본) | 20.05 | 2,090 MiB |
 | kociemba (pip, C) | 20.89 | 20 MiB |
 | kociemba + symmetry | 20.55 | 113 MiB |
@@ -74,17 +77,19 @@ Cube-Solver-Dev/
 │   ├── repeat_metrics/        #    반복 실행·계측
 │   ├── tests/  examples/
 │   └── solve.py  repeat_solve.py  benchmark.py
-├── stemil-rephase/            # ✅ 내 작업 — C++, stemil 위의 rephase
-│   ├── src/                   #    repair · solver · symmetry · optimal · kernel
+├── stemil-rephase/            # ✅ 내 작업 — C++, 기본판과 6way 확장판이 한 바이너리
+│   ├── src/                   #    repair · solver(기본판) / solver(solve_multi)·symmetry·optimal(6way 확장) · kernel
 │   ├── tests/  tools/
-│   ├── compare/               #    같은 seed 비교 도구 (stemil_orig.cpp는 파생 코드)
+│   ├── compare/               #    [6way] 같은 seed 비교 도구 (stemil_orig.cpp는 파생 코드)
 │   ├── corpus/                #    최적해를 아는 큐브 모음
-│   └── Makefile  README.md  README-6way.md  REPORT*.md
+│   ├── README.md  REPORT.md   #    기본판 설명·측정
+│   ├── README-6way.md  REPORT-6way.md   # 6way 확장판 설명·측정
+│   └── Makefile
 ├── benchmarks/                # ✅ 내 작업 — 실험 결과
 │   ├── compare-200/           #    200건 비교 (CSV, JSONL, summary.txt)
 │   └── earlier/               #    이전 실험 기록
 └── third_party/
-    └── stemil/                # ⛔ 다른 사람 코드 — git submodule (5437b8f), 수정하지 않음
+    └── stemil/                # ⛔ 다른 사람 코드 — git submodule, 출처 https://github.com/stemil01/two-phase-solver (커밋 5437b8f), 수정하지 않음
 ```
 
 stemil, Kociemba two-phase 알고리즘, pip `kociemba`, `RubikTwoPhase`는 모두 다른 사람이 만든 원본이다. 코드를 이 저장소로 복사하지 않고 submodule이나 의존성으로만 연결했다. 자세한 내용은 [NOTICE.md](NOTICE.md)에 정리했다.
@@ -131,7 +136,7 @@ python3 -m venv .venv
 
 ### 4.3 stemil-rephase (C++)
 
-먼저 stemil의 pruning table이 필요하다. **원본 README의 방법대로** `third_party/stemil`에서 한 번 만든다(약 6 GB 디스크, 시간이 오래 걸린다). 이 프로젝트의 프로그램은 테이블을 **읽기만** 하고 만들지는 않는다.
+먼저 stemil([stemil01/two-phase-solver](https://github.com/stemil01/two-phase-solver))의 pruning table이 필요하다. **원본 README의 방법대로** `third_party/stemil`에서 한 번 만든다(약 6 GB 디스크, 시간이 오래 걸린다). 이 프로젝트의 프로그램은 테이블을 **읽기만** 하고 만들지는 않는다.
 
 ```bash
 cd stemil-rephase
@@ -139,7 +144,14 @@ make -j4                       # build/ 아래에 stemil-rephase, optimal 등이
 make test && make test-cli     # 테스트
 ```
 
-30수 scramble을 6방향으로 풀고 rephase까지 적용하는 예시이다.
+**기본판** (단일 스레드, 확장 옵션 없음) 예시이다.
+
+```bash
+./build/stemil-rephase solve --seed 659 --scramble-length 30 \
+  --budget-ms 600 --rephase-ms 100 --windows 8
+```
+
+**6way 확장판** 예시이다. 30수 scramble을 6방향으로 풀고 rephase까지 적용한다.
 
 ```bash
 ./build/stemil-rephase solve --seed 659 --scramble-length 30 \
@@ -151,7 +163,7 @@ make test && make test-cli     # 테스트
 - `--budget-ms 600 --rephase-ms 100`: 전체 600 ms 중 Two-Phase가 500 ms, rephase가 최대 100 ms를 쓴다.
 - 테이블을 다른 곳에 두었다면 `--resources <폴더>`로 지정한다.
 
-전체 옵션은 [stemil-rephase/README.md](stemil-rephase/README.md)와 [README-6way.md](stemil-rephase/README-6way.md)에 있다.
+기본판 옵션은 [stemil-rephase/README.md](stemil-rephase/README.md), 6way 확장 옵션은 [README-6way.md](stemil-rephase/README-6way.md)에 있다.
 
 ### 4.4 실제 사례
 
@@ -205,7 +217,7 @@ flowchart TD
 
 6way Solver로 seed를 하나씩 훑으며 **rephase가 해를 실제로 줄인 큐브**만 모았다. 82,224개를 훑어 200건이 모였다(약 0.24%). 그 200개 scramble(30수)을 아래 알고리즘이 똑같이 풀었다.
 
-- **6way**: 6방향, 후보 1, Two-Phase 500 ms + rephase ≤ 100 ms, window 8
+- **6way** (`stemil_rephase_6way`): 6방향, 후보 1, `--phase1-mode ida`, Two-Phase 500 ms + rephase ≤ 100 ms, window 8
 - **stemil**: 원본 탐색 500 ms
 - **kociemba**: pip 패키지(C), 첫 해 반환
 - **kociemba + symmetry**: `RubikTwoPhase`(Python), 첫 해 반환

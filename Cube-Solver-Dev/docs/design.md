@@ -96,9 +96,9 @@ C++ 구현(`stemil-rephase/`)은 이 표를 `--table-depth`(기본 4, 0~5)와 `-
 | 설계 요소 | 구현 위치 |
 |---|---|
 | Kociemba + 경계 수선 (Python/C) | [`rephase/`](../rephase) |
-| stemil + 경계·sliding 수선 (C++) | [`stemil-rephase/src/repair.cpp`](../stemil-rephase/src/repair.cpp), [`solver.cpp`](../stemil-rephase/src/solver.cpp) |
-| 6방향 동시 탐색, 후보 rephase | [`stemil-rephase/src/solver.cpp`](../stemil-rephase/src/solver.cpp)의 `solve_multi`, [`symmetry.cpp`](../stemil-rephase/src/symmetry.cpp) |
-| 최적해 검증 (IDA\*) | [`stemil-rephase/src/optimal.cpp`](../stemil-rephase/src/optimal.cpp) |
+| stemil + 경계·sliding 수선 (C++, 기본판 `stemil_rephase`) | [`stemil-rephase/src/repair.cpp`](../stemil-rephase/src/repair.cpp), [`solver.cpp`](../stemil-rephase/src/solver.cpp) |
+| 6방향 동시 탐색, 후보 rephase (확장판 `stemil_rephase_6way`) | [`stemil-rephase/src/solver.cpp`](../stemil-rephase/src/solver.cpp)의 `solve_multi`, [`symmetry.cpp`](../stemil-rephase/src/symmetry.cpp) |
+| 최적해 검증 (IDA\*, 6way 확장) | [`stemil-rephase/src/optimal.cpp`](../stemil-rephase/src/optimal.cpp) |
 | 같은 seed 비교 도구 | [`stemil-rephase/compare/`](../stemil-rephase/compare) |
 
 ---

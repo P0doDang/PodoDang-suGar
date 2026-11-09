@@ -29,7 +29,8 @@
 | 위치 | 내용 |
 |---|---|
 | `rephase/` | Kociemba two-phase에 Phase-Boundary Exact Repair를 붙인 Python/C 구현 |
-| `stemil-rephase/src/repair.*`, `solver.*`(rephase 경로), `symmetry.*`, `optimal.*` | stemil 위의 경계·sliding rephase, 6방향 동시 탐색, 후보 rephase, 최적해(IDA\*) 검증 |
+| `stemil-rephase/src/repair.*`, `solver.*`(rephase 경로) | 기본판 `stemil_rephase`: stemil 위의 경계·sliding rephase |
+| `stemil-rephase/src/symmetry.*`, `optimal.*`, `solver.*`(`solve_multi`) | 확장판 `stemil_rephase_6way`: 6방향 동시 탐색, 후보 rephase, 최적해(IDA\*) 검증 (기본판과 같은 바이너리) |
 | `stemil-rephase/compare/run_compare.py` 등 비교 도구 | 같은 seed 비교 실험 도구 |
 | `benchmarks/`, `docs/` | 실험 결과와 설계 노트 |
 
