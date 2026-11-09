@@ -1,0 +1,83 @@
+{
+  "cpp_tests": {
+    "command": "make test",
+    "passed": true,
+    "run_date": "2026-09-22"
+  },
+  "sanitizers": {
+    "command": "make sanitize",
+    "passed": true,
+    "exit_code": 0,
+    "checks": [
+      "AddressSanitizer",
+      "UndefinedBehaviorSanitizer",
+      "LeakSanitizer"
+    ],
+    "uses": "existing full pruning tables, read-only",
+    "scope": "passed on 2026-09-17 before output and multi-rephase scheduler changes; not repeated for those later changes"
+  },
+  "cli_tests": {
+    "command": "make test-cli",
+    "passed": true,
+    "results": "cli-verification.json",
+    "solved_automatic_cubes": 5,
+    "independent_model": "54-sticker integer rotations",
+    "default_human_output": true,
+    "json_compatibility": true,
+    "loading_progress_suppressed_by_default": true,
+    "run_date": "2026-09-22",
+    "batch_human_output": true,
+    "move_counts_in_human_output": true,
+    "independent_multi_stemil": true,
+    "independent_multi_rephase": true,
+    "largest_stemil_only_rephased": true,
+    "streaming_result_rows": true,
+    "window_maximum_minimum_cross_product": true,
+    "cartesian_rephase_combinations": 18,
+    "phase_metrics_output": true
+  },
+  "upstream": {
+    "root": "third_party/stemil",
+    "files_checked": 31,
+    "changed": [],
+    "added": [],
+    "unchanged": true,
+    "method": "small files SHA-256 and size/mtime/ctime; two large pruning files size/mtime/ctime; no atime comparison"
+  },
+  "boundary_end_regression": {
+    "input": "U F R R'",
+    "boundary": 4,
+    "window": 2,
+    "expected": "U F",
+    "passed": true
+  },
+  "benchmark": {
+    "results": "uniform-100/summary.json",
+    "modes": 3,
+    "solved": 300,
+    "total": 300,
+    "independent_initial_and_final_verification": true,
+    "fingerprints_identical": true
+  },
+  "frozen_initial_solutions": {
+    "boundary": "frozen-boundary/summary.json",
+    "boundary_sliding": "frozen-boundary-sliding/summary.json",
+    "independent_final_verification": true
+  },
+  "readable_output": {
+    "sample": "readable-output.txt",
+    "fields": [
+      "shuffle moves",
+      "shuffle move count",
+      "stemil phase 1 moves/count/time/memory",
+      "stemil phase 2 moves/count/time/memory",
+      "stemil total moves/count/time/memory",
+      "rephase solve move count",
+      "rephase shortened",
+      "moves saved",
+      "rephase search ms",
+      "rephase build peak MiB"
+    ],
+    "passed": true
+  }
+}

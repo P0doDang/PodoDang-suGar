@@ -1,0 +1,16 @@
+{
+  "cases": 100,
+  "baseline": "results/uniform-100/repair-0.jsonl",
+  "repair_budget_ms": 100.0,
+  "window_slice_ms": 8,
+  "table_depth": 5,
+  "table_bytes": 67108864,
+  "build_peak_bytes": 102059808,
+  "mean_before_htm": 20.36,
+  "mean_after_htm": 20.34,
+  "improved_cases": 2,
+  "moves_saved": 2,
+  "mean_repair_ms": 62.10353,
+  "max_repair_ms": 97.977,
+  "independent_verification": "all postprocessed solutions checked with 54-sticker rotations"
+}

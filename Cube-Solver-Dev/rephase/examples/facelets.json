@@ -1,0 +1,68 @@
+{
+  "metric": "HTM",
+  "backend": "kociemba",
+  "windows": [
+    6,
+    8
+  ],
+  "time_limit_ms": 50.0,
+  "per_window_ms": null,
+  "shifts": [
+    0
+  ],
+  "sliding": false,
+  "max_states": 200000,
+  "initial_solution": "D2 L' D' L2 U R2 F B L B D' B2 R2 U' R2 U' F2 R2 U' L2",
+  "original_boundary": 10,
+  "initial_phase_left": "D2 L' D' L2 U R2 F B L B",
+  "initial_phase_right": "D' B2 R2 U' R2 U' F2 R2 U' L2",
+  "phase2_side": "suffix",
+  "phase2_axis": "UD",
+  "backend_rotation": 0,
+  "backend_inverted": false,
+  "solution": "D2 L' D' L2 U R2 F B L B D' B2 R2 U' R2 U' F2 R2 U' L2",
+  "initial_length": 20,
+  "final_length": 20,
+  "saved_moves": 0,
+  "final_repair_anchor": 10,
+  "base_elapsed_ms": 8.81914699994013,
+  "engine_prepare_ms": 1.0961389998556115,
+  "repair_elapsed_ms": 25.58568100039338,
+  "wall_elapsed_ms": 36.15497700002379,
+  "stop_reason": "NO_IMPROVEMENT",
+  "verified": true,
+  "verification_input": "provided_cube",
+  "global_optimality_proven": false,
+  "attempts": [
+    {
+      "kind": "boundary",
+      "window_size": 6,
+      "start": 7,
+      "end": 13,
+      "before": "B L B D' B2 R2",
+      "replacement": null,
+      "status": "EXHAUSTED",
+      "local_optimality_proven": true,
+      "elapsed_ms": 1.3372190001064155,
+      "generated": 5058,
+      "states": 3764,
+      "solution_length_before": 20,
+      "solution_length_after": 20
+    },
+    {
+      "kind": "boundary",
+      "window_size": 8,
+      "start": 6,
+      "end": 14,
+      "before": "F B L B D' B2 R2 U'",
+      "replacement": null,
+      "status": "EXHAUSTED",
+      "local_optimality_proven": true,
+      "elapsed_ms": 24.067223999736598,
+      "generated": 67752,
+      "states": 50243,
+      "solution_length_before": 20,
+      "solution_length_after": 20
+    }
+  ]
+}

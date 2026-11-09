@@ -1,0 +1,20 @@
+{
+  "repair-0.1-boundary+sliding.stderr.txt": {
+    "phase1_pruning": "8072173413656569414",
+    "phase2_corner_UD_edge": "8964504388834929771",
+    "phase2_corner_UDslice_edge": "14447063561378405273",
+    "phase2_UD_edge_UDslice_edge": "9887755254207665815"
+  },
+  "repair-0.stderr.txt": {
+    "phase1_pruning": "8072173413656569414",
+    "phase2_corner_UD_edge": "8964504388834929771",
+    "phase2_corner_UDslice_edge": "14447063561378405273",
+    "phase2_UD_edge_UDslice_edge": "9887755254207665815"
+  },
+  "repair-0.1-boundary.stderr.txt": {
+    "phase1_pruning": "8072173413656569414",
+    "phase2_corner_UD_edge": "8964504388834929771",
+    "phase2_corner_UDslice_edge": "14447063561378405273",
+    "phase2_UD_edge_UDslice_edge": "9887755254207665815"
+  }
+}

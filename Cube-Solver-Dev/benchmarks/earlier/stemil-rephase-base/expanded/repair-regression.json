@@ -1,0 +1,26 @@
+{
+  "equivalent": true,
+  "initial_sequence": "D2 B2 U R' F' L D R D2 F D F' R2 U2 R2 U2 B2 D' B2",
+  "sequence": "D2 B2 U R' F' L D B' D B D2 R' U2 R2 U2 B2 D' B2",
+  "initial_htm": 19,
+  "htm": 18,
+  "elapsed_ms": 74.587,
+  "setup_ms": 7.757,
+  "repair_table_bytes": 4194304,
+  "repair_build_peak_bytes": 6812640,
+  "repair_table_states": 46741,
+  "peak_rss_kib": 12512,
+  "repair_nodes": 964244,
+  "windows_tested": 25,
+  "windows_completed": 16,
+  "windows_timed_out": 9,
+  "repair_deadline_reached": false,
+  "repairs": [
+    {
+      "begin": 7,
+      "end": 13,
+      "old_length": 6,
+      "new_length": 5
+    }
+  ]
+}

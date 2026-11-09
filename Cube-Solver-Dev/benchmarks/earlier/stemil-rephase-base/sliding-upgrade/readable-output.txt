@@ -1,0 +1,24 @@
+셔플 move
+  B L D2 R B' R2 L2 F R U2 B2 R' D L F2 L U R2 U' L2 F L2 U F' B'
+셔플 move 수: 25수
+stemil 최대 탐색 시간: 900.000 ms
+stemil phase 1 move
+  U' F L U' B2 R D2 F' R' U B
+stemil phase 1 move 수: 11수
+stemil phase 1 탐색 시간: 650.471 ms
+stemil phase 1 메모리: 528.92 MiB
+stemil phase 2 move
+  D' L2 D' R2 F2 L2 B2 R2 F2 U
+stemil phase 2 move 수: 10수
+stemil phase 2 탐색 시간: 51.537 ms
+stemil phase 2 메모리: 1557.78 MiB
+stemil 전체 solve move
+  U' F L U' B2 R D2 F' R' U B D' L2 D' R2 F2 L2 B2 R2 F2 U
+stemil 전체 solve move 수: 21수
+stemil 전체 solve 시간: 900.007 ms
+stemil 전체 solve 메모리: 2091.40 MiB
+rephase solve move 수: 21수
+rephase로 수를 줄였는지: 아니오
+rephase로 줄인 수: 0수
+rephase 탐색 시간: 100.005 ms
+rephase solve 메모리: 6.50 MiB

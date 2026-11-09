@@ -1,0 +1,2 @@
+./build/tests
+All tests passed: existing full stemil pruning tables, read-only ASCII loader, independent projection BFS, cube group, facelets, coordinates, exact repair, sliding windows, trace, shuffle, fixed time caps, deadlines, memory cap, and end-to-end solve.

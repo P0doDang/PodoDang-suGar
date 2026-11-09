@@ -1,0 +1,2 @@
+# Fast initial Two-Phase solver. Native ABI is used to retain its actual phase cut.
+kociemba==1.2.1

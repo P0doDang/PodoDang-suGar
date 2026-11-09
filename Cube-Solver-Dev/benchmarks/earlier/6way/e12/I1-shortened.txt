@@ -1,0 +1,18 @@
+[2026-10-01 02:16:41] 큐브 25: 18수 -> 15수 (-3)
+  셔플:    
+  stemil:  F2 L2 D2 L F' B2 U2 R' L2 F B' D' R U2 L2 U2 R2 D2
+  rephase: F2 L2 D2 L F' B2 R2 U2 L2 D2 R F B' D R'
+  설정: budget 1000 ms, windows 4,6,8,10
+
+[2026-10-01 02:18:46] 큐브 161: 17수 -> 14수 (-3)
+  셔플:    
+  stemil:  U B2 R F B R2 B U' R2 D R' D2 L U2 R2 L2 D2
+  rephase: U B2 R F B R2 B U' R2 D R L2 U2 L
+  설정: budget 1000 ms, windows 4,6,8,10
+
+[2026-10-01 02:19:08] 큐브 187: 18수 -> 16수 (-2)
+  셔플:    
+  stemil:  F2 L' U2 F U2 B2 U R D' F R B' R U F2 U' F2 R2
+  rephase: F2 L' U2 F U2 B2 U R D' F' D' F2 D R B' R'
+  설정: budget 1000 ms, windows 4,6,8,10
+

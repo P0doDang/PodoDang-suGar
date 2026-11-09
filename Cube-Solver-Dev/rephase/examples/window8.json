@@ -1,0 +1,52 @@
+{
+  "metric": "HTM",
+  "backend": "provided_solution",
+  "windows": [
+    8
+  ],
+  "time_limit_ms": 100.0,
+  "per_window_ms": null,
+  "shifts": [
+    0
+  ],
+  "sliding": false,
+  "max_states": 200000,
+  "initial_solution": "R U D U' D' F2 L2 B2",
+  "original_boundary": 3,
+  "initial_phase_left": "R U D",
+  "initial_phase_right": "U' D' F2 L2 B2",
+  "phase2_side": "user_supplied",
+  "phase2_axis": null,
+  "backend_rotation": null,
+  "backend_inverted": null,
+  "solution": "R F2 L2 B2",
+  "initial_length": 8,
+  "final_length": 4,
+  "saved_moves": 4,
+  "final_repair_anchor": 3,
+  "base_elapsed_ms": 0.0,
+  "engine_prepare_ms": 1.614396000150009,
+  "repair_elapsed_ms": 0.4198569999971369,
+  "wall_elapsed_ms": 2.315003000148863,
+  "stop_reason": "NO_WINDOW",
+  "verified": true,
+  "verification_input": "inverse_of_provided_solution",
+  "global_optimality_proven": false,
+  "attempts": [
+    {
+      "kind": "boundary",
+      "window_size": 8,
+      "start": 0,
+      "end": 8,
+      "before": "R U D U' D' F2 L2 B2",
+      "replacement": "R F2 L2 B2",
+      "status": "FOUND",
+      "local_optimality_proven": true,
+      "elapsed_ms": 0.19089500028712791,
+      "generated": 662,
+      "states": 510,
+      "solution_length_before": 8,
+      "solution_length_after": 4
+    }
+  ]
+}

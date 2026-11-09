@@ -1,0 +1,1727 @@
+{
+  "sample_type": "seeded random-walk scrambles (not uniform random states)",
+  "seed": 2026,
+  "count": 100,
+  "scramble_length": 20,
+  "windows": [
+    6,
+    8
+  ],
+  "time_limit_ms": 100.0,
+  "shifts": [
+    0
+  ],
+  "sliding": false,
+  "engine_prepare_ms": 0.9247240000149759,
+  "average_initial_length": 20.69,
+  "average_final_length": 20.69,
+  "improved_cubes": 0,
+  "total_saved_moves": 0,
+  "average_base_ms": 18.62365030003275,
+  "average_repair_ms": 21.719674890000533,
+  "max_repair_ms": 28.42707700028768,
+  "all_verified": true,
+  "global_optimal_hit_rate": null,
+  "rows": [
+    {
+      "index": 0,
+      "scramble": "R F' D' F' L2 B2 U2 B' R B' D L F' D B D F' B2 D' B",
+      "initial_solution": "U R2 D' B2 U2 L B L2 F2 B R2 B2 U2 L2 D F2 D R2 L2 D",
+      "boundary": 10,
+      "solution": "U R2 D' B2 U2 L B L2 F2 B R2 B2 U2 L2 D F2 D R2 L2 D",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 7.899430999714241,
+      "repair_ms": 26.31010699997205,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 1,
+      "scramble": "B L B D F2 R U L U2 R2 F2 B2 U2 D2 U B2 L' D2 F2 L2",
+      "initial_solution": "U' F' R' F U B' D2 B2 L B' U2 F2 U2 D B2 U B2 L2 B2 D",
+      "boundary": 10,
+      "solution": "U' F' R' F U B' D2 B2 L B' U2 F2 U2 D B2 U B2 L2 B2 D",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 4.4146649997856,
+      "repair_ms": 26.178942000115057,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 2,
+      "scramble": "D2 R D R2 F' B' R' B F L' F' L2 U2 L' R' U2 D' F' R2 F2",
+      "initial_solution": "R2 F' L2 B' D2 R U2 R' F L' B2 D2 B2 U F2 R2 U L2 D' L2",
+      "boundary": 10,
+      "solution": "R2 F' L2 B' D2 R U2 R' F L' B2 D2 B2 U F2 R2 U L2 D' L2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 1.1202489999959653,
+      "repair_ms": 26.431958000102895,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 3,
+      "scramble": "L' U' B' D2 L' D' L R2 U B2 D' R' F' D2 F U2 D B' D F'",
+      "initial_solution": "R' U2 L U B R2 F' U2 F' U F U F2 R2 D' B2 D' F2 B2 U2",
+      "boundary": 11,
+      "solution": "R' U2 L U B R2 F' U2 F' U F U F2 R2 D' B2 D' F2 B2 U2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 14.520131000153924,
+      "repair_ms": 24.68853800019133,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 4,
+      "scramble": "B L2 U2 D F' B L B2 D B' F2 D B' F' R2 B2 F L B' F2",
+      "initial_solution": "F U B L' F R2 D B' U' D2 F' B2 U B2 U F2 R2 U D2 F2 U'",
+      "boundary": 11,
+      "solution": "F U B L' F R2 D B' U' D2 F' B2 U B2 U F2 R2 U D2 F2 U'",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 25.802586000281735,
+      "repair_ms": 21.46414399976493,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 5,
+      "scramble": "B2 F' B U L R B U' B2 U L' F' B' D2 U2 L' D F D2 U'",
+      "initial_solution": "U2 B U D' B2 L2 D' R2 U2 B' R L2 U2 L2 F2 U' F2 L2 F2 U2 L2",
+      "boundary": 11,
+      "solution": "U2 B U D' B2 L2 D' R2 U2 B' R L2 U2 L2 F2 U' F2 L2 F2 U2 L2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 11.469317999853956,
+      "repair_ms": 24.99203400020633,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 6,
+      "scramble": "B L' R B2 L' U2 L2 D' F2 L2 F2 L' B' F' R2 D' F L2 R2 D'",
+      "initial_solution": "U2 R F' D B' U2 B' R B U2 L U R2 F2 U2 L2 U2 D' R2 D'",
+      "boundary": 11,
+      "solution": "U2 R F' D B' U2 B' R B U2 L U R2 F2 U2 L2 U2 D' R2 D'",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 4.167017999861855,
+      "repair_ms": 23.11822799993024,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 7,
+      "scramble": "B2 D' F2 B L' F D R F2 B2 R2 U R U' L2 B' D F2 B F'",
+      "initial_solution": "F' R2 U' R L B L D' F U L' U2 F2 L2 U' B2 U F2 D' F2 U2",
+      "boundary": 11,
+      "solution": "F' R2 U' R L B L D' F U L' U2 F2 L2 U' B2 U F2 D' F2 U2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 24.382332999721257,
+      "repair_ms": 21.496486999694753,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 8,
+      "scramble": "B R' B' R F2 L' F2 D2 F' B L2 F2 B F D' L2 B' U B2 R2",
+      "initial_solution": "U' F R L U2 F' R' D' B2 U2 F' U R2 U2 D' R2 L2 B2 U' D' B2",
+      "boundary": 11,
+      "solution": "U' F R L U2 F' R' D' B2 U2 F' U R2 U2 D' R2 L2 B2 U' D' B2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 5.692329000339669,
+      "repair_ms": 20.007308999993256,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 9,
+      "scramble": "D2 F2 B' L U2 D2 L' D' B F' R2 D2 B' U' D B2 D' F2 U2 L2",
+      "initial_solution": "R U2 R D2 B U2 D L2 B' R F2 L2 D' L2 D R2 F2 D L2 D",
+      "boundary": 10,
+      "solution": "R U2 R D2 B U2 D L2 B' R F2 L2 D' L2 D R2 F2 D L2 D",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 1.654862000123103,
+      "repair_ms": 23.65863700015325,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 10,
+      "scramble": "F' B' F2 R' U2 F L' B2 F U' D2 B' U R2 U D2 L F' B' L2",
+      "initial_solution": "R2 U2 B2 L F D' B2 U' F' R2 L' B2 L2 D F2 B2 D' L2 U2 D' R2",
+      "boundary": 11,
+      "solution": "R2 U2 B2 L F D' B2 U' F' R2 L' B2 L2 D F2 B2 D' L2 U2 D' R2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 32.40243800019016,
+      "repair_ms": 28.05869999974675,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 11,
+      "scramble": "U' L B R F U2 L U B F' R2 L2 B D2 R' U' R F' L2 D",
+      "initial_solution": "F2 D L' F R U' B L2 F' D2 R D R2 D F2 D2 R2 L2 F2 D B2",
+      "boundary": 11,
+      "solution": "F2 D L' F R U' B L2 F' D2 R D R2 D F2 D2 R2 L2 F2 D B2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 18.260506000387977,
+      "repair_ms": 24.123685999711597,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 12,
+      "scramble": "B D' L' U' D' R D2 L U' L B' D' F' R2 U2 D L2 U' B' U'",
+      "initial_solution": "U L2 D2 R D2 F' D B U2 R U B U B2 U R2 D2 B2 L2 B2",
+      "boundary": 12,
+      "solution": "U L2 D2 R D2 F' D B U2 R U B U B2 U R2 D2 B2 L2 B2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 49.67585200029134,
+      "repair_ms": 25.329070999760006,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 13,
+      "scramble": "D F' D F B U' D' B R D U R2 D B' U2 R B2 R' L2 R'",
+      "initial_solution": "U2 D2 R' U2 R D R U' B D2 L' U D L2 U' D L2 B2 L2 D' B2",
+      "boundary": 11,
+      "solution": "U2 D2 R' U2 R D R U' B D2 L' U D L2 U' D L2 B2 L2 D' B2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 7.878853999955027,
+      "repair_ms": 27.220738000323763,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 14,
+      "scramble": "U R D' F2 R' L2 R2 D2 R' B' U2 D2 F2 L D B U' R' L F'",
+      "initial_solution": "D R' F' L F' D' B' R' U F' L F2 U' B2 D F2 U' F2 R2 D' R2",
+      "boundary": 11,
+      "solution": "D R' F' L F' D' B' R' U F' L F2 U' B2 D F2 U' F2 R2 D' R2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 15.53102099978787,
+      "repair_ms": 23.86845799992443,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 15,
+      "scramble": "F D L R' D2 L R L2 D' U2 D' F U F L2 B' U' R L2 F'",
+      "initial_solution": "U' R2 B' R F' L2 D' F B D F' R2 D F2 B2 D2 R2 F2 U' L2 F2",
+      "boundary": 11,
+      "solution": "U' R2 B' R F' L2 D' F B D F' R2 D F2 B2 D2 R2 F2 U' L2 F2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 13.891096000406833,
+      "repair_ms": 23.98332999973718,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 16,
+      "scramble": "U2 D2 B2 L D2 R D2 L' D2 B' U R' L2 F' R B L' F' B' U'",
+      "initial_solution": "L2 F' L' U' D2 F2 B' L D' F' L B2 U2 L2 D L2 U R2 U L2 D2",
+      "boundary": 11,
+      "solution": "L2 F' L' U' D2 F2 B' L D' F' L B2 U2 L2 D L2 U R2 U L2 D2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 32.88670900019497,
+      "repair_ms": 24.306053000145766,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 17,
+      "scramble": "R' L2 B2 U' D R2 D F' D B2 U2 D R2 U' F' U' F2 D2 F2 B",
+      "initial_solution": "R U2 R' B2 U L2 B' L2 F R' F U' L2 U2 F2 L2 B2 U' F2 B2",
+      "boundary": 11,
+      "solution": "R U2 R' B2 U L2 B' L2 F R' F U' L2 U2 F2 L2 B2 U' F2 B2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 14.118686000074376,
+      "repair_ms": 28.42707700028768,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 18,
+      "scramble": "L2 R2 D2 U' F' D' F2 D2 U2 D' B F' B R2 B2 U2 B2 R F U",
+      "initial_solution": "U2 F L U' D2 L U R' U2 R U D F2 R2 U L2 U B2 D L2",
+      "boundary": 10,
+      "solution": "U2 F L U' D2 L U R' U2 R U D F2 R2 U L2 U B2 D L2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 3.6240570002519235,
+      "repair_ms": 20.698678999906406,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 19,
+      "scramble": "U' B' F2 L2 R' D F' B L2 B2 L2 D2 U' R F' B2 U' F' D' L2",
+      "initial_solution": "U2 R F U L U' B L2 U' L' B R' U' L2 D R2 U' R2 F2 U F2 B2",
+      "boundary": 12,
+      "solution": "U2 R F U L U' B L2 U' L' B R' U' L2 D R2 U' R2 F2 U F2 B2",
+      "initial_length": 22,
+      "final_length": 22,
+      "saved_moves": 0,
+      "base_ms": 60.81054500009486,
+      "repair_ms": 20.733695999751944,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 20,
+      "scramble": "B' R U2 L D' R2 D' B D L' R L R2 L R2 L2 F' U' R2 B",
+      "initial_solution": "U2 L' D F R B2 D B' L U2 R' L2 B2 U2 D' B2 D' F2",
+      "boundary": 11,
+      "solution": "U2 L' D F R B2 D B' L U2 R' L2 B2 U2 D' B2 D' F2",
+      "initial_length": 18,
+      "final_length": 18,
+      "saved_moves": 0,
+      "base_ms": 7.058986000174627,
+      "repair_ms": 20.412888000009843,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 21,
+      "scramble": "F' U2 D U' R2 L2 U B R' L' B U' L2 D2 U2 D' R' F2 L B2",
+      "initial_solution": "U D F R' U2 L U2 B L' U B L' F2 B2 D2 F2 D R2 B2 U F2 B2",
+      "boundary": 12,
+      "solution": "U D F R' U2 L U2 B L' U B L' F2 B2 D2 F2 D R2 B2 U F2 B2",
+      "initial_length": 22,
+      "final_length": 22,
+      "saved_moves": 0,
+      "base_ms": 28.686102999927243,
+      "repair_ms": 20.980542999950558,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 22,
+      "scramble": "U' F2 B' R' U' F2 R2 U2 R D B2 L' B' L R2 D U R U2 F",
+      "initial_solution": "U R2 L F L B L2 B' R' U D R' B2 U B2 U R2 U B2 D2 F2 U2",
+      "boundary": 12,
+      "solution": "U R2 L F L B L2 B' R' U D R' B2 U B2 U R2 U B2 D2 F2 U2",
+      "initial_length": 22,
+      "final_length": 22,
+      "saved_moves": 0,
+      "base_ms": 19.02838099977089,
+      "repair_ms": 22.475453999959427,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 23,
+      "scramble": "U F2 U2 R2 L2 F' L B' L2 R' F' B F2 L D2 L2 D' L U B'",
+      "initial_solution": "L F' R' B2 D' L U2 R B R' F' U2 F2 D L2 U' D2 F2 U' R2 D2",
+      "boundary": 11,
+      "solution": "L F' R' B2 D' L U2 R B R' F' U2 F2 D L2 U' D2 F2 U' R2 D2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 22.221464000267588,
+      "repair_ms": 20.209864000207745,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 24,
+      "scramble": "L R' L R L F2 D L2 B' U2 L2 R' B2 F' L2 B' R2 D R2 B2",
+      "initial_solution": "F D2 F U2 R2 U L F' L' D' R' D' R2 D B2 D B2 R2 D2 F2 B2",
+      "boundary": 11,
+      "solution": "F D2 F U2 R2 U L F' L' D' R' D' R2 D B2 D B2 R2 D2 F2 B2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 11.465566999959265,
+      "repair_ms": 19.84748299992134,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 25,
+      "scramble": "D' U L' D' F B' U F2 L' R' F2 L' B L B' U2 F2 B F R'",
+      "initial_solution": "U R' B R' B2 R U B D F' L B2 D' L2 U' D2 F2 U2 B2 L2 U2",
+      "boundary": 11,
+      "solution": "U R' B R' B2 R U B D F' L B2 D' L2 U' D2 F2 U2 B2 L2 U2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 5.8232359997418826,
+      "repair_ms": 21.80646999977398,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 26,
+      "scramble": "U D' R' F D' U L' U2 R' L U2 R2 U R' D' R' L D2 L2 R2",
+      "initial_solution": "F' L2 U2 L' D2 L B' R2 U R B2 D L2 B2 D' F2 U L2 F2 U'",
+      "boundary": 10,
+      "solution": "F' L2 U2 L' D2 L B' R2 U R B2 D L2 B2 D' F2 U L2 F2 U'",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 4.436493999946833,
+      "repair_ms": 21.36241300013353,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 27,
+      "scramble": "U D L U' F' D F D R B F L2 R B U' R' D' U L2 D'",
+      "initial_solution": "R U2 F2 L' D2 R F2 R2 U D2 F' L2 F2 D2 R2 U D2 R2 D' F2 U",
+      "boundary": 11,
+      "solution": "R U2 F2 L' D2 R F2 R2 U D2 F' L2 F2 D2 R2 U D2 R2 D' F2 U",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 15.983619000053295,
+      "repair_ms": 20.13292400033606,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 28,
+      "scramble": "B' D2 F' D B' R2 B U' F U R F2 D' F2 D R2 F' U' L2 D",
+      "initial_solution": "L2 F' R B' D B2 R' D R2 F' L2 D2 F2 U L2 D2 R2 B2 R2 F2",
+      "boundary": 10,
+      "solution": "L2 F' R B' D B2 R' D R2 F' L2 D2 F2 U L2 D2 R2 B2 R2 F2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 4.197589000341395,
+      "repair_ms": 21.045783999852574,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 29,
+      "scramble": "U' B2 U' D' U L2 B2 L2 F' B2 R2 F' L2 F' B D' R' U L2 B2",
+      "initial_solution": "B2 L2 U' R D' F U2 B' L2 F2 L2 U D F2 B2 U' B2 U",
+      "boundary": 8,
+      "solution": "B2 L2 U' R D' F U2 B' L2 F2 L2 U D F2 B2 U' B2 U",
+      "initial_length": 18,
+      "final_length": 18,
+      "saved_moves": 0,
+      "base_ms": 0.5542250000871718,
+      "repair_ms": 19.574540999656165,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 30,
+      "scramble": "U L2 R D2 U F L2 F' B2 U' B' D' B' L2 F L' R' B R D'",
+      "initial_solution": "F' D L' B L B R2 U F' R L D F2 R2 U F2 R2 L2 D R2 L2",
+      "boundary": 11,
+      "solution": "F' D L' B L B R2 U F' R L D F2 R2 U F2 R2 L2 D R2 L2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 11.760116000004928,
+      "repair_ms": 19.939487999636185,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 31,
+      "scramble": "F' R' B2 R F' R' D2 L2 F2 D' B F2 B' L D2 L R2 F U' L2",
+      "initial_solution": "U F2 U R' L2 B2 R2 U F2 D F L2 D2 F2 L2 D B2 U R2 U2 L2",
+      "boundary": 11,
+      "solution": "U F2 U R' L2 B2 R2 U F2 D F L2 D2 F2 L2 D B2 U R2 U2 L2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 6.2947179999355285,
+      "repair_ms": 20.5337980000877,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 32,
+      "scramble": "L2 U' D2 B' U F' B2 L2 F' L' F B U L2 U' R2 F2 R' D' L'",
+      "initial_solution": "U R2 L2 F D' F2 R B L U F' R2 D R2 D2 F2 U' R2 F2 U L2",
+      "boundary": 11,
+      "solution": "U R2 L2 F D' F2 R B L U F' R2 D R2 D2 F2 U' R2 F2 U L2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 2.0261009999558155,
+      "repair_ms": 19.989361000170902,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 33,
+      "scramble": "F' U' L' D' U2 B' U D' R B2 L2 D' L R2 L U D F D' F'",
+      "initial_solution": "U' R D' B' L2 F' U' D L2 D2 L' F2 U' F2 U R2 D L2 U' F2 D2",
+      "boundary": 11,
+      "solution": "U' R D' B' L2 F' U' D L2 D2 L' F2 U' F2 U R2 D L2 U' F2 D2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 10.296932000073866,
+      "repair_ms": 21.253052000247408,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 34,
+      "scramble": "R' D' U2 R2 U' L' F R' D' R2 F2 U L' D L2 B R U' B' R2",
+      "initial_solution": "U F2 L2 B' U2 F U2 L D F2 R' U2 R2 F2 D F2 D R2 D' F2 U",
+      "boundary": 11,
+      "solution": "U F2 L2 B' U2 F U2 L D F2 R' U2 R2 F2 D F2 D R2 D' F2 U",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 4.604557000220666,
+      "repair_ms": 20.53744300019389,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 35,
+      "scramble": "D F' R2 F' U' D R L' D2 U B2 D L2 F2 D R' B L B' L",
+      "initial_solution": "U' F2 U2 L U' F' U2 D' F B2 U2 F2 L2 U' R2 L2 U L2 U'",
+      "boundary": 9,
+      "solution": "U' F2 U2 L U' F' U2 D' F B2 U2 F2 L2 U' R2 L2 U L2 U'",
+      "initial_length": 19,
+      "final_length": 19,
+      "saved_moves": 0,
+      "base_ms": 0.551879999875382,
+      "repair_ms": 19.851137999921775,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 36,
+      "scramble": "B' U' L' F' U R' F' D' U' R' U B' U2 D' L2 B' D' L2 B U",
+      "initial_solution": "D F R B' L U B R' U' R L2 U F2 U R2 U2 R2 U F2 R2",
+      "boundary": 10,
+      "solution": "D F R B' L U B R' U' R L2 U F2 U R2 U2 R2 U F2 R2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 2.5061770002139383,
+      "repair_ms": 22.27644300000975,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 37,
+      "scramble": "D' U2 F' R2 F D' U' L D R U' R2 F' D2 U2 B2 L2 D' U2 D",
+      "initial_solution": "U B2 D2 L' F D' F B L' B2 D' R' U2 B2 D' R2 L2 D' R2 D L2",
+      "boundary": 12,
+      "solution": "U B2 D2 L' F D' F B L' B2 D' R' U2 B2 D' R2 L2 D' R2 D L2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 38.68428400028279,
+      "repair_ms": 22.564322000107495,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 38,
+      "scramble": "F' L R2 L2 U2 F' D2 B' F2 U2 D' F' R B2 R' L2 B2 F2 B' D",
+      "initial_solution": "D2 R F B R' L2 D' B' U' D R' U' L2 D' F2 U B2 U2 R2 L2",
+      "boundary": 11,
+      "solution": "D2 R F B R' L2 D' B' U' D R' U' L2 D' F2 U B2 U2 R2 L2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 22.809678000157874,
+      "repair_ms": 20.755586000177573,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 39,
+      "scramble": "D' U2 R2 B U2 B F2 B R2 F2 B D2 R U' F' D F' D' R' F'",
+      "initial_solution": "U F R' L' D2 B U' L F2 B' U2 R' B2 D R2 B2 U2 D L2 U' B2 D",
+      "boundary": 12,
+      "solution": "U F R' L' D2 B U' L F2 B' U2 R' B2 D R2 B2 U2 D L2 U' B2 D",
+      "initial_length": 22,
+      "final_length": 22,
+      "saved_moves": 0,
+      "base_ms": 68.64441400011856,
+      "repair_ms": 21.109677999902487,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 40,
+      "scramble": "B F R' U' F B F2 R B2 D' B' R' B L R' D B2 L D F",
+      "initial_solution": "U D' R D' R' L2 F2 B L' B' R U R2 U2 L2 U' B2 D2 B2 L2 B2",
+      "boundary": 11,
+      "solution": "U D' R D' R' L2 F2 B L' B' R U R2 U2 L2 U' B2 D2 B2 L2 B2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 7.646578999811027,
+      "repair_ms": 20.7128079996437,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 41,
+      "scramble": "F U' D2 L' D L2 D' U' D R2 F' B2 U2 F' R2 B2 L2 F2 R2 U'",
+      "initial_solution": "U D2 R D L' D2 R' B' R2 U2 D' B' U D R2 U L2 B2 U' D2 L2 B2",
+      "boundary": 12,
+      "solution": "U D2 R D L' D2 R' B' R2 U2 D' B' U D R2 U L2 B2 U' D2 L2 B2",
+      "initial_length": 22,
+      "final_length": 22,
+      "saved_moves": 0,
+      "base_ms": 37.88640600032522,
+      "repair_ms": 21.469058000093355,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 42,
+      "scramble": "B' D2 R2 F R' U' D' B U2 F2 R2 L F2 L2 F D U D' L' R'",
+      "initial_solution": "R' B U2 R2 U D' B' R2 L' U B L2 U' L2 D' L2 U' L2 B2 R2 B2",
+      "boundary": 11,
+      "solution": "R' B U2 R2 U D' B' R2 L' U B L2 U' L2 D' L2 U' L2 B2 R2 B2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 21.81387199971141,
+      "repair_ms": 21.256137999898783,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 43,
+      "scramble": "L2 R' U2 L2 B L' F2 B' D2 B2 D2 B2 D2 B F' D' R D R' L2",
+      "initial_solution": "R L2 D' F R2 D2 R' D' B R L D' R2 U' B2 R2 D' F2 D F2 U2",
+      "boundary": 11,
+      "solution": "R L2 D' F R2 D2 R' D' B R L D' R2 U' B2 R2 D' F2 D F2 U2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 17.687788999865006,
+      "repair_ms": 20.293066000249382,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 44,
+      "scramble": "D2 U B' F L' U' R F2 D' L' R2 U' F' L D2 L F B2 L B",
+      "initial_solution": "F U D' F D' L2 D R F R' L F2 D' F2 D' F2 B2 D' F2 B2 L2",
+      "boundary": 11,
+      "solution": "F U D' F D' L2 D R F R' L F2 D' F2 D' F2 B2 D' F2 B2 L2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 17.5403749999532,
+      "repair_ms": 19.91187700014052,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 45,
+      "scramble": "B L2 B' F2 R' U R B R L2 U2 L2 B2 R2 F' U B R B F2",
+      "initial_solution": "U' F2 L' U' R' D L' B' L2 D F L' F2 B2 D' B2 L2 U' R2 L2 U D",
+      "boundary": 12,
+      "solution": "U' F2 L' U' R' D L' B' L2 D F L' F2 B2 D' B2 L2 U' R2 L2 U D",
+      "initial_length": 22,
+      "final_length": 22,
+      "saved_moves": 0,
+      "base_ms": 84.5933660002629,
+      "repair_ms": 19.9851510001281,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 46,
+      "scramble": "B2 R2 L D2 R' U2 D' L' R D' B U R2 U' F' R D2 R L D2",
+      "initial_solution": "B2 R' F' D B R U' D' F R D' F2 L2 U D' L2 F2 L2 U' F2",
+      "boundary": 10,
+      "solution": "B2 R' F' D B R U' D' F R D' F2 L2 U D' L2 F2 L2 U' F2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 3.4677910002756107,
+      "repair_ms": 20.341991999885067,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 47,
+      "scramble": "R' L' R2 U2 L F L' F' L2 D F' U' R2 U F2 D U R' D' L'",
+      "initial_solution": "R2 F U2 B' L U R' U2 D' R F' D F2 U2 F2 U' L2 B2 U2 F2 U'",
+      "boundary": 11,
+      "solution": "R2 F U2 B' L U R' U2 D' R F' D F2 U2 F2 U' L2 B2 U2 F2 U'",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 10.553522999998677,
+      "repair_ms": 20.348432999981014,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 48,
+      "scramble": "B2 R B' F2 L2 D2 R' F' R' F' L F2 R2 D2 B' R' B2 R2 U L2",
+      "initial_solution": "R2 B' R U D F2 L' B' L' B U L2 U2 D' R2 D2 R2 F2 D2 F2",
+      "boundary": 10,
+      "solution": "R2 B' R U D F2 L' B' L' B U L2 U2 D' R2 D2 R2 F2 D2 F2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 3.2868549997147056,
+      "repair_ms": 21.019251000325312,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 49,
+      "scramble": "B U' R D2 B R' F2 B2 L F2 R F' R2 D' B2 D' F R2 F L",
+      "initial_solution": "L F' L2 F' L2 D F2 U D' R' B' R2 L2 B2 U2 B2 D' R2 U' D",
+      "boundary": 11,
+      "solution": "L F' L2 F' L2 D F2 U D' R' B' R2 L2 B2 U2 B2 D' R2 U' D",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 24.278327000047284,
+      "repair_ms": 19.72943700002361,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 50,
+      "scramble": "U2 B2 F B2 U2 L' D' L2 D2 F' L2 F' B L2 R2 D2 L U2 B2 F'",
+      "initial_solution": "U2 R' D' L F' R B2 U2 R2 U L B2 U B2 R2 U2 D' R2 D' B2 D2",
+      "boundary": 11,
+      "solution": "U2 R' D' L F' R B2 U2 R2 U L B2 U B2 R2 U2 D' R2 D' B2 D2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 4.465846000130114,
+      "repair_ms": 21.014333000039187,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 51,
+      "scramble": "B2 D R' D2 R' L2 R' F' U' R2 D' B2 L U' B R2 B2 F' D' B2",
+      "initial_solution": "U2 L2 D' F' U L F U2 F U' R U2 F2 U' D2 L2 U2 D' F2 B2",
+      "boundary": 11,
+      "solution": "U2 L2 D' F' U L F U2 F U' R U2 F2 U' D2 L2 U2 D' F2 B2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 4.983725999863964,
+      "repair_ms": 20.359065999855375,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 52,
+      "scramble": "L D2 U2 B' D R U D2 R F D F' B2 F' U' D' R B L2 R2",
+      "initial_solution": "R D2 R' D2 B' U B D F B2 R' F2 U F2 L2 D F2 D F2 D L2",
+      "boundary": 11,
+      "solution": "R D2 R' D2 B' U B D F B2 R' F2 U F2 L2 D F2 D F2 D L2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 9.311116999924707,
+      "repair_ms": 20.65778800033513,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 53,
+      "scramble": "B U' D' L2 B2 L2 R' F' L2 F D' L D' F' R U' L F' L' U'",
+      "initial_solution": "L2 D' B R' L2 D' R2 D L U2 F L2 U D2 L2 U' F2 B2 R2 B2 U'",
+      "boundary": 11,
+      "solution": "L2 D' B R' L2 D' R2 D L U2 F L2 U D2 L2 U' F2 B2 R2 B2 U'",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 19.683092999912333,
+      "repair_ms": 25.373432999913348,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 54,
+      "scramble": "R2 U' B L2 B D2 L U B D2 B2 U F2 B R2 B2 U' R' F2 D'",
+      "initial_solution": "L U2 F2 B U F B L' F' R F2 U2 R2 U' F2 U2 L2 U' L2 U",
+      "boundary": 10,
+      "solution": "L U2 F2 B U F B L' F' R F2 U2 R2 U' F2 U2 L2 U' L2 U",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 4.048067999974592,
+      "repair_ms": 21.957052000288968,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 55,
+      "scramble": "D' U' D2 U' R' L' U B U' L2 U' D L2 D F2 B' F' U F2 R",
+      "initial_solution": "D B' U F' B2 D2 R' D R' L' B' U' D' F2 U' R2 L2 B2 U F2 D2",
+      "boundary": 11,
+      "solution": "D B' U F' B2 D2 R' D R' L' B' U' D' F2 U' R2 L2 B2 U F2 D2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 12.990631000320718,
+      "repair_ms": 20.371858999624237,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 56,
+      "scramble": "B2 R' B' F' U2 D2 L2 D' F U' B' R' U' L' F' U D2 U R U2",
+      "initial_solution": "R U L U2 F D B U2 R' D2 F B2 L2 D' L2 B2 D L2 U2 B2 L2",
+      "boundary": 11,
+      "solution": "R U L U2 F D B U2 R' D2 F B2 L2 D' L2 B2 D L2 U2 B2 L2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 6.97125499982576,
+      "repair_ms": 19.819863000066107,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 57,
+      "scramble": "D' L B2 D' L' B2 L2 R2 F' B U R' D' R B2 L2 U2 D L2 F",
+      "initial_solution": "R B R U' F D' L2 F B D' L D2 L2 F2 U R2 B2 D2 B2 L2 D",
+      "boundary": 11,
+      "solution": "R B R U' F D' L2 F B D' L D2 L2 F2 U R2 B2 D2 B2 L2 D",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 14.459608999914053,
+      "repair_ms": 21.379696000167314,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 58,
+      "scramble": "F B2 L2 U' F R L2 F2 R F' U' D' B2 F L' F D2 B2 R' L'",
+      "initial_solution": "U R' U R2 B2 U R L' F' R' L2 F R2 F2 U' R2 U R2 L2 U L2 D'",
+      "boundary": 12,
+      "solution": "U R' U R2 B2 U R L' F' R' L2 F R2 F2 U' R2 U R2 L2 U L2 D'",
+      "initial_length": 22,
+      "final_length": 22,
+      "saved_moves": 0,
+      "base_ms": 45.42747000004965,
+      "repair_ms": 21.607674000279076,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 59,
+      "scramble": "F R2 L2 D' F2 B' F' L F2 U2 B' L' R L' R U2 B U2 F' L'",
+      "initial_solution": "L2 D' F D R2 L2 U' R2 L B R2 F2 U' R2 D2 R2 U F2 D F2",
+      "boundary": 10,
+      "solution": "L2 D' F D R2 L2 U' R2 L B R2 F2 U' R2 D2 R2 U F2 D F2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 10.5777520002448,
+      "repair_ms": 20.019715999751497,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 60,
+      "scramble": "R' U2 R' F L2 F R B' F U D' U' L2 B' L' D2 B R2 F2 L'",
+      "initial_solution": "U D' B D F' U' R U' F R2 F U2 L2 F2 U D2 F2 L2 B2 R2 U'",
+      "boundary": 11,
+      "solution": "U D' B D F' U' R U' F R2 F U2 L2 F2 U D2 F2 L2 B2 R2 U'",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 13.001452000025893,
+      "repair_ms": 20.493659999829106,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 61,
+      "scramble": "D' F U D2 F' D2 B' R2 B2 R' D2 U' R2 B U' D' R F' D2 F",
+      "initial_solution": "U2 D2 B2 L B' L' U' F2 B' L' U R' F2 L2 U' F2 U' D2 F2 R2 L2 D'",
+      "boundary": 12,
+      "solution": "U2 D2 B2 L B' L' U' F2 B' L' U R' F2 L2 U' F2 U' D2 F2 R2 L2 D'",
+      "initial_length": 22,
+      "final_length": 22,
+      "saved_moves": 0,
+      "base_ms": 59.99943999995594,
+      "repair_ms": 20.870928000022104,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 62,
+      "scramble": "U2 B' D' L2 F' R' B R2 L2 U2 D2 F2 R' D' B2 L F' B2 F' U2",
+      "initial_solution": "U' B' L B L2 F2 U F2 U' F U' D L2 U' F2 L2 U' F2 U L2",
+      "boundary": 10,
+      "solution": "U' B' L B L2 F2 U F2 U' F U' D L2 U' F2 L2 U' F2 U L2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 6.218517999968753,
+      "repair_ms": 20.392959999753657,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 63,
+      "scramble": "F' R2 U R2 L U R2 D' B' F2 L U2 D B D2 B D F2 L F2",
+      "initial_solution": "D' R L2 U' B L B D R L' B' U R2 U' L2 U' D L2 B2 D2 L2",
+      "boundary": 11,
+      "solution": "D' R L2 U' B L B D R L' B' U R2 U' L2 U' D L2 B2 D2 L2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 15.260326999850804,
+      "repair_ms": 21.15332399989711,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 64,
+      "scramble": "B' U R' B' R' U' R U2 D U2 R' D' B2 R2 U R L' U2 B D",
+      "initial_solution": "U R2 D' B' U D2 B2 L' D R F U' F2 D2 L2 F2 D F2 U' R2",
+      "boundary": 11,
+      "solution": "U R2 D' B' U D2 B2 L' D R F U' F2 D2 L2 F2 D F2 U' R2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 7.352327999797126,
+      "repair_ms": 21.328182999695855,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 65,
+      "scramble": "B2 U2 L' B2 L' R' L' U' F2 D2 R F' L' B' F2 L' R D R D'",
+      "initial_solution": "U2 R2 U2 R' U2 B R U D' L' B U R2 B2 L2 D' R2 U F2 U' D'",
+      "boundary": 11,
+      "solution": "U2 R2 U2 R' U2 B R U D' L' B U R2 B2 L2 D' R2 U F2 U' D'",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 5.875029999970138,
+      "repair_ms": 20.890757999950438,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 66,
+      "scramble": "D2 F U D2 R L U' D2 R B U2 L F2 L F D2 F' U D2 R",
+      "initial_solution": "U2 F2 D2 B' U' R2 L F' R B U' F' U B2 U B2 D' F2 B2 D R2 D'",
+      "boundary": 12,
+      "solution": "U2 F2 D2 B' U' R2 L F' R B U' F' U B2 U B2 D' F2 B2 D R2 D'",
+      "initial_length": 22,
+      "final_length": 22,
+      "saved_moves": 0,
+      "base_ms": 62.111671999900864,
+      "repair_ms": 19.870352999987517,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 67,
+      "scramble": "L D' U D' F2 B U' F2 R B2 F' R' F2 B F B2 D' L U F'",
+      "initial_solution": "F2 R B' U' L2 D B2 R F D L' D F2 L2 U L2 D F2 U2 L2",
+      "boundary": 11,
+      "solution": "F2 R B' U' L2 D B2 R F D L' D F2 L2 U L2 D F2 U2 L2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 20.46755200035477,
+      "repair_ms": 20.302785999774642,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 68,
+      "scramble": "B2 U' D' U2 L R' B R L U2 D' U' D2 F B U2 B U2 B F",
+      "initial_solution": "R B2 R2 F R D2 R' F B' U B2 U F2 U D2 F2 U' B2",
+      "boundary": 9,
+      "solution": "R B2 R2 F R D2 R' F B' U B2 U F2 U D2 F2 U' B2",
+      "initial_length": 18,
+      "final_length": 18,
+      "saved_moves": 0,
+      "base_ms": 8.622035999906075,
+      "repair_ms": 23.21643600043899,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 69,
+      "scramble": "L U F R U F2 B L U' D' R2 B' R' U2 F2 U' B' L' U F",
+      "initial_solution": "R D F' U B' R' U2 B U2 F D2 R D2 L2 D B2 U' D2 R2 U' F2 R2",
+      "boundary": 12,
+      "solution": "R D F' U B' R' U2 B U2 F D2 R D2 L2 D B2 U' D2 R2 U' F2 R2",
+      "initial_length": 22,
+      "final_length": 22,
+      "saved_moves": 0,
+      "base_ms": 114.75675700012289,
+      "repair_ms": 20.606132000011712,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 70,
+      "scramble": "B' U2 B' F2 D' L2 U F' B' D' F2 B2 F' L2 B' U B' L' B2 R",
+      "initial_solution": "U' R2 U D' R' D' B' D B' L B2 L2 U F2 U R2 L2 D' L2 U'",
+      "boundary": 10,
+      "solution": "U' R2 U D' R' D' B' D B' L B2 L2 U F2 U R2 L2 D' L2 U'",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 4.46873200007758,
+      "repair_ms": 19.87714100005178,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 71,
+      "scramble": "B U F2 U2 R' L2 U2 F2 R U F2 L D2 U D2 B' R2 U2 B' D'",
+      "initial_solution": "U2 L F U2 F2 D B L U R B2 L U' R2 L2 U2 F2 D2 B2 R2 B2 U'",
+      "boundary": 12,
+      "solution": "U2 L F U2 F2 D B L U R B2 L U' R2 L2 U2 F2 D2 B2 R2 B2 U'",
+      "initial_length": 22,
+      "final_length": 22,
+      "saved_moves": 0,
+      "base_ms": 87.85299999999552,
+      "repair_ms": 21.134844000243902,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 72,
+      "scramble": "B' U' D' L2 F' L F' R D2 B2 U D' R' F D' F D2 U2 F U",
+      "initial_solution": "F2 L D B2 U2 L D F2 D F B L2 B2 U' L2 U' D2 B2 D R2 U'",
+      "boundary": 11,
+      "solution": "F2 L D B2 U2 L D F2 D F B L2 B2 U' L2 U' D2 B2 D R2 U'",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 17.652161000114575,
+      "repair_ms": 20.90375999978278,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 73,
+      "scramble": "U D F D' U2 D2 L2 D U' R' F U' D' R D' B R' D R2 L2",
+      "initial_solution": "D2 F2 D2 F R' U' R B D' L' D' R2 F2 R2 D B2 U' D2 B2 U'",
+      "boundary": 10,
+      "solution": "D2 F2 D2 F R' U' R B D' L' D' R2 F2 R2 D B2 U' D2 B2 U'",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 6.152207000013732,
+      "repair_ms": 20.08519199989678,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 74,
+      "scramble": "R' D2 U2 R F' U2 L' B U' L B2 F' B R B2 L2 F2 B2 D' U'",
+      "initial_solution": "R' F L F L2 B2 D L' U' R' U2 F2 R2 D2 F2 R2 U F2 U' B2",
+      "boundary": 10,
+      "solution": "R' F L F L2 B2 D L' U' R' U2 F2 R2 D2 F2 R2 U F2 U' B2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 2.8142539999862493,
+      "repair_ms": 20.18542600035289,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 75,
+      "scramble": "D2 U' D2 F' U2 R' U B2 F U2 L' F2 L2 F L2 D R' D' R' U2",
+      "initial_solution": "F' B L2 D L2 F' B2 R B D B U2 R2 U' R2 B2 R2 U D L2 F2",
+      "boundary": 11,
+      "solution": "F' B L2 D L2 F' B2 R B D B U2 R2 U' R2 B2 R2 U D L2 F2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 19.65900999994119,
+      "repair_ms": 20.294618000207265,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 76,
+      "scramble": "U L2 R2 F U2 D B' R F2 L D2 L D2 L U' F2 L' F' U R",
+      "initial_solution": "D2 L U' F2 L D' R2 F D' B' R2 U2 B2 U2 F2 D B2 D R2 L2",
+      "boundary": 10,
+      "solution": "D2 L U' F2 L D' R2 F D' B' R2 U2 B2 U2 F2 D B2 D R2 L2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 4.026212000098894,
+      "repair_ms": 20.46296499975142,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 77,
+      "scramble": "D2 B' D' U' L' F2 L U2 F L2 F2 B U' L F' B' D2 F2 U2 R2",
+      "initial_solution": "U2 B' R D F2 U B U L2 B' L' D' B2 L2 D' B2 L2 U F2 B2 D2",
+      "boundary": 11,
+      "solution": "U2 B' R D F2 U B U L2 B' L' D' B2 L2 D' B2 L2 U F2 B2 D2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 10.079020000375749,
+      "repair_ms": 21.237000999917655,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 78,
+      "scramble": "R2 U L F' R2 U' D R2 U D2 L R2 U' D L2 D2 U D2 L U2",
+      "initial_solution": "L2 D F2 B2 R' U B' D2 L' D L' D2 F2 D' L2 B2 D' B2 U' F2 D'",
+      "boundary": 11,
+      "solution": "L2 D F2 B2 R' U B' D2 L' D L' D2 F2 D' L2 B2 D' B2 U' F2 D'",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 27.092675999938365,
+      "repair_ms": 19.978674000412866,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 79,
+      "scramble": "R F B2 R' D2 B U2 B2 F R2 D2 B F2 L' B2 R2 F2 D2 L' D",
+      "initial_solution": "U B' R D F U2 B D' F2 R2 U L' F2 U L2 U' R2 F2 R2 D' R2 U'",
+      "boundary": 12,
+      "solution": "U B' R D F U2 B D' F2 R2 U L' F2 U L2 U' R2 F2 R2 D' R2 U'",
+      "initial_length": 22,
+      "final_length": 22,
+      "saved_moves": 0,
+      "base_ms": 44.912109000051714,
+      "repair_ms": 21.45557399990139,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 80,
+      "scramble": "L2 F2 R2 B2 R' B2 U' R2 L F' U F R L' R2 L' B F R B2",
+      "initial_solution": "B' L' U2 R B' L' B2 U L F' B R2 L2 U' L2 F2 D' R2 F2 D",
+      "boundary": 11,
+      "solution": "B' L' U2 R B' L' B2 U L F' B R2 L2 U' L2 F2 D' R2 F2 D",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 26.39231600005587,
+      "repair_ms": 20.75486399962756,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 81,
+      "scramble": "D2 U' B U2 F D U' L R' L2 F' D R L F' R2 B' F' D' F",
+      "initial_solution": "R F R B' D' F R F2 U' D L F2 D' B2 L2 B2 L2 U D2 R2 U2",
+      "boundary": 11,
+      "solution": "R F R B' D' F R F2 U' D L F2 D' B2 L2 B2 L2 U D2 R2 U2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 11.754987000131223,
+      "repair_ms": 20.485280999764655,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 82,
+      "scramble": "F' R' B2 L' F2 R U' D' R2 U L' D B2 R F2 U' B2 F L2 D",
+      "initial_solution": "R2 U' L2 F' L2 U' B' R2 L' B2 U' L2 U' R2 D' R2 D' R2 B2",
+      "boundary": 9,
+      "solution": "R2 U' L2 F' L2 U' B' R2 L' B2 U' L2 U' R2 D' R2 D' R2 B2",
+      "initial_length": 19,
+      "final_length": 19,
+      "saved_moves": 0,
+      "base_ms": 1.0808679999172455,
+      "repair_ms": 20.707181000034325,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 83,
+      "scramble": "R2 D2 F L2 F2 L2 U L R2 L' U B D F' R' D' R2 B2 F R",
+      "initial_solution": "U2 F2 L F2 B' L B' L' F2 U' R F2 L2 U2 B2 D R2 U' R2 L2 U'",
+      "boundary": 11,
+      "solution": "U2 F2 L F2 B' L B' L' F2 U' R F2 L2 U2 B2 D R2 U' R2 L2 U'",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 5.451025000184018,
+      "repair_ms": 20.03292400013379,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 84,
+      "scramble": "B' L' B2 F' R2 B D2 B2 D F' R' B2 R' B F D' R U D F'",
+      "initial_solution": "U F2 B R B R F2 R2 U2 D2 F' L2 D F2 U' L2 D2 B2 U' R2 B2",
+      "boundary": 11,
+      "solution": "U F2 B R B R F2 R2 U2 D2 F' L2 D F2 U' L2 D2 B2 U' R2 B2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 7.4307360000602785,
+      "repair_ms": 19.666226000026654,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 85,
+      "scramble": "L2 F L B' L' R' B2 L R D' L F R' B2 D' B2 L2 U R2 F",
+      "initial_solution": "B' R2 U' L2 B2 L' B' L2 D' F R U2 F2 U L2 D2 L2 U R2 U L2",
+      "boundary": 11,
+      "solution": "B' R2 U' L2 B2 L' B' L2 D' F R U2 F2 U L2 D2 L2 U R2 U L2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 25.22763400020267,
+      "repair_ms": 21.56176400012555,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 86,
+      "scramble": "F U' D2 L F D2 B2 U' D F' R F' U D' U2 R2 U2 F D U2",
+      "initial_solution": "B2 U' F L D L' B D2 L B U D' R2 D F2 U2 R2 B2 L2 F2",
+      "boundary": 10,
+      "solution": "B2 U' F L D L' B D2 L B U D' R2 D F2 U2 R2 B2 L2 F2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 6.056098000044585,
+      "repair_ms": 20.780837999609503,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 87,
+      "scramble": "L' D R' L2 F' B' D2 U2 D R F' R2 B' U R2 B' U2 B R' L2",
+      "initial_solution": "F2 D2 R2 D L' U R' B' U2 B U2 D B2 L2 U' R2 D F2 L2 D2",
+      "boundary": 10,
+      "solution": "F2 D2 R2 D L' U R' B' U2 B U2 D B2 L2 U' R2 D F2 L2 D2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 5.7320579999213805,
+      "repair_ms": 20.0756829999591,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 88,
+      "scramble": "R2 D2 L2 F U2 L2 U2 B2 L2 R B2 L F' B2 F2 R' L U' R2 U2",
+      "initial_solution": "R2 L' U' B' U2 D F' R L2 U F' U F2 B2 L2 U' B2 U2 F2 U F2",
+      "boundary": 11,
+      "solution": "R2 L' U' B' U2 D F' R L2 U F' U F2 B2 L2 U' B2 U2 F2 U F2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 9.885023000151705,
+      "repair_ms": 20.988025999940874,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 89,
+      "scramble": "D' R U' D2 F2 B2 L' U2 B' F' B F B U' R2 U L2 F2 D B'",
+      "initial_solution": "F L B R2 F2 D' L' B U2 D2 R L2 U2 R2 U B2 D' R2 D2 B2 L2",
+      "boundary": 11,
+      "solution": "F L B R2 F2 D' L' B U2 D2 R L2 U2 R2 U B2 D' R2 D2 B2 L2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 14.284215999850858,
+      "repair_ms": 21.021669000219845,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 90,
+      "scramble": "U' D2 F2 U D2 F2 R' L' U2 R D U' D L2 U2 F2 L' F' D' R",
+      "initial_solution": "R' D F L U2 D2 B2 D2 L2 U' R' F2 U2 R2 B2 L2 U2 R2 U B2 U'",
+      "boundary": 11,
+      "solution": "R' D F L U2 D2 B2 D2 L2 U' R' F2 U2 R2 B2 L2 U2 R2 U B2 U'",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 14.023544999872684,
+      "repair_ms": 19.85775899993314,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 91,
+      "scramble": "L2 U2 F' U' R B2 U' L D B R2 F2 B L F B U2 L' R F'",
+      "initial_solution": "U' R U2 B' R U' D' R' B2 R' L' D' B2 U2 L2 D' B2 U2 L2 U L2",
+      "boundary": 11,
+      "solution": "U' R U2 B' R U' D' R' B2 R' L' D' B2 U2 L2 D' B2 U2 L2 U L2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 17.801485999825672,
+      "repair_ms": 25.99385000030452,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 92,
+      "scramble": "U' D B' D2 U2 L B D R2 F' D B2 D B2 D R2 F L' B2 D",
+      "initial_solution": "U2 L F R' F' R' U2 F2 U' R' F' B L2 B2 U2 R2 D F2 U' F2 B2",
+      "boundary": 12,
+      "solution": "U2 L F R' F' R' U2 F2 U' R' F' B L2 B2 U2 R2 D F2 U' F2 B2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 57.400000000143336,
+      "repair_ms": 22.85740999968766,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 93,
+      "scramble": "B2 U' D' F R2 U D' L R2 D' F2 R2 D L' B2 L2 R2 F L' B'",
+      "initial_solution": "U F2 U L2 F R U B' R D F' B2 U2 F2 L2 D L2 U' L2 B2 U'",
+      "boundary": 11,
+      "solution": "U F2 U L2 F R U B' R D F' B2 U2 F2 L2 D L2 U' L2 B2 U'",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 6.3091639999584,
+      "repair_ms": 28.102093000143213,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 94,
+      "scramble": "L' U' F' B2 F' R2 F2 R2 U2 B2 D R U B' R L D R' L' R'",
+      "initial_solution": "U2 D2 F2 L2 F U' L' U2 B2 R' F2 D B2 D' L2 U2 D2 F2 L2 F2",
+      "boundary": 10,
+      "solution": "U2 D2 F2 L2 F U' L' U2 B2 R' F2 D B2 D' L2 U2 D2 F2 L2 F2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 1.891341999908036,
+      "repair_ms": 23.772105000261945,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 95,
+      "scramble": "R L2 R' D L2 F L F2 L F L2 U2 F' B2 L2 F B D2 F2 L",
+      "initial_solution": "R F B' R2 F' L' B' R L2 F U B2 U' L2 U D' R2 U' B2 L2",
+      "boundary": 10,
+      "solution": "R F B' R2 F' L' B' R L2 F U B2 U' L2 U D' R2 U' B2 L2",
+      "initial_length": 20,
+      "final_length": 20,
+      "saved_moves": 0,
+      "base_ms": 2.6280370002496056,
+      "repair_ms": 22.35371500000838,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 96,
+      "scramble": "D2 L F R' U B R' D L' R' B R2 B F2 U F' D F2 U L",
+      "initial_solution": "U D F' D' F2 B U B2 U F2 L U2 D' B2 D2 L2 B2 U' R2 F2 U2",
+      "boundary": 11,
+      "solution": "U D F' D' F2 B U B2 U F2 L U2 D' B2 D2 L2 B2 U' R2 F2 U2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 6.7791279998346,
+      "repair_ms": 24.827967999954126,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 97,
+      "scramble": "U B2 D' R2 D' F' B U R2 B R' D R2 D R2 B' L2 D' R2 U",
+      "initial_solution": "F B R' B R2 L U' R2 L' B R U2 L2 B2 L2 B2 D R2 U' D2 L2",
+      "boundary": 11,
+      "solution": "F B R' B R2 L U' R2 L' B R U2 L2 B2 L2 B2 D R2 U' D2 L2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 30.307804999665677,
+      "repair_ms": 23.46685200018328,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 98,
+      "scramble": "F R U R2 F U' R L' R' B' L2 D F' D2 U2 L2 D F' D' L2",
+      "initial_solution": "U F2 L' D' B' R' F' B2 L' U B' R L2 B2 L2 U' B2 U F2 R2 U' D'",
+      "boundary": 12,
+      "solution": "U F2 L' D' B' R' F' B2 L' U B' R L2 B2 L2 U' B2 U F2 R2 U' D'",
+      "initial_length": 22,
+      "final_length": 22,
+      "saved_moves": 0,
+      "base_ms": 23.78991900013716,
+      "repair_ms": 20.125644999552605,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "index": 99,
+      "scramble": "U2 F2 U' R2 B2 F R U2 L' U2 B' U2 B L U2 L B2 D' L' F",
+      "initial_solution": "L D F L' D' F' R' L' B2 U L U F2 R2 F2 R2 D' L2 U' R2 U2",
+      "boundary": 11,
+      "solution": "L D F L' D' F' R' L' B2 U L U F2 R2 F2 R2 D' L2 U' R2 U2",
+      "initial_length": 21,
+      "final_length": 21,
+      "saved_moves": 0,
+      "base_ms": 50.25449300001128,
+      "repair_ms": 20.41268500033766,
+      "verified": true,
+      "stop_reason": "NO_IMPROVEMENT",
+      "search_statuses": {
+        "EXHAUSTED": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+Postprocessed 25/100
+Postprocessed 50/100
+Postprocessed 75/100
+Postprocessed 100/100
+{
+  "cases": 100,
+  "baseline": "results/sliding-upgrade/uniform-100/repair-0.jsonl",
+  "repair_budget_ms": 100.0,
+  "window_slice_ms": 8,
+  "repair_mode": "boundary+sliding",
+  "windows": "4,6,8,10",
+  "boundary_improvements": 3,
+  "sliding_improvements": 0,
+  "table_depth": 4,
+  "table_bytes": 4194304,
+  "build_peak_bytes": 6812640,
+  "mean_before_htm": 19.85,
+  "mean_after_htm": 19.82,
+  "improved_cases": 3,
+  "moves_saved": 3,
+  "mean_repair_ms": 99.92808,
+  "max_repair_ms": 100.078,
+  "independent_verification": "all postprocessed solutions checked with 54-sticker rotations"
+}

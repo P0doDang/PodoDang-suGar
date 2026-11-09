@@ -1,0 +1,26 @@
+{
+  "repair-0.1.stderr": {
+    "phase1_pruning": "8072173413656569414",
+    "phase2_corner_UD_edge": "8964504388834929771",
+    "phase2_corner_UDslice_edge": "14447063561378405273",
+    "phase2_UD_edge_UDslice_edge": "9887755254207665815"
+  },
+  "repair-0.05.stderr": {
+    "phase1_pruning": "8072173413656569414",
+    "phase2_corner_UD_edge": "8964504388834929771",
+    "phase2_corner_UDslice_edge": "14447063561378405273",
+    "phase2_UD_edge_UDslice_edge": "9887755254207665815"
+  },
+  "repair-0.stderr": {
+    "phase1_pruning": "8072173413656569414",
+    "phase2_corner_UD_edge": "8964504388834929771",
+    "phase2_corner_UDslice_edge": "14447063561378405273",
+    "phase2_UD_edge_UDslice_edge": "9887755254207665815"
+  },
+  "repair-0.2.stderr": {
+    "phase1_pruning": "8072173413656569414",
+    "phase2_corner_UD_edge": "8964504388834929771",
+    "phase2_corner_UDslice_edge": "14447063561378405273",
+    "phase2_UD_edge_UDslice_edge": "9887755254207665815"
+  }
+}

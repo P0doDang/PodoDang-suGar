@@ -1,0 +1,189 @@
+{
+  "root": "third_party/stemil",
+  "files": {
+    ".gitignore": {
+      "size": 127,
+      "mtime_ns": 1789195680672798235,
+      "ctime_ns": 1789195680672798235,
+      "sha256": "1a02bc61dee2e7155261d0b87550113a01bc6a920b04aa30b839d1251cfa1134"
+    },
+    "Makefile": {
+      "size": 61,
+      "mtime_ns": 1789195680672798235,
+      "ctime_ns": 1789195680672798235,
+      "sha256": "7ced05464769aedaa8131dc9eb1ffe4d13ed3dcdb9130ff23dfe25d5faacfe68"
+    },
+    "README.md": {
+      "size": 1763,
+      "mtime_ns": 1789195680672798235,
+      "ctime_ns": 1789195680672798235,
+      "sha256": "aabf0a4ee882419c62e3199a558b51129cbbc60f0d322d07c401a75e7c9c54ac"
+    },
+    "a.out": {
+      "size": 88672,
+      "mtime_ns": 1789195692648832068,
+      "ctime_ns": 1789195692648850063,
+      "sha256": "54e3a801737f55dcfeca65a63d1a8bd390b706849d8c0839f8431083c6ef601a"
+    },
+    "instrumented/.gitignore": {
+      "size": 15,
+      "mtime_ns": 1789199357363749658,
+      "ctime_ns": 1789199357363749658,
+      "sha256": "8fe618c257eb1a6c340a8b32cfed011cd9392952664d7d9e502176ab2231a612"
+    },
+    "instrumented/Makefile": {
+      "size": 408,
+      "mtime_ns": 1789199332366580497,
+      "ctime_ns": 1789199332366580497,
+      "sha256": "00b3d2728c06177c47917bd4d70c9e37781930e9f71452f7b2e30db613ca7f88"
+    },
+    "instrumented/README.md": {
+      "size": 1760,
+      "mtime_ns": 1789199928492141808,
+      "ctime_ns": 1789199928492141808,
+      "sha256": "ca2ee1254d0002d72599668e9153f3dd45950b4a9ad5f43a46f20ffe31e72459"
+    },
+    "instrumented/solver_metrics": {
+      "size": 130032,
+      "mtime_ns": 1789199934234346253,
+      "ctime_ns": 1789199934234363767,
+      "sha256": "6570100a089471319f824b903c71076a4fd74ff3e18d900d8c51fa8e6bf1ebb0"
+    },
+    "instrumented/solver_metrics.cpp": {
+      "size": 25082,
+      "mtime_ns": 1789199928567180353,
+      "ctime_ns": 1789199928567180353,
+      "sha256": "f4bc3c1fcb4d8a103ae4c28df3b30fe2256c8f7dffdc8c22e1f5e584ce5bb4d7"
+    },
+    "resources/moving_tables/move_UD_edge_permutation": {
+      "size": 2348420,
+      "mtime_ns": 1789197408998209851,
+      "ctime_ns": 1789197408998209851,
+      "sha256": "2316028290ca1f6266100947a50fd31008c2844fa2606a80fd2154143494ec49"
+    },
+    "resources/moving_tables/move_UDslice_edge_permutation": {
+      "size": 644,
+      "mtime_ns": 1789197408998209851,
+      "ctime_ns": 1789197408998209851,
+      "sha256": "53dc14edd622f5ec0d69004f1f56c742ed6cf5e9eafd635d38d669ef18311932"
+    },
+    "resources/moving_tables/move_UDslice_edge_position": {
+      "size": 34155,
+      "mtime_ns": 1789197408673106023,
+      "ctime_ns": 1789197408673106023,
+      "sha256": "085b3f8c4d6300db1827eaa3830dcbf15c74bfbf91529323fb3ad515b357db04"
+    },
+    "resources/moving_tables/move_corner_orientation": {
+      "size": 179037,
+      "mtime_ns": 1789197408657051512,
+      "ctime_ns": 1789197408657051512,
+      "sha256": "096f374c356b7ba759dc33c581b0f47d579ecebce2d19d80ef4fb61cee8e38ba"
+    },
+    "resources/moving_tables/move_corner_permutation": {
+      "size": 4194900,
+      "mtime_ns": 1789197408853719263,
+      "ctime_ns": 1789197408853719263,
+      "sha256": "792a2d4ce10e8ef78b8adac189f733eb423173f2eece481bf1ea0c48e3c3ee65"
+    },
+    "resources/moving_tables/move_edge_orientation": {
+      "size": 166388,
+      "mtime_ns": 1789197408669092395,
+      "ctime_ns": 1789197408669092395,
+      "sha256": "626d1be903cd8fe0fa7c47a332b8b14afbf986bd138832830718cb458a6c07c6"
+    },
+    "resources/pruning_tables/phase1_pruning": {
+      "size": 1634495819,
+      "mtime_ns": 1789198113268094851,
+      "ctime_ns": 1789198113268094851
+    },
+    "resources/pruning_tables/phase2_UD_edge_UDslice_edge": {
+      "size": 1948436,
+      "mtime_ns": 1789198646537188691,
+      "ctime_ns": 1789198646537188691,
+      "sha256": "b05192f429315a06eb22f6ba40b5afa32af47aa2716200dc20aedf5815b54ae1"
+    },
+    "resources/pruning_tables/phase2_corner_UD_edge": {
+      "size": 4869591262,
+      "mtime_ns": 1789198621067163246,
+      "ctime_ns": 1789198621067163246
+    },
+    "resources/pruning_tables/phase2_corner_UDslice_edge": {
+      "size": 2486512,
+      "mtime_ns": 1789198644467853675,
+      "ctime_ns": 1789198644467853675,
+      "sha256": "2dc8a3958d1daed781060b655f1bfd47a93c7936a23ebff6beb0421ab4914f4d"
+    },
+    "src/coordinates.cpp": {
+      "size": 14232,
+      "mtime_ns": 1789195680713033966,
+      "ctime_ns": 1789195680713033966,
+      "sha256": "0e641b3c7587efb6f5e1990a95e29bc4a1f09a3c7514fae6feebcb0618e2b914"
+    },
+    "src/coordinates.hpp": {
+      "size": 3538,
+      "mtime_ns": 1789195680718477478,
+      "ctime_ns": 1789195680718477478,
+      "sha256": "975dfdbfc0d7d39478ada388deb34acd42fa6b9aad27300091185073ee65f64c"
+    },
+    "src/main.cpp": {
+      "size": 623,
+      "mtime_ns": 1789195680718477478,
+      "ctime_ns": 1789195680718477478,
+      "sha256": "a702534c0d268504ff902ac347289fc082cad675b9ad93fe8c5ee7ef39404ddd"
+    },
+    "src/moves.cpp": {
+      "size": 11996,
+      "mtime_ns": 1789195680718477478,
+      "ctime_ns": 1789195680718477478,
+      "sha256": "0cfa28bfe5ee8c105b914d80896a34a8581eb774e74f731561f51d0c9b83c3ec"
+    },
+    "src/moves.hpp": {
+      "size": 1662,
+      "mtime_ns": 1789195680718477478,
+      "ctime_ns": 1789195680718477478,
+      "sha256": "129e7ab2f9d5ca0804fb288955e22c689286baa7756359ecac334051cda5a44b"
+    },
+    "src/moving_tables.cpp": {
+      "size": 9100,
+      "mtime_ns": 1789195680718477478,
+      "ctime_ns": 1789195680718477478,
+      "sha256": "b9e83443b2e361a5befc284d60926543407f66fb2cc3df09bf32b7de8a6cff23"
+    },
+    "src/pruning_tables.cpp": {
+      "size": 16790,
+      "mtime_ns": 1789195680718477478,
+      "ctime_ns": 1789195680718477478,
+      "sha256": "9ffd16997bc89dd71eab8d65284520e8edfcd97b7d22aafd27c9c026bfefe4d1"
+    },
+    "src/pruning_tables.hpp": {
+      "size": 1377,
+      "mtime_ns": 1789195680718477478,
+      "ctime_ns": 1789195680718477478,
+      "sha256": "ccfaeee464930bcd631567f71574b5faf3c001f2732ee36704377d6b8f27d548"
+    },
+    "src/search.cpp": {
+      "size": 8962,
+      "mtime_ns": 1789195680718477478,
+      "ctime_ns": 1789195680718477478,
+      "sha256": "a9bd4067419dc98108afda51de6c12ceda254ec2b016db5bd436c3376c63154f"
+    },
+    "src/search.hpp": {
+      "size": 889,
+      "mtime_ns": 1789195680718477478,
+      "ctime_ns": 1789195680718477478,
+      "sha256": "9ead21be6659cec5b5b68c84373eabaf8e6cabd25b04ecf9a889047e40698243"
+    },
+    "src/testiranje.cpp": {
+      "size": 1253,
+      "mtime_ns": 1789195680718477478,
+      "ctime_ns": 1789195680718477478,
+      "sha256": "e59366de37113df5e4d9ae67b0fbe4441cdd222b9d672075caa640546d8a6d89"
+    },
+    "src/testiranje.hpp": {
+      "size": 128,
+      "mtime_ns": 1789195680718477478,
+      "ctime_ns": 1789195680718477478,
+      "sha256": "f05146fd9d11d0c0306dc6cfb7582b6fc7299daab359cdde74a53580ca2c5b62"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+[2026-10-01 02:30:42] 큐브 64: 18수 -> 15수 (-3)
+  셔플:    
+  stemil:  U B2 R2 L2 F2 L B2 L U D' F2 D2 L F' L2 D R B'
+  rephase: U L F2 R2 L' U D' F2 D2 L F' L2 D R B'
+  설정: budget 1000 ms, windows 4,6,8,10
+

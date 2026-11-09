@@ -1,0 +1,44 @@
+
+===== 2026-10-01 13:42:01 실행 시작: budget 150 ms, rephase 15 ms, orientations 1, candidates 1, phase1-mode prefix, 검증 상한 120 초 =====
+큐브 1: solve 22수, 최적 아님 (최적 15수, +7), 검증 0.8초
+  solve: U D' R2 F2 D2 F' L' D2 B R U2 L2 F2 L2 D B2 U' R2 D2 R2 U2 R2
+큐브 2: solve 21수, 최적 아님 (최적 15수, +6), 검증 1.3초
+  solve: R2 D2 F2 B' R' B' L U B2 R2 D' L B2 L2 D' B2 R2 B2 L2 D2 R2
+큐브 3: solve 15수, 최적해 (증명됨), 검증 0.2초
+  solve: B' L B' R2 B' D2 F2 B L B U2 F2 B2 R2 U
+큐브 4: solve 17수, 최적 아님 (최적 14수, +3), 검증 0.1초
+  solve: L D L U' B2 U F2 D2 L2 B2 R' B' R2 F B U2 B2
+큐브 5: solve 19수, 최적 아님 (최적 15수, +4), 검증 1.2초
+  solve: F D2 R2 F2 B2 L U2 D' L' U2 F L2 F2 U2 R2 B2 U2 R2 U2
+큐브 6: solve 19수, 최적 아님 (최적 15수, +4), 검증 2.3초
+  solve: F' D2 B' R L2 F U2 F' U2 L F U' B2 U' L2 B2 D F2 D2
+큐브 7: solve 20수, 최적 아님 (최적 15수, +5), 검증 1.0초
+  solve: L F2 L F2 U F L2 B' R' D2 B' L2 U F2 U2 R2 B2 D L2 B2
+큐브 8: solve 20수, 최적 아님 (최적 15수, +5), 검증 2.0초
+  solve: D B' R L' B2 R2 U L F R' U' B R2 F2 U' R2 F2 B2 U D'
+큐브 9: solve 21수, 최적 아님 (최적 15수, +6), 검증 2.2초
+  solve: B2 R U F' R2 F' R2 D' B U L U2 R2 B2 L2 D L2 U' D R2 U'
+큐브 10: solve 20수, 최적 아님 (최적 15수, +5), 검증 0.8초
+  solve: B2 D R U B' D' R B2 R' U' F2 B2 L2 F2 U2 B2 U' F2 D R2
+큐브 11: solve 21수, 최적 아님 (최적 15수, +6), 검증 1.6초
+  solve: R F2 L F2 B R' B' R2 U' L F U B2 D L2 F2 R2 U' L2 U' F2
+큐브 12: solve 22수, 최적 아님 (최적 15수, +7), 검증 1.3초
+  solve: F D2 L D2 R D F2 U' B' D' L' F' R2 L F2 U R2 L2 B2 U B2 D2
+
+----- 실행 요약 -----
+[반복 요약] 큐브 0개, 해결 0개
+  평균 stemil HTM 20.00 -> 평균 최종 HTM 19.75
+  rephase로 단축된 큐브 1개, 줄인 수 합계 3
+  평균 탐색 시간 150.08 ms
+
+[최적해 검증] 검증한 큐브 12개: 최적 1개, 최적 아님 11개, 미확정 0개
+  최적해 비율: 판정된 12개 중 8.33%, 전체 12개 중 8.33% (미확정은 최적으로 세지 않음)
+  평균 solve move 수: 전체 19.75, 최적 사례 15.00, 최적 아닌 사례 20.18, 미확정 사례 0.00
+  판정된 큐브의 평균 최적 길이 14.92, 평균 solve 길이 19.75 (평균 gap 4.83)
+  검증 소요 시간 합계 14.69 초
+
+[rephase로 수를 줄인 사례] 1건
+  큐브 4: 20수 -> 17수 (-3)
+    셔플:   
+    stemil: L D L U' B2 U F2 D2 L2 B2 R' F' U2 R2 F2 U2 F2 R2 F2 B2
+    rephase: L D L U' B2 U F2 D2 L2 B2 R' B' R2 F B U2 B2

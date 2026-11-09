@@ -1,0 +1,44 @@
+{
+  "corpus_index": 3,
+  "facelets": "LBBUUUBDFDRDURLUBLDBLRFLRLRDDBDDLRDFBFRRLBUFFLUUFBFURF",
+  "initial_sequence": "F2 B' R' B' L2 U' D' F L2 F R F2 R D2 R2 F2 R2 U B2 U'",
+  "initial_boundary": 13,
+  "measured_sequence": "F2 B' R' B' L2 U' D' F L2 F L D2 L' F2 R2 D2 U B2 U'",
+  "reproduction_command": [
+    "./build/stemil-rephase",
+    "repair",
+    "--sequence",
+    "F2 B' R' B' L2 U' D' F L2 F R F2 R D2 R2 F2 R2 U B2 U'",
+    "--boundary",
+    "13",
+    "--budget-ms",
+    "100"
+  ],
+  "reproduction": {
+    "equivalent": true,
+    "initial_sequence": "F2 B' R' B' L2 U' D' F L2 F R F2 R D2 R2 F2 R2 U B2 U'",
+    "sequence": "F2 B' R' B' L2 U' D' F L2 F L D2 L' F2 R2 D2 U B2 U'",
+    "initial_htm": 20,
+    "htm": 19,
+    "elapsed_ms": 59.119,
+    "setup_ms": 8.686,
+    "repair_table_bytes": 4194304,
+    "repair_build_peak_bytes": 6812640,
+    "repair_table_states": 46741,
+    "peak_rss_kib": 13184,
+    "repair_nodes": 762163,
+    "windows_tested": 25,
+    "windows_completed": 18,
+    "windows_timed_out": 7,
+    "repair_deadline_reached": false,
+    "repairs": [
+      {
+        "begin": 9,
+        "end": 17,
+        "old_length": 8,
+        "new_length": 7
+      }
+    ]
+  },
+  "independent_sticker_verified": true
+}
