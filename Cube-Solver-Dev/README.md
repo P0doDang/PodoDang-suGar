@@ -1,6 +1,6 @@
 # Cube Solver Dev
 
-Kociemba two-phase로 푼 해를 **정확 검색으로 한 번 더 다듬는(rephase)** 큐브 솔버 실험 프로젝트예요.
+Kociemba two-phase로 푼 해를 **정확 검색으로 한 번 더 다듬는(rephase)** 큐브 솔버 실험 프로젝트이다.
 
 > **English summary.** Rubik's Cube solvers built around Kociemba's two-phase algorithm, plus a post-processing step called *rephase*: windows around the phase boundary (then sliding over the whole solution) are re-solved exactly, and a window is replaced only if a strictly shorter equivalent sequence exists — so the move count never grows. `rephase/` is a Python/C version on top of the pip `kociemba` solver; `stemil-rephase/` is a C++ version on top of the third-party [stemil two-phase-solver](https://github.com/stemil01/two-phase-solver), extended with 6-way orientation search and an exact (IDA\*) reference solver. On 200 scrambles where rephase actually helped, the 6-way solver averages **17.52** moves vs 20.05 (stemil), 20.89 (kociemba) and ~20.6 (kociemba + symmetry), and equals a proven lower bound (= optimal) in 85/200 cases. Third-party code is **not** included — see [NOTICE.md](NOTICE.md).
 
@@ -25,16 +25,16 @@ Kociemba two-phase로 푼 해를 **정확 검색으로 한 번 더 다듬는(rep
 
 ### 1.1 만든 이유
 
-Kociemba two-phase는 큐브를 두 단계로 풉니다. Phase 1에서 G1이라는 부분군까지 간 다음, Phase 2에서 그 안에서만 움직여 맞춰요. 문제는 Phase 1이 끝나는 순간 **반드시 G1 조건을 만족해야 한다**는 점이에요. 전체 최단 경로가 G1을 지나갈 필요는 없기 때문에, 두 단계가 만나는 경계 근처에서 수가 조금씩 낭비될 수 있다고 봤어요.
+Kociemba two-phase는 큐브를 두 단계로 푼다. Phase 1에서 G1이라는 부분군까지 간 뒤, Phase 2에서 그 안에서만 움직여 맞춘다. 문제는 Phase 1이 끝나는 순간 **반드시 G1 조건을 만족해야 한다**는 점이다. 전체 최단 경로가 G1을 지나갈 필요는 없으므로, 두 단계가 만나는 경계 근처에서 수가 조금씩 낭비될 수 있다고 보았다.
 
-그래서 이런 후처리를 만들어 봤어요.
+그래서 다음과 같은 후처리를 만들었다.
 
-1. Two-Phase로 해를 구하고 Phase 경계의 위치를 기억해 둡니다.
-2. 경계 주변의 짧은 구간(window)을 잘라, 같은 변환을 만드는 **더 짧은 수순**이 있는지 정확하게 검색합니다.
-3. 있으면 바꿔 끼우고, 없으면 그대로 둡니다. 더 짧을 때만 바뀌므로 **수가 늘어나는 일은 없어요.**
-4. 경계 수선이 끝나면 해 전체를 window로 훑으며(sliding) 같은 검사를 합니다.
+1. Two-Phase로 해를 구하고 Phase 경계의 위치를 기록한다.
+2. 경계 주변의 짧은 구간(window)을 잘라, 같은 변환을 만드는 **더 짧은 수순**이 있는지 정확하게 검색한다.
+3. 있으면 바꿔 끼우고, 없으면 그대로 둔다. 더 짧을 때만 바뀌므로 **수가 늘어나는 일은 없다.**
+4. 경계 수선이 끝나면 해 전체를 window로 훑으며(sliding) 같은 검사를 한다.
 
-이 후처리를 **rephase**라고 불러요. 자세한 설계는 [docs/design.md](docs/design.md)에 있어요.
+이 후처리를 **rephase**라고 부른다. 자세한 설계는 [docs/design.md](docs/design.md)에 있다.
 
 ### 1.2 구현한 것
 
@@ -46,7 +46,7 @@ Kociemba two-phase는 큐브를 두 단계로 풉니다. Phase 1에서 G1이라�
 
 ### 1.3 한눈에 보는 결과
 
-rephase가 해를 실제로 줄여 준 큐브 200개로 비교했어요(자세한 조건은 [6장](#6-실험-결과)).
+rephase가 해를 실제로 줄인 큐브 200개로 비교했다(자세한 조건은 [6장](#6-실험-결과)).
 
 | 알고리즘 | 평균 move | 메모리 |
 |---|---:|---:|
@@ -55,13 +55,13 @@ rephase가 해를 실제로 줄여 준 큐브 200개로 비교했어요(자세�
 | kociemba (pip, C) | 20.89 | 20 MiB |
 | kociemba + symmetry | 20.55 | 113 MiB |
 
-6way의 결과가 증명된 하한과 같아서 **최적해라고 확정되는 큐브가 200개 중 85개(42.5%)** 였어요.
+6way의 결과가 증명된 하한과 같아서 **최적해로 확정되는 큐브가 200개 중 85개(42.5%)** 였다.
 
 ---
 
 ## 2. 저장소 구성
 
-이 폴더 안에서 **내가 만든 것**과 **다른 사람이 만든 원본**은 이렇게 나뉘어요.
+이 폴더에서 **직접 만든 것**과 **다른 사람이 만든 원본**은 다음과 같이 나뉜다.
 
 ```
 Cube-Solver-Dev/
@@ -87,7 +87,7 @@ Cube-Solver-Dev/
     └── stemil/                # ⛔ 다른 사람 코드 — git submodule (5437b8f), 수정하지 않음
 ```
 
-stemil과 Kociemba two-phase 알고리즘, pip `kociemba`, `RubikTwoPhase`는 모두 다른 분들이 만든 원본이에요. 코드를 이 저장소로 복사하지 않고 submodule이나 의존성으로만 연결했어요. 자세한 내용은 [NOTICE.md](NOTICE.md)에 정리했어요.
+stemil, Kociemba two-phase 알고리즘, pip `kociemba`, `RubikTwoPhase`는 모두 다른 사람이 만든 원본이다. 코드를 이 저장소로 복사하지 않고 submodule이나 의존성으로만 연결했다. 자세한 내용은 [NOTICE.md](NOTICE.md)에 정리했다.
 
 ---
 
@@ -101,7 +101,7 @@ stemil과 Kociemba two-phase 알고리즘, pip `kociemba`, `RubikTwoPhase`는 �
 | Python 의존성 | `kociemba==1.2.1`, `RubikTwoPhase==1.1.1` (비교용) |
 | 디스크 / 메모리 | stemil의 pruning table은 파일로 약 6 GB, 실행 중에는 약 2 GiB RAM |
 
-> pruning table은 크기 때문에 저장소에 넣지 않았어요. 아래 [시작하기](#4-시작하기)에서 만드는 방법을 알려 드려요.
+> pruning table은 크기 때문에 저장소에 넣지 않았다. 만드는 방법은 [시작하기](#4-시작하기)에 있다.
 
 ---
 
@@ -114,7 +114,7 @@ git clone --recursive https://github.com/P0doDang/PodoDang-suGar
 cd PodoDang-suGar/Cube-Solver-Dev
 ```
 
-`--recursive`를 빼먹었다면 `git submodule update --init`을 한 번 실행해 주세요.
+`--recursive`를 빼먹었다면 `git submodule update --init`을 한 번 실행한다.
 
 ### 4.2 rephase (Python)
 
@@ -123,23 +123,23 @@ cd rephase
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 
-# 자동으로 20수 scramble을 만들어 풀고, 경계를 수선해요
+# 자동으로 20수 scramble을 만들어 풀고, 경계를 수선한다
 .venv/bin/python solve.py solve --window 6 8 --time-ms 100 --trace
 ```
 
-옵션은 [rephase/README.md](rephase/README.md)에 있어요.
+옵션은 [rephase/README.md](rephase/README.md)에 있다.
 
 ### 4.3 stemil-rephase (C++)
 
-먼저 stemil의 pruning table이 필요해요. **원본 README의 방법대로** `third_party/stemil`에서 한 번 만들어 주세요(약 6 GB 디스크, 시간이 오래 걸려요). 이 프로젝트의 프로그램은 테이블을 **읽기만** 하고 만들지는 않아요.
+먼저 stemil의 pruning table이 필요하다. **원본 README의 방법대로** `third_party/stemil`에서 한 번 만든다(약 6 GB 디스크, 시간이 오래 걸린다). 이 프로젝트의 프로그램은 테이블을 **읽기만** 하고 만들지는 않는다.
 
 ```bash
 cd stemil-rephase
-make -j4                       # build/ 아래에 stemil-rephase, optimal 등이 생겨요
+make -j4                       # build/ 아래에 stemil-rephase, optimal 등이 생긴다
 make test && make test-cli     # 테스트
 ```
 
-30수 scramble을 6방향으로 풀고 rephase까지 적용해 볼게요.
+30수 scramble을 6방향으로 풀고 rephase까지 적용하는 예시이다.
 
 ```bash
 ./build/stemil-rephase solve --seed 659 --scramble-length 30 \
@@ -147,15 +147,15 @@ make test && make test-cli     # 테스트
   --budget-ms 600 --rephase-ms 100 --windows 8
 ```
 
-- `--seed`: 같은 seed는 같은 scramble을 만들어요 (탐색 결과는 시간 제한 때문에 조금씩 달라질 수 있어요).
-- `--budget-ms 600 --rephase-ms 100`: 전체 600 ms 중 Two-Phase가 500 ms, rephase가 최대 100 ms를 써요.
-- 테이블을 다른 곳에 뒀다면 `--resources <폴더>`로 알려 주세요.
+- `--seed`: 같은 seed는 같은 scramble을 만든다 (탐색 결과는 시간 제한 때문에 조금씩 달라질 수 있다).
+- `--budget-ms 600 --rephase-ms 100`: 전체 600 ms 중 Two-Phase가 500 ms, rephase가 최대 100 ms를 쓴다.
+- 테이블을 다른 곳에 두었다면 `--resources <폴더>`로 지정한다.
 
-전체 옵션은 [stemil-rephase/README.md](stemil-rephase/README.md)와 [README-6way.md](stemil-rephase/README-6way.md)에 있어요.
+전체 옵션은 [stemil-rephase/README.md](stemil-rephase/README.md)와 [README-6way.md](stemil-rephase/README-6way.md)에 있다.
 
 ### 4.4 실제 사례
 
-위 seed 659 큐브를 각 알고리즘이 푼 결과예요 (모두 직접 시뮬레이션으로 검증했어요).
+위 seed 659 큐브를 각 알고리즘이 푼 결과이다 (모두 직접 시뮬레이션으로 검증했다).
 
 | 알고리즘 | 수 | 해 |
 |---|---:|---|
@@ -165,13 +165,13 @@ make test && make test-cli     # 테스트
 | kociemba | 22 | `U R' D' L' F2 U F L' B2 D L2 B' U B2 U' R2 L2 U' L2 B2 L2 U'` |
 
 scramble: `B2 D B' D2 R' B U2 R D' F2 U B2 U D' B D' F' D B D' B2 L2 B L2 U R2 L2 B' D2 R'`
-6방향 탐색으로 얻은 18수 해를 rephase가 1수 줄여 17수가 됐고, 이 해는 최적해와 같아요.
+6방향 탐색으로 얻은 18수 해를 rephase가 1수 줄여 17수가 되었고, 이 해는 최적해와 같다.
 
 ---
 
 ## 5. 동작 원리
 
-6way 솔버가 한 큐브를 푸는 흐름이에요.
+6way 솔버가 한 큐브를 푸는 흐름은 다음과 같다.
 
 ```mermaid
 flowchart TD
@@ -192,10 +192,10 @@ flowchart TD
     J --> K["최종 해"]
 ```
 
-- 방향마다 Phase 1이 큐브의 서로 다른 면 축을 목표로 해서, 같은 큐브라도 **서로 다른 후보 해**가 나와요. 방향은 스레드 하나씩 돌려요.
-- rephase는 큐브 전체가 아니라 **가까운 두 상태 사이**만 검색해요. 짧은 수순의 변환을 미리 모아 둔 표(기본 반경 4)에서 한쪽을 찾고, 다른 쪽은 깊이 우선으로 탐색해 중간에서 만나요.
-- 시간은 따로 정해 둬요. 이번 실험은 Two-Phase 500 ms + rephase 최대 100 ms였어요.
-- 마지막에는 **항상** 원래 큐브에 해를 적용해서 풀리는지 확인해요. 실패하면 오류로 멈춰요.
+- 방향마다 Phase 1이 큐브의 서로 다른 면 축을 목표로 하므로, 같은 큐브라도 **서로 다른 후보 해**가 나온다. 방향은 스레드 하나씩 돌린다.
+- rephase는 큐브 전체가 아니라 **가까운 두 상태 사이**만 검색한다. 짧은 수순의 변환을 미리 모아 둔 표(기본 반경 4)에서 한쪽을 찾고, 다른 쪽은 깊이 우선으로 탐색해 중간에서 만난다.
+- 시간은 따로 정해 둔다. 이번 실험은 Two-Phase 500 ms + rephase 최대 100 ms였다.
+- 마지막에는 **항상** 원래 큐브에 해를 적용해 풀리는지 확인한다. 실패하면 오류로 멈춘다.
 
 ---
 
@@ -203,7 +203,7 @@ flowchart TD
 
 ### 6.1 비교 방법
 
-6way 솔버로 seed를 하나씩 훑으면서 **rephase가 해를 실제로 줄인 큐브**만 모았어요. 82,224개를 훑어 200건이 모였어요(약 0.24%). 그 200개 scramble(30수)을 아래 알고리즘이 똑같이 풀었어요.
+6way 솔버로 seed를 하나씩 훑으며 **rephase가 해를 실제로 줄인 큐브**만 모았다. 82,224개를 훑어 200건이 모였다(약 0.24%). 그 200개 scramble(30수)을 아래 알고리즘이 똑같이 풀었다.
 
 - **6way**: 6방향, 후보 1, Two-Phase 500 ms + rephase ≤ 100 ms, window 8
 - **stemil**: 원본 탐색 500 ms
@@ -211,7 +211,7 @@ flowchart TD
 - **kociemba + symmetry**: `RubikTwoPhase`(Python), 첫 해 반환
 - **최적해**: IDA\*, 큐브당 60초 상한, 6스레드
 
-테이블 로딩 시간은 모두 뺐어요. 메모리는 프로세스 peak RSS예요.
+테이블 로딩 시간은 모두 제외했다. 메모리는 프로세스 peak RSS이다.
 
 ### 6.2 결과
 
@@ -223,14 +223,14 @@ flowchart TD
 | kociemba + symmetry | 20.55 | 20.1 | 20.1 | 113.2 |
 | 최적해 (확정된 35건만) | 16.51 | 27,839 | 54,374 | 2523.1 |
 
-- `time_to_final`: **최종 해가 처음 존재한 시점**이에요. 끝난 뒤에 돌아보며 재는 값이고, 모든 알고리즘에 같은 규칙을 썼어요. 6way는 "Two-Phase 최선 해를 찾은 시점 + rephase 개선 시점"이에요.
-- `wall`: 실제로 걸린 시간이에요. 6way와 stemil은 예산을 끝까지 써서 약 500 ms예요.
-- rephase 전 평균은 18.59수, 후는 17.52수예요. 1수 줄인 큐브가 186개, 2수 줄인 큐브가 14개예요.
-- 6way가 더 짧았던 비율은 stemil 대비 196/200(4건 같음), kociemba와 kociemba + symmetry 대비 200/200이에요.
+- `time_to_final`: **최종 해가 처음 존재한 시점**이다. 끝난 뒤에 돌아보며 재는 값이고, 모든 알고리즘에 같은 규칙을 적용했다. 6way는 "Two-Phase 최선 해를 찾은 시점 + rephase 개선 시점"이다.
+- `wall`: 실제로 걸린 시간이다. 6way와 stemil은 예산을 끝까지 쓰므로 약 500 ms이다.
+- rephase 전 평균은 18.59수, 후는 17.52수이다. 1수 줄인 큐브가 186개, 2수 줄인 큐브가 14개이다.
+- 6way가 더 짧았던 비율은 stemil 대비 196/200(4건 같음), kociemba와 kociemba + symmetry 대비 200/200이다.
 
 ### 6.3 최적해와의 거리
 
-최적해 solver가 60초 안에 확정한 건 35건(17.5%)뿐이에요. 그래도 **증명된 하한**은 대부분 얻어요(대부분 17수). 6way의 결과가 하한과 같으면 최적이에요.
+최적해 solver가 60초 안에 확정한 것은 35건(17.5%)뿐이다. 그래도 **증명된 하한**은 대부분 얻는다(대부분 17수). 6way의 결과가 하한과 같으면 최적이다.
 
 | 알고리즘 | 하한과의 평균 차이 (수) |
 |---|---:|
@@ -239,54 +239,54 @@ flowchart TD
 | kociemba + symmetry | 3.65 |
 | kociemba | 3.98 |
 
-200건 중 85건(42.5%)에서 6way의 해가 하한과 같았어요. 하한과의 차이는 0수 85건, 1수 107건, 2수 8건이에요.
+200건 중 85건(42.5%)에서 6way의 해가 하한과 같았다. 하한과의 차이는 0수 85건, 1수 107건, 2수 8건이다.
 
 ### 6.4 읽을 때 주의할 점
 
-1. **고른 큐브라는 점.** rephase가 성공한 큐브만 모았기 때문에 전체 큐브의 평균이 아니에요. 6way의 시간이 항상 500 ms를 넘는 것도 같은 이유예요(개선이 rephase 구간에서만 나오니까요).
-2. **이득의 대부분은 6방향 탐색**에서 나와요. 이전 100개 실험에서 rephase만으로 줄인 큐브는 2~3개(각 1수)였어요 → [`REPORT-6way.md`](stemil-rephase/REPORT-6way.md).
-3. **스레드 수가 달라요.** 6way, kociemba + symmetry, 최적해는 6스레드이고 stemil과 kociemba는 1스레드예요. kociemba + symmetry는 스레드 경쟁이라 **실행마다 평균이 조금씩 달라요**(이번에 다시 돌렸더니 20.58 → 20.55).
-4. **메모리 차이는 테이블 크기** 때문이에요. stemil 계열은 2 GiB짜리 pruning table이 올라간 프로세스 전체 값이에요.
-5. 최적해 평균은 60초 안에 풀린 **쉬운 큐브 위주**예요.
-6. 측정 환경은 위 [개발 환경](#3-개발-환경)이에요. 시간 제한 탐색이라 같은 seed도 실행마다 결과가 조금 달라질 수 있어요.
+1. **고른 큐브라는 점.** rephase가 성공한 큐브만 모았으므로 전체 큐브의 평균이 아니다. 6way의 시간이 항상 500 ms를 넘는 것도 같은 이유이다(개선이 rephase 구간에서만 나오기 때문이다).
+2. **이득의 대부분은 6방향 탐색**에서 나온다. 이전 100개 실험에서 rephase만으로 줄인 큐브는 2~3개(각 1수)였다 → [`REPORT-6way.md`](stemil-rephase/REPORT-6way.md).
+3. **스레드 수가 다르다.** 6way, kociemba + symmetry, 최적해는 6스레드이고 stemil과 kociemba는 1스레드이다. kociemba + symmetry는 스레드 경쟁 때문에 **실행마다 평균이 조금씩 달라진다**(다시 돌렸을 때 20.58 → 20.55).
+4. **메모리 차이는 테이블 크기** 때문이다. stemil 계열은 2 GiB짜리 pruning table이 올라간 프로세스 전체 값이다.
+5. 최적해 평균은 60초 안에 풀린 **쉬운 큐브 위주**이다.
+6. 측정 환경은 위 [개발 환경](#3-개발-환경)이다. 시간 제한 탐색이므로 같은 seed도 실행마다 결과가 조금 달라질 수 있다.
 
 ### 6.5 직접 재현하기
 
 ```bash
 cd stemil-rephase && make -j4
-# 환경에 맞게 지정해요 (기본값은 저장소 상대경로)
+# 환경에 맞게 지정한다 (기본값은 저장소 상대경로)
 #   REPHASE_DIR=<rephase 폴더>   STEMIL_RESOURCES=<stemil resources 폴더>
 python3 compare/run_compare.py all --count 100000 --max-cases 200      # scan → solve → report, 중간부터 재개 가능
 python3 compare/run_compare.py report --out ../benchmarks/compare-200  # 저장된 결과로 표만 다시 만들기
 ```
 
-`kociemba + symmetry` 기준은 첫 실행에서 `RubikTwoPhase` 테이블(약 70 MB)을 만들어요. 30분 넘게 걸릴 수 있어요: `cd rephase && .venv/bin/python -m pip install -r requirements-reference.txt && .venv/bin/python solve.py init-twophase`. 전체 scan은 몇 시간에서 10시간 이상 걸려요.
+`kociemba + symmetry` 기준은 첫 실행에서 `RubikTwoPhase` 테이블(약 70 MB)을 만든다. 30분 넘게 걸릴 수 있다: `cd rephase && .venv/bin/python -m pip install -r requirements-reference.txt && .venv/bin/python solve.py init-twophase`. 전체 scan은 몇 시간에서 10시간 이상 걸린다.
 
 ---
 
 ## 7. 만난 문제와 해결
 
-실험하면서 실제로 부딪힌 문제들이에요.
+실험하며 실제로 부딪힌 문제들이다.
 
-**① 원본 stemil의 move table이 덮어써질 뻔했어요.**
-stemil의 `generate_moving_tables()`는 질문의 기본값이 "생성"이고, 실행한 위치의 `resources/moving_tables/*`를 매번 새로 써요. 비교용 드라이버를 만들며 원본 폴더에서 호출했다가 파일 6개의 수정 시각이 바뀌었어요. 내용이 같은지 따로 **byte 단위로 비교**해서 모두 같다는 걸 확인했고, 그 뒤로는 드라이버가 **전용 작업 폴더**(심볼릭 링크)에서만 돌고 원본 폴더에는 쓰지 않아요.
+**① 원본 stemil의 move table이 덮어써질 뻔했다.**
+stemil의 `generate_moving_tables()`는 질문의 기본값이 "생성"이고, 실행한 위치의 `resources/moving_tables/*`를 매번 새로 쓴다. 비교용 드라이버를 만들며 원본 폴더에서 호출했다가 파일 6개의 수정 시각이 바뀌었다. 내용이 같은지 따로 **byte 단위로 비교**해 모두 같다는 것을 확인했고, 그 뒤로는 드라이버가 **전용 작업 폴더**(심볼릭 링크)에서만 돌고 원본 폴더에는 쓰지 않는다.
 
-**② kociemba의 메모리가 200건 모두 똑같이 나왔어요.**
-kociemba와 kociemba + symmetry의 peak RSS가 전부 638.4 MiB였어요. 이전 작은 실험에서는 각각 20 MiB, 113 MiB였어요. 원인은 리눅스에서 자식 프로세스의 `ru_maxrss`가 **부모 프로세스의 RSS를 물려받는다**는 점이었어요. 실험 스크립트가 scan 결과 8만 건을 메모리에 들고 있었거든요(부모가 640 MiB를 쓰는 상태로 재현했어요). 자식 자신의 값인 `VmHWM`으로 바꿔서 해결했고, 두 알고리즘만 다시 돌렸어요.
+**② kociemba의 메모리가 200건 모두 똑같이 나왔다.**
+kociemba와 kociemba + symmetry의 peak RSS가 전부 638.4 MiB였다. 이전 작은 실험에서는 각각 20 MiB, 113 MiB였다. 원인은 리눅스에서 자식 프로세스의 `ru_maxrss`가 **부모 프로세스의 RSS를 물려받는다**는 점이었다. 실험 스크립트가 scan 결과 8만 건을 메모리에 들고 있었기 때문이다(부모가 640 MiB를 쓰는 상태로 재현했다). 자식 자신의 값인 `VmHWM`으로 바꿔 해결했고, 두 알고리즘만 다시 돌렸다.
 
-**③ rephase 성공 큐브가 너무 드물었어요.**
-처음 400개 seed에서는 성공이 0건이었어요. 6방향 탐색만으로 해가 이미 충분히 짧아져서 rephase가 줄일 여지가 적었기 때문이에요. 조건(후보 1, window 8, 500 + 100 ms)은 그대로 두고, 목표를 200건으로 잡아 seed를 82,224개까지 훑었어요(스캔에만 10시간 넘게 걸렸어요).
+**③ rephase 성공 큐브가 너무 드물었다.**
+처음 400개 seed에서는 성공이 0건이었다. 6방향 탐색만으로 해가 이미 충분히 짧아져 rephase가 줄일 여지가 적었기 때문이다. 조건(후보 1, window 8, 500 + 100 ms)은 그대로 두고, 목표를 200건으로 잡아 seed를 82,224개까지 훑었다(스캔에만 10시간 넘게 걸렸다).
 
 ---
 
 ## 8. 한계와 앞으로
 
 **한계**
-- 전역 최적해를 보장하지 않아요. 최적해가 Two-Phase 경로와 전혀 다르면 국소 수선으로는 찾지 못해요.
-- 비교 대상이 rephase가 성공한 큐브로 **고른 표본**이에요. 아직 무작위 큐브 전체에서의 평균 이득은 재지 않았어요.
-- 최적해 검증은 60초 상한이라 대부분 "하한까지만" 확인돼요.
+- 전역 최적해를 보장하지 않는다. 최적해가 Two-Phase 경로와 전혀 다르면 국소 수선으로는 찾지 못한다.
+- 비교 대상이 rephase가 성공한 큐브로 **고른 표본**이다. 무작위 큐브 전체에서의 평균 이득은 아직 재지 않았다.
+- 최적해 검증은 60초 상한이라 대부분 "하한까지만" 확인된다.
 
-**앞으로 해 보고 싶은 것**
+**앞으로 할 일**
 - [ ] 고르지 않은 무작위 큐브에서 같은 비교 (rephase가 평균에 주는 실제 이득)
 - [ ] 결과 차트(move 분포, 하한과의 차이, 메모리) 추가
 - [ ] scramble 길이와 window 크기별 비교
@@ -296,6 +296,6 @@ kociemba와 kociemba + symmetry의 peak RSS가 전부 638.4 MiB였어요. 이전
 
 ## 9. 출처와 라이선스
 
-- 다른 분들의 원본(stemil, Kociemba two-phase, pip `kociemba`, `RubikTwoPhase`)과 원본에서 파생한 파일은 [NOTICE.md](NOTICE.md)에 따로 정리했어요.
-- 표에 나오는 stemil, kociemba, kociemba + symmetry 값은 각 원본을 **그대로 실행해 얻은 측정값**이에요.
-- 이 프로젝트의 라이선스는 아직 정하지 않았어요.
+- 다른 사람의 원본(stemil, Kociemba two-phase, pip `kociemba`, `RubikTwoPhase`)과 원본에서 파생한 파일은 [NOTICE.md](NOTICE.md)에 따로 정리했다.
+- 표에 나오는 stemil, kociemba, kociemba + symmetry 값은 각 원본을 **그대로 실행해 얻은 측정값**이다.
+- 이 프로젝트의 라이선스는 아직 정하지 않았다.
