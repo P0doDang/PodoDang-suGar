@@ -89,7 +89,7 @@ Cube-Solver-Dev/
 │   ├── compare-200/           #    200건 비교 (CSV, JSONL, summary.txt)
 │   └── earlier/               #    이전 실험 기록
 └── third_party/
-    └── stemil/                # ⛔ 다른 사람 코드 — git submodule, 출처 https://github.com/stemil01/two-phase-solver (커밋 5437b8f), 수정하지 않음
+    └── stemil/                # ⛔ git submodule, 출처 https://github.com/stemil01/two-phase-solver
 ```
 
 stemil, Kociemba two-phase 알고리즘, pip `kociemba`, `RubikTwoPhase`는 모두 다른 사람이 만든 원본이다. 코드를 이 저장소로 복사하지 않고 submodule이나 의존성으로만 연결했다. 자세한 내용은 [NOTICE.md](NOTICE.md)에 정리했다.
