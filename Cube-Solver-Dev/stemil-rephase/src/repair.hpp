@@ -28,7 +28,7 @@ struct ExactResult {
 };
 enum class RepairStage { Boundary,Sliding };
 const char* repair_stage_name(RepairStage stage);
-struct RepairEvent { int begin=0,end=0,old_length=0,new_length=0; RepairStage stage=RepairStage::Boundary; };
+struct RepairEvent { int begin=0,end=0,old_length=0,new_length=0; RepairStage stage=RepairStage::Boundary; double at_ms=0; /* since optimize() start */ };
 struct RepairStageStats {
     uint64_t nodes=0;
     int windows_tested=0,windows_completed=0,windows_timed_out=0,cache_hits=0,improvements=0,moves_saved=0;

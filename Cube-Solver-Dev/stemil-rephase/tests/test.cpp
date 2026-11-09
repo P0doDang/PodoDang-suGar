@@ -1,9 +1,13 @@
 #include "solver.hpp"
 #include "shuffle.hpp"
+#include "symmetry.hpp"
+#include "kernel.hpp"
+#include "search.hpp"
 #include "moves.hpp"
 #include "pruning_tables.hpp"
 #include <algorithm>
 #include <filesystem>
+#include <functional>
 #include <fstream>
 #include <iostream>
 #include <random>
@@ -17,6 +21,72 @@ void require(bool ok,const std::string& reason) { if(!ok)throw std::runtime_erro
 Deadline later(double ms=5000) { return Clock::now()+std::chrono::duration_cast<Clock::duration>(std::chrono::duration<double,std::milli>(ms)); }
 template<class F> void rejects(F fn) { bool threw=false;try{fn();}catch(const std::invalid_argument&){threw=true;}require(threw,"invalid input accepted"); }
 struct Hash { size_t operator()(Key k) const { return hash_key(k); } };
+void symmetry_test() {
+    std::mt19937 rng(6);const auto id=State::identity();
+    for(int i=0;i<300;++i) {
+        Algorithm a;int n=1+rng()%25;for(int j=0;j<n;++j)a.push_back(rng()%18);
+        State cube=id.applied(a);
+        for(int k=0;k<3;++k)require(conjugate(cube,k)==id.applied(rotate_algorithm(a,k)),"conjugation equals relabelled moves");
+        require(conjugate(conjugate(cube,1),2)==cube && conjugate(conjugate(cube,2),1)==cube,"rotation inverse");
+        require(mirror(cube)==id.applied(mirror_algorithm(a)),"mirror equals reflected moves");
+        require(mirror(mirror(cube))==cube,"mirror is an involution");
+        for(int index=0;index<max_orientations;++index) {
+            Orientation o=orientation_at(index);
+            State searched=search_state(cube,o);searched.validate();
+            Algorithm rotated=rotate_algorithm(o.inverse?inverse_algorithm(a):a,o.rotation);
+            Algorithm found=inverse_algorithm(o.mirror?mirror_algorithm(rotated):rotated);
+            require(searched.applied(found).solved(),"constructed search-state solution");
+            Algorithm back=original_solution(found,o);
+            require(cube.applied(back).solved() && back.size()==found.size(),"solution maps back to the original cube");
+            require(original_boundary(int(found.size())/2,found.size(),o)>=0,"boundary maps");
+        }
+    }
+    require(rotate_move(0,1)!=0 && rotate_move(rotate_move(rotate_move(5,1),1),1)==5,"move rotation has order three");
+    rejects([&]{orientation_at(12);});rejects([&]{rotate_move(18,0);});
+}
+void kernel_test(const Tables& tables) {
+    std::mt19937 rng(99);const auto id=State::identity();
+    // Phase-1 descent must equal the original phase1_search for every cube.
+    for(int i=0;i<400;++i) {
+        Algorithm a;int n=1+rng()%25;for(int j=0;j<n;++j)a.push_back(rng()%18);
+        Cube c=id.applied(a).coordinates();
+        std::vector<int> original;::phase1_search(c.corner_orientation,c.edge_orientation,c.UDslice_edge_position,&original);
+        Algorithm fast;phase1_descent(c.corner_orientation,c.edge_orientation,c.UDslice_edge_position,fast);
+        require(Algorithm(original.begin(),original.end())==fast,"phase-1 descent equals original phase1_search");
+        require(phase1_mod3(c.corner_orientation,c.edge_orientation,c.UDslice_edge_position)==tables.phase1_mod3(c.corner_orientation,c.edge_orientation,c.UDslice_edge_position),"inline phase-1 lookup");
+    }
+    // fast_move must equal upstream move_cube on all fields.
+    Cube c=id.coordinates(),d=c;
+    for(int i=0;i<2000;++i) {
+        int m=rng()%18;c=move_cube(c,m);d=fast_move(d,m);
+        bool same=c.corner_orientation==d.corner_orientation && c.edge_orientation==d.edge_orientation && c.UDslice_edge_position==d.UDslice_edge_position && c.corner_permutation==d.corner_permutation;
+        for(int k=0;k<12;++k)same=same && c.cubie_edge_permutation[k]==d.cubie_edge_permutation[k];
+        require(same,"fast_move equals upstream move_cube");
+    }
+    // Phase 2: compare against the previous std::function implementation.
+    struct Ctx { bool expired(){return false;} bool timed_out=false; } ctx;
+    auto p2move=[](int m){return m>=12 || m%3==1;};
+    for(int i=0;i<300;++i) {
+        int cp=0,ep=0,sl=0;Algorithm scramble;int prev=-1;
+        for(int j=0,n=2+rng()%8;j<n;) { int m=rng()%18;if(p2move(m) && canonical_next(prev,m)){cp=move_corner_permutation[cp][m];ep=move_UD_edge_permutation[ep][m];sl=move_UDslice_edge_permutation[sl][m];prev=m;++j;} }
+        std::function<bool(int,int,int,int,int,Algorithm&)> visit=[&](int cc,int e,int s,int left,int previous,Algorithm& out) {
+            if(cc==0 && e==0 && s==0)return true;
+            if(left==0 || tables.phase2_lower_bound(cc,e,s)>left)return false;
+            for(int m=0;m<18;++m)if(p2move(m) && canonical_next(previous,m)) {
+                out.push_back(m);
+                if(visit(move_corner_permutation[cc][m],move_UD_edge_permutation[e][m],move_UDslice_edge_permutation[s][m],left-1,m,out))return true;
+                out.pop_back();
+            }
+            return false;
+        };
+        Algorithm expected,actual;bool found=false;
+        for(int depth=tables.phase2_lower_bound(cp,ep,sl);depth<=18 && !found;++depth){expected.clear();found=visit(cp,ep,sl,depth,-1,expected);}
+        found=false;
+        for(int depth=phase2_bound(cp,ep,sl);depth<=18 && !found;++depth){actual.clear();found=phase2_visit(ctx,cp,ep,sl,depth,-1,actual);}
+        require(found && expected==actual,"phase-2 kernel equals the previous implementation");
+        require(phase2_bound(cp,ep,sl)==tables.phase2_lower_bound(cp,ep,sl),"inline phase-2 bound");
+    }
+}
 void existing_loader_test() {
     char temporary[]="/tmp/rephase-read-only-loader-XXXXXX";
     char* created=mkdtemp(temporary);require(created!=nullptr,"create loader fixture");
@@ -105,9 +175,11 @@ int main() {
         require(generated.size()==25,"automatic scramble length");
         for(size_t i=1;i<generated.size();++i)require(canonical_next(generated[i-1],generated[i]),"automatic scramble move constraints");
         id.applied(generated).validate();rejects([&]{random_scramble(0,1);});rejects([&]{random_scramble(1001,1);});
+        symmetry_test();
         existing_loader_test();
         Tables tables("../third_party/stemil/resources");
         existing_pruning_test(tables);
+        kernel_test(tables);
         state=id;
         for(int i=0;i<1000;++i) {
             int m=rng()%18;auto coordinate_move=move_cube(state.coordinates(),m);state=state.moved(m);auto expected=state.coordinates();
@@ -183,6 +255,39 @@ int main() {
         }
         auto almost_no_time=solver.solve(id.applied(parse_algorithm("R U F B L D R U F2")),{0.00001,0,false,std::nullopt,{}});
         require(!almost_no_time.solved && almost_no_time.two_phase_timed_out,"initial search honors deadline");
+        {
+            // 6-way path: every orientation subset and candidate count must give a verified solution
+            // no longer than its own initial solution, and 1/1 must reproduce the single-thread path.
+            std::mt19937 multi_rng(77);
+            for(int i=0;i<6;++i) {
+                auto scramble=random_scramble(20,uint32_t(500+i));State state=id.applied(scramble);
+                for(auto [orientations,candidates]:{std::pair<int,int>{1,1},{2,1},{6,1},{6,4},{3,6},{12,1},{8,3}}) {
+                    SolveConfig config{150,0.2,false,std::nullopt,{}};config.orientations=orientations;config.candidates=candidates;
+                    auto found=solver.solve(state,config);
+                    require(found.solved && state.applied(found.moves).solved() && state.applied(found.initial_moves).solved(),"6-way solution verification");
+                    require(found.moves.size()<=found.initial_moves.size(),"6-way repair never lengthens");
+                    if(orientations>1 || candidates>1) {
+                        require(int(found.orientation_reports.size())==orientations && found.orientations==orientations,"per-orientation reports");
+                        size_t best=99;for(const auto& o:found.orientation_reports)if(o.solved)best=std::min(best,o.htm);
+                        require(found.initial_moves.size()<=best,"6-way base is at most the best orientation");
+                        require(found.candidate_reports.size()<=size_t(candidates) && !found.candidate_reports.empty(),"candidate reports");
+                    } else require(found.orientation_reports.empty(),"1/1 uses the single-thread path");
+                }
+            }
+            // Kociemba-style Phase-1 enumeration: verified, never longer than its first solution,
+            // single- and multi-orientation.
+            for(int i=0;i<8;++i) {
+                auto scramble=random_scramble(i<4?8:22,uint32_t(900+i));State state=id.applied(scramble);
+                for(int orientations:{1,6}) {
+                    SolveConfig config{150,0.1,false,std::nullopt,{}};config.orientations=orientations;config.phase1_ida=true;
+                    auto found=solver.solve(state,config);
+                    require(found.solved && state.applied(found.moves).solved() && found.moves.size()<=found.initial_moves.size(),"phase-1 IDA solution verification");
+                    if(i<4)require(found.moves.size()<=8,"phase-1 IDA finds a solution no longer than a short scramble");
+                }
+            }
+            rejects([&]{SolveConfig bad{100,0,false,std::nullopt,{}};bad.orientations=13;solver.solve(id.moved(1),bad);});
+            rejects([&]{SolveConfig bad{100,0.1,true,std::nullopt,{}};bad.orientations=2;solver.solve(id.moved(1),bad);});
+        }
         auto adaptive=solver.solve(id.moved(1),{100,0.1,true,std::nullopt,{}});
         require(adaptive.solved && adaptive.allocated_repair_fraction==0.2,"adaptive short-solution allocation");
         SolveConfig fixed;fixed.budget_ms=100;fixed.rephase_ms=3;captured.clear();fixed.trace=[&](const TraceEvent& e){captured.push_back(e);};
@@ -193,7 +298,7 @@ int main() {
         fixed.rephase_ms=100;rejects([&]{solver.solve(id.moved(1),fixed);});
         fixed.rephase_ms=3;fixed.adaptive=true;rejects([&]{solver.solve(id.moved(1),fixed);});
         fixed.adaptive=false;fixed.rephase_ms=0;fixed.trace={};Solver plain(tables);require(plain.solve(id.moved(1),fixed).solved,"fixed zero disables rephase without DB");
-        std::cout<<"All tests passed: existing full stemil pruning tables, read-only ASCII loader, independent projection BFS, cube group, facelets, coordinates, exact repair, sliding windows, trace, shuffle, fixed time caps, deadlines, memory cap, and end-to-end solve.\n";
+        std::cout<<"All tests passed: existing full stemil pruning tables, read-only ASCII loader, independent projection BFS, cube group, facelets, coordinates, exact repair, sliding windows, trace, shuffle, fixed time caps, deadlines, memory cap, end-to-end solve, and 6-way orientation/candidate solving.\n";
         return 0;
     }catch(const std::exception& e){std::cerr<<"TEST FAILURE: "<<e.what()<<'\n';return 1;}
 }

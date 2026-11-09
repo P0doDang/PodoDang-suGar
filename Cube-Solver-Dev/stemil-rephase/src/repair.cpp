@@ -100,7 +100,7 @@ RepairResult Repair::optimize(const Algorithm& solution,int boundary,Deadline de
 RepairResult Repair::optimize_with(const Algorithm& solution,int boundary,const RepairConfig& search_config,Deadline deadline,const TraceCallback& trace) const {
     validate_repair_config(search_config);
     if(boundary<0 || size_t(boundary)>solution.size())throw std::invalid_argument("boundary outside sequence");
-    RepairResult result{solution,boundary,{}};const State original=State::identity().applied(solution);
+    RepairResult result{solution,boundary,{}};const State original=State::identity().applied(solution);const auto optimize_began=Clock::now();
     int focal=boundary;
     struct Query {Key key;int bound;bool operator==(const Query& other) const{return key==other.key && bound==other.bound;}};
     struct Hash {size_t operator()(const Query& q) const{return hash_key(q.key)^uint64_t(q.bound)*0x9e3779b97f4a7c15ULL;}};
@@ -150,7 +150,7 @@ RepairResult Repair::optimize_with(const Algorithm& solution,int boundary,const 
                 next.insert(next.end(),replacement.begin(),replacement.end());next.insert(next.end(),result.moves.begin()+end,result.moves.end());
                 if(next.size()>=result.moves.size() || State::identity().applied(next)!=original)
                     throw std::logic_error("repair splice failed verification");
-                result.stats.events.push_back({start,end,end-start,int(replacement.size()),stage});++counts.improvements;counts.moves_saved+=end-start-int(replacement.size());
+                result.stats.events.push_back({start,end,end-start,int(replacement.size()),stage,std::chrono::duration<double,std::milli>(Clock::now()-optimize_began).count()});++counts.improvements;counts.moves_saved+=end-start-int(replacement.size());
                 if(trace){TraceEvent e;e.event="repair_applied";e.stage=name;e.begin=start;e.end=end;e.before=int(result.moves.size());e.after=int(next.size());e.sequence=format_algorithm(window);e.replacement=format_algorithm(replacement);e.complete=found.complete;trace(e);}
                 result.moves=std::move(next);
                 if(stage==RepairStage::Boundary)focal=start+int(replacement.size())/2;

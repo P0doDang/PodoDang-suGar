@@ -78,6 +78,14 @@ Tables::Tables(std::filesystem::path resources,bool progress):resources_(std::fi
     read_stemil_ascii(pruning/"phase2_corner_UD_edge",::phase2_corner_UD_edge,NUM_PHASE2_CORNER_UD_EDGE,false,progress);
     read_stemil_ascii(pruning/"phase2_corner_UDslice_edge",::phase2_corner_UDslice_edge,NUM_PHASE2_CORNER_UDSLICE_EDGE,false,progress);
     read_stemil_ascii(pruning/"phase2_UD_edge_UDslice_edge",::phase2_UD_edge_UDslice_edge,NUM_PHASE2_UD_EDGE_UDSLICE_EDGE,false,progress);
+    // Touch every page once, sequentially. If the OS swapped part of a table out while the
+    // later tables were loading, this pays the page-in cost during setup instead of as random
+    // faults inside a timed search.
+    volatile unsigned char sink=0;unsigned char sum=0;
+    auto touch=[&](const void* data,size_t bytes){auto p=static_cast<const volatile unsigned char*>(data);for(size_t i=0;i<bytes;i+=4096)sum^=p[i];};
+    touch(::phase1_pruning,sizeof(::phase1_pruning));touch(::phase2_corner_UD_edge,sizeof(::phase2_corner_UD_edge));
+    touch(::phase2_corner_UDslice_edge,sizeof(::phase2_corner_UDslice_edge));touch(::phase2_UD_edge_UDslice_edge,sizeof(::phase2_UD_edge_UDslice_edge));
+    sink=sum;(void)sink;
 }
 int Tables::phase1_lower_bound(int co,int eo,int slice) const {
     int depth=0;

@@ -44,6 +44,8 @@ for arguments in [
     ['solve','--stemil-max-ms','100,200','--rephase-ms','10'],
     ['repair','--sequence','R','--boundary','0','--stemil-max-ms','100'],
     ['solve','--rephase-ms','-1'],['solve','--window','8junk'],
+    ['solve','--orientations','0'],['solve','--orientations','13'],['solve','--phase1-mode','fast'],['solve','--verify-optimal','--stemil-max-ms','100'],['solve','--verify-cap-sec','0'],['repair','--sequence','R','--boundary','0','--verify-optimal'],['solve','--candidates','0'],['solve','--candidates','65'],
+    ['solve','--orientations','2','--adaptive'],
     ['solve','--seed','4294967296'],['solve','--runs','-1'],['solve','--runs','10001'],
     ['solve','--facelets',SOLVED,'--seed','1'],
     ['solve','--window-slice-ms','nan'],
@@ -118,6 +120,27 @@ saved['multi_stemil_rephase']=multi_rows
 saved['multi_stemil_rephase_trace']=multi_trace
 result=run(['batch','--json','--budget-ms','100','--rephase-ms','0'],input=SOLVED+'\r\n')
 assert rows(result)[0]['htm']==0
-out=ROOT/'results/sliding-upgrade';out.mkdir(parents=True,exist_ok=True)
+six=run(['solve','--json','--seed','31','--runs','2','--scramble-length','25','--budget-ms','400','--rephase-ms','60','--orientations','6','--candidates','3','--output-file','results/cli-6way-output.txt'])
+saved['six_way']=rows(six)
+assert six.returncode==0 and len(saved['six_way'])==2
+for r in saved['six_way']:
+    assert r['orientations']==6 and len(r['orientation_htm'])==6 and 1<=len(r['candidate_htm'])<=3
+    assert r['htm']<=r['initial_htm']<=min(h for h in r['orientation_htm'] if h is not None)
+    assert apply(r['facelets'],r['sequence'])==SOLVED and len(r['sequence'].split())==r['htm']
+ida=run(['solve','--json','--seed','32','--budget-ms','300','--rephase-ms','50','--orientations','12','--phase1-mode','ida','--output-file','results/cli-6way-output.txt'])
+assert ida.returncode==0 and rows(ida)[0]['orientations']==12 and len(rows(ida)[0]['orientation_htm'])==12
+assert apply(rows(ida)[0]['facelets'],rows(ida)[0]['sequence'])==SOLVED
+stats_path=ROOT/'results/cli-6way-stats.txt'
+if stats_path.exists():stats_path.unlink()
+ver=run(['solve','--json','--seed','7','--runs','3','--scramble-length','13','--budget-ms','300','--rephase-ms','30','--orientations','6','--phase1-mode','ida','--verify-optimal','--verify-cap-sec','60','--stats-file',str(stats_path),'--output-file','results/cli-6way-output.txt'])
+vrows=rows(ver)
+assert ver.returncode==0 and len(vrows)==3
+for r in vrows:
+    assert r['optimal_status'] in ('optimal','not_optimal') and r['optimal_htm']<=r['htm']
+    assert (r['optimal_status']=='optimal')==(r['optimal_htm']==r['htm'])
+assert '[최적해 검증]' in ver.stderr and stats_path.exists() and '실행 요약' in stats_path.read_text()
+human=run(['solve','--seed','31','--budget-ms','300','--rephase-ms','50','--orientations','6','--candidates','2','--output-file','results/cli-6way-output.txt'])
+assert human.returncode==0 and '6방향 탐색: 6방향' in human.stdout and '후보 rephase: ' in human.stdout
+out=ROOT/'results/cli';out.mkdir(parents=True,exist_ok=True)
 (out/'cli-verification.json').write_text(json.dumps(saved,indent=2)+'\n')
 print('CLI tests passed: automatic random shuffle, move counts, independent multi-stemil budgets, multi-rephase cross product, legacy fixed caps, trace sinks, file preservation, input errors, and independent stickers.')
