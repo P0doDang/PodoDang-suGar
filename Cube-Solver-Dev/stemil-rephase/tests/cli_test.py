@@ -7,6 +7,7 @@ import sys
 import tempfile
 
 ROOT=Path(__file__).resolve().parents[1]
+(ROOT/'results').mkdir(exist_ok=True)  # test outputs (git-ignored); the folder is not tracked
 sys.path.insert(0,str(ROOT/'tools'))
 from stickers import SOLVED,apply
 BINARY=str(ROOT/'build/stemil-rephase')

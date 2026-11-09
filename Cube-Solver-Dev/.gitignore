@@ -9,3 +9,5 @@ twophase_tables/
 stemil-rephase/compare/stemil_work/
 stemil-rephase/compare/stemil_regen/
 stemil-rephase/compare/out*/
+# test outputs written by stemil-rephase/tests/cli_test.py
+stemil-rephase/results/
