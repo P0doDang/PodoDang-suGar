@@ -171,7 +171,7 @@ scramble: `B2 D B' D2 R' B U2 R D' F2 U B2 U D' B D' F' D B D' B2 L2 B L2 U R2 L
 
 ## 5. 동작 원리
 
-6way 솔버가 한 큐브를 푸는 흐름은 다음과 같다.
+6way Solver가 한 큐브를 푸는 흐름은 다음과 같다.
 
 ```mermaid
 flowchart TD
