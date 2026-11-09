@@ -97,7 +97,7 @@ stemil, Kociemba two-phase 알고리즘, pip `kociemba`, `RubikTwoPhase`는 모�
 |---|---|
 | 언어 | C++17 (`g++ 13.3`, `-O3`), Python 3.12 |
 | OS / 장비 | WSL2 (Ubuntu 24.04), Intel Core i5-1235U (12 스레드), RAM 약 8 GB |
-| 외부 솔버 | stemil two-phase-solver (submodule, 커밋 `5437b8f`) |
+| 외부 Solver | stemil two-phase-solver (submodule, 커밋 `5437b8f`) |
 | Python 의존성 | `kociemba==1.2.1`, `RubikTwoPhase==1.1.1` (비교용) |
 | 디스크 / 메모리 | stemil의 pruning table은 파일로 약 6 GB, 실행 중에는 약 2 GiB RAM |
 
@@ -203,7 +203,7 @@ flowchart TD
 
 ### 6.1 비교 방법
 
-6way 솔버로 seed를 하나씩 훑으며 **rephase가 해를 실제로 줄인 큐브**만 모았다. 82,224개를 훑어 200건이 모였다(약 0.24%). 그 200개 scramble(30수)을 아래 알고리즘이 똑같이 풀었다.
+6way Solver로 seed를 하나씩 훑으며 **rephase가 해를 실제로 줄인 큐브**만 모았다. 82,224개를 훑어 200건이 모였다(약 0.24%). 그 200개 scramble(30수)을 아래 알고리즘이 똑같이 풀었다.
 
 - **6way**: 6방향, 후보 1, Two-Phase 500 ms + rephase ≤ 100 ms, window 8
 - **stemil**: 원본 탐색 500 ms
