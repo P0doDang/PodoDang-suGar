@@ -1,6 +1,8 @@
 # stemil-rephase 6way
 
-`../` (stemil_rephase)의 복사본에 **6방향 동시 탐색**과 **후보 전체 rephase**를 추가한 버전입니다. 원본 stemil과 상위 `stemil_rephase`는 수정하지 않습니다. 옵션을 끄면(`--orientations 1 --candidates 1`, 기본값) 상위 프로그램과 동일한 단일 스레드 경로로 동작합니다.
+> 이 문서는 6way가 별도 폴더였을 때 작성되었고, 지금은 이 폴더(`stemil-rephase/`)에 통합되어 **같은 바이너리**입니다. 아래 "상위 프로그램"은 6way 옵션을 끈 기본 동작을 뜻합니다. 기본판 설명은 [README.md](README.md), 측정은 [REPORT-6way.md](REPORT-6way.md)를 보세요.
+
+**6방향 동시 탐색**과 **후보 전체 rephase**를 추가한 기능입니다. 원본 stemil은 수정하지 않습니다. 옵션을 끄면(`--orientations 1 --candidates 1`, 기본값) 기본판과 동일한 단일 스레드 경로로 동작합니다.
 
 ## 추가된 두 가지
 

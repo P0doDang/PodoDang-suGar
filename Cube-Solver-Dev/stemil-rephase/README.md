@@ -1,6 +1,6 @@
 # stemil-rephase
 
-기존 `../third_party/stemil`와 그 **전체 pruning table**을 읽어서 사용하는 큐브 solver 보완 프로그램입니다. `stemil_업그레이드.pdf`의 경계 수선에 `kociemba_twophase_업그레이드.pdf`의 전체 해 sliding-window 수선을 추가했습니다. 기존 stemil 소스·실행 파일·테이블은 수정하지 않고, 이 폴더의 코드와 실행 파일만 갱신합니다. 별도 stemil 사본이나 pruning 생성기는 없습니다.
+기존 `../third_party/stemil`와 그 **전체 pruning table**을 읽어서 사용하는 큐브 solver 보완 프로그램입니다. 설계 노트([docs/design.md](../docs/design.md))의 경계 수선에 설계 노트([docs/design.md](../docs/design.md))의 전체 해 sliding-window 수선을 추가했습니다. 기존 stemil 소스·실행 파일·테이블은 수정하지 않고, 이 폴더의 코드와 실행 파일만 갱신합니다. 별도 stemil 사본이나 pruning 생성기는 없습니다.
 
 ## 바로 실행
 

@@ -17,7 +17,7 @@
 - 기본 출력에 셔플, stemil 해, rephase 해의 HTM move 수를 추가했다. 다중 모드에서는 각 window의 설정·move 수·단축 여부·단축 수·시간·메모리를 별도 블록으로 출력한다.
 - 다중 모드의 `--budget-ms`는 stemil에 전부 주고 각 rephase 최대 시간은 이후 독립 예산으로 더한다. 기존 `--rephase-ms` 결합 모드는 그대로 지원한다.
 
-`stemil_업그레이드.pdf`의 경계 exact repair에 `kociemba_twophase_업그레이드.pdf`의 전체 sliding-window 수선을 추가했다. 기존 `third_party/stemil` 소스와 준비된 전체 pruning table 네 개를 읽기 전용으로 재사용한다. 변경한 코드는 현재 `stemil_rephase`에만 있다. 원본 소스·`a.out`·사용자 `instrumented/`·테이블은 수정하지 않는다.
+설계 노트([docs/design.md](../docs/design.md))의 경계 exact repair에 설계 노트([docs/design.md](../docs/design.md))의 전체 sliding-window 수선을 추가했다. 기존 `third_party/stemil` 소스와 준비된 전체 pruning table 네 개를 읽기 전용으로 재사용한다. 변경한 코드는 현재 `stemil_rephase`에만 있다. 원본 소스·`a.out`·사용자 `instrumented/`·테이블은 수정하지 않는다.
 
 이전 구현과 문서는 `reports/pre-sliding-source/`에 보존했다. `reports/sliding-upgrade.patch`는 해당 백업과 비교한 구현·CLI·문서 변경을 담고 있으며, 원본 stemil 파일은 포함하지 않는다. 이전 compact 사본과 캐시는 다시 만들지 않았다.
 
