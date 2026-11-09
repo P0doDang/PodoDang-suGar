@@ -1,0 +1,2 @@
+# Optional: the reference package from hkociemba/RubiksCube-TwophaseSolver.
+RubikTwoPhase==1.1.1
