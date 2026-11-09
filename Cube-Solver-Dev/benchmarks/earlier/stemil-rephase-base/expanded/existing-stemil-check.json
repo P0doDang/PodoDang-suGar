@@ -1,0 +1,10 @@
+{
+  "root": "third_party/stemil",
+  "files_checked": 31,
+  "changed_files": [],
+  "small_files": "SHA-256, size, mtime_ns, ctime_ns",
+  "large_tables": "size, mtime_ns, ctime_ns",
+  "local_stemil_copy_removed": true,
+  "local_caches_removed": true,
+  "table_generator_removed": true
+}

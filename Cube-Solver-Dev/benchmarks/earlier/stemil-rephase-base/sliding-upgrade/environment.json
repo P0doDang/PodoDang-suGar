@@ -1,0 +1,32 @@
+{
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "flags": "-std=c++17 -O3 -Wall -Wextra -Wpedantic -mcmodel=medium",
+  "source_sha256": {
+    "Makefile": "4e429b1406c0b7d765f823e636ddfccd76c960bb3984c1a95af576eaec569f18",
+    "build/stemil-rephase": "76a71ea6bef09c4c9671a80101e53a834c9233d46f246e592e239ad4d5cc30c3",
+    "src/cube.cpp": "96111ac94433b16bc8f70294131ba1816c8a0152fb59dec50602f5508a3e42ce",
+    "src/cube.hpp": "b49a671065ed7b0c65a2284da095866817758d9a492aa482495d0587d75d9784",
+    "src/main.cpp": "5251b4f44f9e05c89ac91fce84af8d998e163330b889d7e569903a189f95ff50",
+    "src/repair.cpp": "c8acf77a03288ce70de80fc8705cbace3aebb75ae563c5d6d56b2397a8c4dc7a",
+    "src/repair.hpp": "abc54cb28ddfc968e81e04c6d27a21b258df255e6334e908fe234df078e1523c",
+    "src/shuffle.cpp": "1922c12dbeb3e1a69eca9a9a4fc95c5550cdc518f25f910c7bfa0466c3d2df69",
+    "src/shuffle.hpp": "71c020cb1a4db38b7aed3dd3b135a96a51ee391a35d8a61d14475ef7187cf05d",
+    "src/solver.cpp": "7b4069212dc43ea041f64890bb1a0e3b1f98b18f083a90180280e50a87a7190e",
+    "src/solver.hpp": "15e00640e1a93004e5835979c3cb59d0ac29d01b8c48d8c724cef666744a2c66",
+    "src/tables.cpp": "c137d670bfaf24967eff8dac2ec2d009ae0faa6a81e0401eb7ecc3cf6828eab4",
+    "src/tables.hpp": "8499ca337d293a2ec29698ec4015c12f178fe1b6c25213c0279c284408008b4a",
+    "src/trace.hpp": "c4bf3f863016442b7483ea6c7911979a3910f94f152e6a700b1f1c8ab205d5c7",
+    "tests/cli_test.py": "80645bf6547fd5f573e15c66784b8eaec1a48750fc4f7f0ac18bb3b634ab9930",
+    "tests/test.cpp": "c71cc9f3edd493e0719570cfd8b5de874b44fa986ee610e7c818607e5a3757bd",
+    "tools/benchmark.py": "997c7402259dfab376b8cbf19b49adc30dd86483396b8e686ad73c1218160018",
+    "tools/postprocess.py": "d6729b3c5127134a517872e75503068a2efe8a8f3534c5eeba9c8b040910dd52",
+    "tools/stickers.py": "9359a169fd6d3a98578e25c519e656820961a951391a260e6e4a1fb879acd4a7"
+  },
+  "meminfo": {
+    "MemTotal": "8131224 kB",
+    "SwapTotal": "8388608 kB"
+  },
+  "last_updated": "2026-09-22"
+}

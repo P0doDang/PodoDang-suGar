@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-17",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "cpu": "12th Gen Intel(R) Core(TM) i5-1235U",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "flags": "-std=c++17 -O3 -Wall -Wextra -Wpedantic",
+  "upstream_commit": "5437b8f6f5c10b6da1857d4bf1d93000ba393063",
+  "pdf_sha256": "f81557629bcdc29c689ffabf49c4c143645e693391b42c7971d844305e183c4c",
+  "source_sha256": {
+    "src/cube.cpp": "96111ac94433b16bc8f70294131ba1816c8a0152fb59dec50602f5508a3e42ce",
+    "src/cube.hpp": "b49a671065ed7b0c65a2284da095866817758d9a492aa482495d0587d75d9784",
+    "src/main.cpp": "60689f62a8b0c53f0337ad6cbae88d25324945d4cce28c9e724935e40985175e",
+    "src/repair.cpp": "32189edb10ee169f755fd177a0f134b3c71cc058e53413876c1e9f2f3e26ce64",
+    "src/repair.hpp": "402c6252d961f5f165229c94f431adb5c6eef29ced6efae3a0b4980b299f4f07",
+    "src/solver.cpp": "72eb705601acc58bb00fc21b15f776e3d29898e376b67a749be5fc4133fa6d64",
+    "src/solver.hpp": "0844230ccdd036900aafe7651b8da6037cff24f15c32ef69f71450dbba6c9d9c",
+    "src/tables.cpp": "56ad7a8abd6737cb903db948b5a535a1c14cb869faa811dafded25cfba573724",
+    "src/tables.hpp": "655bf32ffb9751691b9502d57d38509c892de2ffcf2bcfa183c00eeaca5e3524"
+  },
+  "validation": {
+    "make test": "passed, including sparse expanded adapter",
+    "make sanitize": "passed outside sandbox; address, undefined behavior and leak checks",
+    "random": "100 inputs x 4 configurations, independent sticker verification passed",
+    "shallow": "40 inputs x 4 configurations, all optimal distances matched independent BFS"
+  }
+}

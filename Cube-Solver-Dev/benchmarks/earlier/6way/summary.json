@@ -1,0 +1,52 @@
+{
+ "A 기준(1방향)": {
+  "solved": 100,
+  "avg_htm": 19.74,
+  "min": 18,
+  "max": 21,
+  "avg_ms": 1000.0107,
+  "le_ref": 27,
+  "eq_ref": 27,
+  "n_common": 100
+ },
+ "B 6방향": {
+  "solved": 100,
+  "avg_htm": 18.74,
+  "min": 15,
+  "max": 20,
+  "avg_ms": 999.6042199999999,
+  "le_ref": 85,
+  "eq_ref": 85,
+  "n_common": 100
+ },
+ "C 6방향+후보6": {
+  "solved": 100,
+  "avg_htm": 18.75,
+  "min": 15,
+  "max": 20,
+  "avg_ms": 1000.31657,
+  "le_ref": 84,
+  "eq_ref": 84,
+  "n_common": 100
+ },
+ "R 참조(5s, 6방향+후보6)": {
+  "solved": 100,
+  "avg_htm": 18.55,
+  "min": 15,
+  "max": 20,
+  "avg_ms": 4673.949,
+  "le_ref": 100,
+  "eq_ref": 100,
+  "n_common": 100
+ },
+ "B 6방향 vs A": {
+  "shorter": 63,
+  "same": 36,
+  "longer": 1
+ },
+ "C 6방향+후보6 vs A": {
+  "shorter": 62,
+  "same": 38,
+  "longer": 0
+ }
+}

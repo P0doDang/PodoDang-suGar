@@ -1,0 +1,8 @@
+{
+  "root": "third_party/stemil",
+  "files_checked": 31,
+  "changed": [],
+  "added": [],
+  "unchanged": true,
+  "method": "small files SHA-256 and size/mtime/ctime; two large pruning files size/mtime/ctime; no atime comparison"
+}

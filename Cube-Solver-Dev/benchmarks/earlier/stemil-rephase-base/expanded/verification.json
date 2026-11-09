@@ -1,0 +1,150 @@
+{
+  "source_sha256": {
+    "src/repair.cpp": "32189edb10ee169f755fd177a0f134b3c71cc058e53413876c1e9f2f3e26ce64",
+    "src/repair.hpp": "402c6252d961f5f165229c94f431adb5c6eef29ced6efae3a0b4980b299f4f07",
+    "src/cube.cpp": "96111ac94433b16bc8f70294131ba1816c8a0152fb59dec50602f5508a3e42ce",
+    "src/solver.cpp": "21903a26312d10a06291e02d8cac07497190ddfaebf1a01001810a91fea079ad",
+    "src/tables.hpp": "ba4e14c956109772361894d1895f577d25fe639ddc4103e40660bee3e6a1d6a6",
+    "src/tables.cpp": "dd40264dc508e4573aa9c8ded011f7684a73f4cf354b2177e4c90d10ca68a30c",
+    "src/main.cpp": "5939309680b2370e5843fa8aef0ec6507526fcc09a4f4018afc2d018d67c8df3",
+    "src/cube.hpp": "b49a671065ed7b0c65a2284da095866817758d9a492aa482495d0587d75d9784",
+    "src/solver.hpp": "0844230ccdd036900aafe7651b8da6037cff24f15c32ef69f71450dbba6c9d9c",
+    "tests/test.cpp": "84aa6f3187f050815ba019505a7b8b4ab7dabd660fae7889125f9787433719bc",
+    "tools/stickers.py": "9359a169fd6d3a98578e25c519e656820961a951391a260e6e4a1fb879acd4a7",
+    "tools/postprocess.py": "29d89d9d40b32a6a3ba74e7531a99e0b4d239c4e50c1fe804dc7925154de30d1",
+    "tools/benchmark.py": "05c4d2887690a7b8a79f9af64ba19b7695113a4e73d3ccc02a1b2add9be7bf0d"
+  },
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "existing_stemil_root": "third_party/stemil",
+  "example": {
+    "index": 0,
+    "facelets": "FBBDUURDDLBULRFDRRFFFDFFFLLLBBDDFUUDRRURLLBBURRDUBUBLL",
+    "solved": true,
+    "tables": "expanded",
+    "stemil_resources": "third_party/stemil/resources",
+    "sequence": "B2 D' L F2 U' R'",
+    "initial_sequence": "B2 D' L F2 U' R'",
+    "htm": 6,
+    "initial_htm": 6,
+    "initial_boundary": 6,
+    "final_focal_index": 6,
+    "elapsed_ms": 900.004,
+    "two_phase_ms": 900.003,
+    "repair_ms": 0.001,
+    "budget_ms": 1000.0,
+    "allocated_repair_fraction": 0.1,
+    "search_nodes": 393915,
+    "candidates": 189292,
+    "two_phase_timed_out": true,
+    "setup_ms": 14453.455,
+    "heuristic_bytes": 2181911040,
+    "repair_table_bytes": 4194304,
+    "repair_build_peak_bytes": 6812640,
+    "repair_table_states": 46741,
+    "peak_rss_kib": 2148172,
+    "repair_nodes": 0,
+    "windows_tested": 0,
+    "windows_completed": 0,
+    "windows_timed_out": 0,
+    "repair_deadline_reached": false,
+    "repairs": []
+  },
+  "repair_regression": {
+    "equivalent": true,
+    "initial_sequence": "D2 B2 U R' F' L D R D2 F D F' R2 U2 R2 U2 B2 D' B2",
+    "sequence": "D2 B2 U R' F' L D B' D B D2 R' U2 R2 U2 B2 D' B2",
+    "initial_htm": 19,
+    "htm": 18,
+    "elapsed_ms": 74.587,
+    "setup_ms": 7.757,
+    "repair_table_bytes": 4194304,
+    "repair_build_peak_bytes": 6812640,
+    "repair_table_states": 46741,
+    "peak_rss_kib": 12512,
+    "repair_nodes": 964244,
+    "windows_tested": 25,
+    "windows_completed": 16,
+    "windows_timed_out": 9,
+    "repair_deadline_reached": false,
+    "repairs": [
+      {
+        "begin": 7,
+        "end": 13,
+        "old_length": 6,
+        "new_length": 5
+      }
+    ]
+  },
+  "invalid_input_checks": [
+    {
+      "arguments": [
+        "solve",
+        "--scramble",
+        "R U",
+        "--resources",
+        "/tmp/rephase-missing-existing-resources"
+      ],
+      "returncode": 1,
+      "error": "missing existing stemil pruning table: /tmp/rephase-missing-existing-resources/pruning_tables/phase1_pruning; existing stemil files must be supplied; they are never regenerated"
+    },
+    {
+      "arguments": [
+        "solve",
+        "--scramble",
+        "X"
+      ],
+      "returncode": 1,
+      "error": "invalid move: X"
+    },
+    {
+      "arguments": [
+        "solve",
+        "--facelets",
+        "bad"
+      ],
+      "returncode": 1,
+      "error": "facelets need 54 characters in URFDLB order"
+    }
+  ],
+  "unit_tests": {
+    "passed": true,
+    "command": "make test",
+    "log": "results/expanded/unit-tests.log",
+    "uses_actual_full_tables": true
+  },
+  "sanitizers": {
+    "passed": true,
+    "command": "make sanitize",
+    "checks": [
+      "AddressSanitizer",
+      "UndefinedBehaviorSanitizer",
+      "LeakSanitizer"
+    ],
+    "execution": "previously approved execution outside ptrace-restricted sandbox",
+    "uses_actual_full_tables": true
+  },
+  "upstream_unchanged": {
+    "root": "third_party/stemil",
+    "files_checked": 31,
+    "changed_files": [],
+    "small_files": "SHA-256, size, mtime_ns, ctime_ns",
+    "large_tables": "size, mtime_ns, ctime_ns",
+    "local_stemil_copy_removed": true,
+    "local_caches_removed": true,
+    "table_generator_removed": true
+  },
+  "uniform_benchmark": {
+    "path": "results/expanded/uniform-100/summary.json",
+    "all_four_modes_solved": 100,
+    "all_reported_initial_and_final_solutions_independently_verified": true
+  },
+  "shallow_validation": {
+    "oracle": "results/expanded/shallow-oracle-check.json",
+    "50ms": "results/expanded/shallow-40/summary.json",
+    "100ms": "results/expanded/shallow-40-100ms/summary.json",
+    "default_10percent_100ms_solved": 40,
+    "default_10percent_100ms_optimal": 40,
+    "default_10percent_50ms_initial_timeouts": 1
+  },
+  "full_pruning_initial_repair_reproduction": "results/expanded/full-pruning-repair-case.json"
+}

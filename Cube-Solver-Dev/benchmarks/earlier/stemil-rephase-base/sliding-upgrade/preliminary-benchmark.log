@@ -1,0 +1,4 @@
+repair-0: solved 100/100, mean HTM 19.85, local improvements 0, wall 110.2s
+repair-0.1-boundary: solved 100/100, mean HTM 19.82, local improvements 3, wall 110.6s
+repair-0.1-boundary+sliding: solved 100/100, mean HTM 19.9, local improvements 2, wall 116.4s
+Verified results saved to results/sliding-upgrade/uniform-100

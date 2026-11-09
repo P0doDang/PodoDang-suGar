@@ -1,0 +1,2 @@
+python3 tests/cli_test.py
+CLI tests passed: automatic random shuffle, move counts, independent multi-stemil budgets, multi-rephase cross product, legacy fixed caps, trace sinks, file preservation, input errors, and independent stickers.

@@ -1,0 +1,18 @@
+[2026-09-30 20:57:36] 큐브 41 (seed 1040): 19수 -> 18수 (-1)
+  셔플:    U' L' F D F' U R' U' L D2 B2 L2 U2 F' U' B L' U' L' D2 F2 U2 R' L' U2 L U2 R' D' R'
+  stemil:  D F' D F2 R' D2 B' R2 D2 L' B' U' F' B2 U2 B R2 F' L2
+  rephase: R2 F B2 U' R D2 L' F' D2 L' B2 R2 F' B2 D2 L2 U2 D2
+  설정: budget 1000 ms, windows 4,6,8,10
+
+[2026-09-30 20:57:43] 큐브 48 (seed 1047): 19수 -> 18수 (-1)
+  셔플:    U' D2 L' U' D' B2 U2 R F' U F L' F' D F' L' F R F R' D2 L' D2 B' L2 F D R D B2
+  stemil:  U R' U L' U' R L U' D R' B L' F2 U F L2 F2 D2 F
+  rephase: B' U2 L' U' L U' B D R' B L' F2 U F L2 F2 D2 F
+  설정: budget 1000 ms, windows 4,6,8,10
+
+[2026-09-30 20:58:19] 큐브 84 (seed 1083): 18수 -> 17수 (-1)
+  셔플:    F U2 D L U B2 U2 B D R2 B U2 F R' F' R F R' D' B' L2 D2 F' B2 D R2 F' L D R2
+  stemil:  U2 R2 U2 L2 F2 D F' R F2 L2 B L2 D2 F2 L2 F2 R U
+  rephase: U2 R2 U2 L2 F2 D F' R L2 F B D2 F L2 D2 R U
+  설정: budget 1000 ms, windows 4,6,8,10
+

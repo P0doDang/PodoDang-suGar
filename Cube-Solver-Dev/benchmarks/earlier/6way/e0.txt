@@ -1,0 +1,6 @@
+corpus: 192 cubes, optimal distribution [(12, 2), (13, 4), (14, 60), (15, 62), (16, 64)]
+config         avg HTM avg opt   gap   hit%   +1   +2  +3+      ms  time-s
+B6r0             15.90   14.95  0.95  63.5%    9   24   37    1000     210
+corpus: 192 cubes, optimal distribution [(12, 2), (13, 4), (14, 60), (15, 62), (16, 64)]
+config         avg HTM avg opt   gap   hit%   +1   +2  +3+      ms  time-s
+B6r100           15.86   14.95  0.92  65.1%    9   22   36     981     206

@@ -1,0 +1,12 @@
+{
+  "recorded_at": "2026-09-16T17:46:43.286332+00:00",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "cpu": "12th Gen Intel(R) Core(TM) i5-1235U",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "flags": "-std=c++17 -O3 -Wall -Wextra -Wpedantic -mcmodel=medium",
+  "existing_stemil_commit": "5437b8f6f5c10b6da1857d4bf1d93000ba393063",
+  "existing_stemil_root": "third_party/stemil",
+  "pruning_mode": "original-full-ASCII-read-only",
+  "table_bytes": 2181911040,
+  "makefile_sha256": "3c2ea9d2a22783e436dc24fbb13491465a5f4b1bc7f9e026aa2e814b1eb079f1"
+}

@@ -1,0 +1,113 @@
+{
+  "cold_cache": {
+    "index": 0,
+    "facelets": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+    "solved": true,
+    "tables": "compact",
+    "sequence": "",
+    "initial_sequence": "",
+    "htm": 0,
+    "initial_htm": 0,
+    "initial_boundary": 0,
+    "final_focal_index": 0,
+    "elapsed_ms": 0.0,
+    "two_phase_ms": 0.0,
+    "repair_ms": 0.0,
+    "budget_ms": 1000.0,
+    "allocated_repair_fraction": 0.1,
+    "search_nodes": 0,
+    "candidates": 0,
+    "two_phase_timed_out": false,
+    "setup_ms": 463.681,
+    "heuristic_bytes": 8510661,
+    "repair_table_bytes": 4194304,
+    "repair_build_peak_bytes": 6812640,
+    "repair_table_states": 46741,
+    "peak_rss_kib": 37612,
+    "repair_nodes": 0,
+    "windows_tested": 0,
+    "windows_completed": 0,
+    "windows_timed_out": 0,
+    "repair_deadline_reached": false,
+    "repairs": []
+  },
+  "warm_cache": {
+    "index": 0,
+    "facelets": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+    "solved": true,
+    "tables": "compact",
+    "sequence": "",
+    "initial_sequence": "",
+    "htm": 0,
+    "initial_htm": 0,
+    "initial_boundary": 0,
+    "final_focal_index": 0,
+    "elapsed_ms": 0.0,
+    "two_phase_ms": 0.0,
+    "repair_ms": 0.0,
+    "budget_ms": 1000.0,
+    "allocated_repair_fraction": 0.1,
+    "search_nodes": 0,
+    "candidates": 0,
+    "two_phase_timed_out": false,
+    "setup_ms": 63.285,
+    "heuristic_bytes": 8510661,
+    "repair_table_bytes": 4194304,
+    "repair_build_peak_bytes": 6812640,
+    "repair_table_states": 46741,
+    "peak_rss_kib": 24748,
+    "repair_nodes": 0,
+    "windows_tested": 0,
+    "windows_completed": 0,
+    "windows_timed_out": 0,
+    "repair_deadline_reached": false,
+    "repairs": []
+  },
+  "clean_cache_path": "stemil-rephase/cache/clean-verification-165r873h",
+  "real_case_39": {
+    "equivalent": true,
+    "initial_sequence": "D2 B2 U R' F' L D R D2 F D F' R2 U2 R2 U2 B2 D' B2",
+    "sequence": "D2 B2 U R' F' L D B' D B D2 R' U2 R2 U2 B2 D' B2",
+    "initial_htm": 19,
+    "htm": 18,
+    "elapsed_ms": 73.674,
+    "setup_ms": 6.913,
+    "repair_table_bytes": 4194304,
+    "repair_build_peak_bytes": 6812640,
+    "repair_table_states": 46741,
+    "peak_rss_kib": 14100,
+    "repair_nodes": 1431828,
+    "windows_tested": 25,
+    "windows_completed": 16,
+    "windows_timed_out": 9,
+    "repair_deadline_reached": false,
+    "repairs": [
+      {
+        "begin": 7,
+        "end": 13,
+        "old_length": 6,
+        "new_length": 5
+      }
+    ]
+  },
+  "independent_sticker_verification": true,
+  "cpp_verification": {
+    "valid": true,
+    "htm": 18
+  },
+  "invalid_inputs_rejected": {
+    "invalid facelets": {
+      "error": "facelets need 54 characters in URFDLB order"
+    },
+    "invalid budget": {
+      "error": "budget must be >0 and <=60000 ms"
+    },
+    "invalid boundary": {
+      "error": "boundary outside sequence"
+    },
+    "missing expanded tables": {
+      "error": "missing expanded table: cache/not-generated-expanded/phase1_pruning.bin; run tools/import_full_tables.py"
+    }
+  },
+  "missing_original_import_rejected": true
+}

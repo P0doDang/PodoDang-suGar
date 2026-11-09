@@ -1,0 +1,42 @@
+[2026-10-01 02:19:29] 큐브 4: 19수 -> 16수 (-3)
+  셔플:    
+  stemil:  U2 F' B2 R2 B2 R' L F' D2 B D R L B2 U D R2 L2 U'
+  rephase: U2 F' B2 R2 B2 R' L F' D2 B U2 D' R L B2 D
+  설정: budget 1000 ms, windows 4,6,8,10
+
+[2026-10-01 02:19:58] 큐브 32: 19수 -> 16수 (-3)
+  셔플:    
+  stemil:  R2 L2 D R2 F2 U R2 U R2 U2 L' U2 R2 B' D2 F U' D2 L'
+  rephase: R2 L2 D R2 F2 U' L' U2 R2 U B' D2 F U' D2 L'
+  설정: budget 1000 ms, windows 4,6,8,10
+
+[2026-10-01 02:20:32] 큐브 66: 17수 -> 16수 (-1)
+  셔플:    
+  stemil:  F' U F2 R' F2 U' F2 B2 U' R2 U B2 U2 L2 U2 R' D2
+  rephase: F' U F2 R' F2 U' F2 B2 D' F2 D' R2 D2 B2 R' D2
+  설정: budget 1000 ms, windows 4,6,8,10
+
+[2026-10-01 02:20:59] 큐브 93: 17수 -> 15수 (-2)
+  셔플:    
+  stemil:  L' U2 L2 B2 D2 R2 B2 U2 F2 D' L' F' D' F' D' R2 B
+  rephase: L U' F2 U D' R2 D2 R2 L F' D' F' D' R2 B
+  설정: budget 1000 ms, windows 4,6,8,10
+
+[2026-10-01 02:21:23] 큐브 116: 17수 -> 15수 (-2)
+  셔플:    
+  stemil:  R2 U' L' B' D' L' U2 B' U2 L2 F2 U' B2 R2 D' B2 D2
+  rephase: R2 U' L' B' D' L F2 U' B2 R2 D2 B' D B2 D2
+  설정: budget 1000 ms, windows 4,6,8,10
+
+[2026-10-01 02:21:31] 큐브 124: 16수 -> 15수 (-1)
+  셔플:    
+  stemil:  B2 L2 D' R2 L2 U2 F2 L' U2 D2 R' F' R' L' B L2
+  rephase: B2 L2 D B2 L' U2 R2 L2 U2 R' F' R' L' B L2
+  설정: budget 1000 ms, windows 4,6,8,10
+
+[2026-10-01 02:22:08] 큐브 162: 16수 -> 14수 (-2)
+  셔플:    
+  stemil:  U L D2 L' U' F L' U2 F2 D' R2 D2 F2 U2 D2 L'
+  rephase: U L D2 L' U' F L' D2 B2 D' L2 D2 B2 L'
+  설정: budget 1000 ms, windows 4,6,8,10
+
