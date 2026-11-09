@@ -1,0 +1,3 @@
+[submodule "Cube-Solver-Dev/third_party/stemil"]
+	path = Cube-Solver-Dev/third_party/stemil
+	url = https://github.com/stemil01/two-phase-solver

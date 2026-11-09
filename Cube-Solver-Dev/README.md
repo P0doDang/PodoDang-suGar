@@ -1,4 +1,4 @@
-# cube-solver
+# cube-solver (Cube-Solver-Dev)
 
 ## English summary
 
@@ -36,7 +36,7 @@ stemil, Kociemba two-phase 알고리즘, pip `kociemba`, `RubikTwoPhase`는 **�
 ## 빠른 시작
 
 ```bash
-git clone --recursive <this-repo-url> cube-solver && cd cube-solver
+git clone --recursive https://github.com/P0doDang/PodoDang-suGar && cd PodoDang-suGar/Cube-Solver-Dev
 ```
 
 ### rephase (Python)
