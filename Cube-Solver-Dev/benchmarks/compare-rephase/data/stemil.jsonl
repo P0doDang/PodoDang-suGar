@@ -1,0 +1,200 @@
+{"seed":221,"solved":true,"htm":20,"first_htm":24,"found_ms":40.675,"total_ms":501.429,"peak_rss_kib":2140344,"moves":"F' B2 R F2 L2 B2 R B' U' L' F U' R2 U D2 L2 F2 D B2 U2"}
+{"seed":339,"solved":true,"htm":19,"first_htm":23,"found_ms":111.077,"total_ms":500.130,"peak_rss_kib":2140528,"moves":"L U2 R D R2 F R2 L2 U L' F U2 B F2 U' F2 L2 D2 B2"}
+{"seed":413,"solved":true,"htm":19,"first_htm":23,"found_ms":9.493,"total_ms":500.375,"peak_rss_kib":2140528,"moves":"L2 F2 U2 F' B2 R2 U' L' D' B' U2 L B2 U D2 F2 U' R2 D"}
+{"seed":439,"solved":true,"htm":20,"first_htm":24,"found_ms":5.404,"total_ms":500.135,"peak_rss_kib":2140528,"moves":"F2 U2 B R2 U' R2 U' B' U' D' L B L2 R2 F2 D' L2 F2 B2 D2"}
+{"seed":680,"solved":true,"htm":20,"first_htm":23,"found_ms":11.962,"total_ms":500.217,"peak_rss_kib":2140528,"moves":"B2 U D' F U' F D' B2 L D R' U2 F' L2 U' F2 D' B2 U' B2"}
+{"seed":1018,"solved":true,"htm":21,"first_htm":23,"found_ms":6.592,"total_ms":500.067,"peak_rss_kib":2140528,"moves":"L2 F' U' F' L U' R' B' R F2 B2 R U2 R2 D2 L2 U F2 B2 D L2"}
+{"seed":1039,"solved":true,"htm":20,"first_htm":24,"found_ms":0.153,"total_ms":500.061,"peak_rss_kib":2140528,"moves":"B' R F B U2 R D' F R2 B R B2 D' L2 F2 U2 R2 U L2 U'"}
+{"seed":1182,"solved":true,"htm":20,"first_htm":22,"found_ms":3.535,"total_ms":500.078,"peak_rss_kib":2140528,"moves":"F2 L2 B2 F U R2 U2 L' B R2 U F' R F2 B2 R2 F2 U' D' L2"}
+{"seed":1328,"solved":true,"htm":21,"first_htm":22,"found_ms":66.281,"total_ms":500.105,"peak_rss_kib":2140528,"moves":"F' L' B D' R B2 D2 R' F' L2 F' U R F2 D' F2 L2 U2 D L2 U"}
+{"seed":1844,"solved":true,"htm":21,"first_htm":23,"found_ms":295.117,"total_ms":500.087,"peak_rss_kib":2140528,"moves":"D2 F L' D' L D R D B U' F D F U' F2 D' B2 D R2 L2 U2"}
+{"seed":2220,"solved":true,"htm":20,"first_htm":22,"found_ms":94.125,"total_ms":500.175,"peak_rss_kib":2140528,"moves":"L2 R U' B2 F2 R' D L' U2 D2 F D R U' R2 D2 R2 L2 B2 D"}
+{"seed":2548,"solved":true,"htm":21,"first_htm":22,"found_ms":1.392,"total_ms":500.143,"peak_rss_kib":2140528,"moves":"D L' U' R F' D L' U2 D' R' B D' F2 U R2 L2 U2 R2 F2 R2 D'"}
+{"seed":3055,"solved":true,"htm":21,"first_htm":24,"found_ms":24.267,"total_ms":500.254,"peak_rss_kib":2140528,"moves":"F R2 F U' B R' F R2 U' F' B2 L' F U R2 U' B2 U B2 D R2"}
+{"seed":3351,"solved":true,"htm":20,"first_htm":21,"found_ms":104.190,"total_ms":500.259,"peak_rss_kib":2140528,"moves":"L2 D F L' R2 F' L2 B' D F2 R2 B L2 U2 L2 U B2 U' D R2"}
+{"seed":3539,"solved":true,"htm":19,"first_htm":22,"found_ms":455.334,"total_ms":500.089,"peak_rss_kib":2140528,"moves":"F B2 L B2 D2 R' F' B2 L U R F' B' U' B' L2 F2 D' R2"}
+{"seed":3963,"solved":true,"htm":21,"first_htm":25,"found_ms":49.477,"total_ms":500.062,"peak_rss_kib":2140528,"moves":"F2 B2 L B2 U2 D B D' R L' B D F L2 R2 F2 D' B2 R2 U' D'"}
+{"seed":4406,"solved":true,"htm":21,"first_htm":23,"found_ms":1.239,"total_ms":500.143,"peak_rss_kib":2140528,"moves":"B' R2 F2 U F2 D B L B2 D B U R2 U2 D L2 B2 U' D2 F2 U'"}
+{"seed":4442,"solved":true,"htm":20,"first_htm":22,"found_ms":0.872,"total_ms":500.238,"peak_rss_kib":2140528,"moves":"L2 B2 L' U B D2 L F' R U D2 R2 B2 L2 U R2 F2 D' F2 D'"}
+{"seed":4638,"solved":true,"htm":20,"first_htm":24,"found_ms":45.841,"total_ms":500.193,"peak_rss_kib":2140528,"moves":"F2 U2 F2 D R2 L2 U2 R' F R2 L' U R U F2 U2 D L2 U2 D'"}
+{"seed":4883,"solved":true,"htm":19,"first_htm":21,"found_ms":13.026,"total_ms":500.058,"peak_rss_kib":2140528,"moves":"U' R B F U' D' R2 F' R2 B2 D' L' F2 L2 U B2 R2 D B2"}
+{"seed":5070,"solved":true,"htm":19,"first_htm":24,"found_ms":0.551,"total_ms":500.140,"peak_rss_kib":2140528,"moves":"L U' F B L' F2 B L F' D2 F' D2 F2 U' B2 D' B2 D R2"}
+{"seed":5331,"solved":true,"htm":20,"first_htm":22,"found_ms":149.603,"total_ms":500.074,"peak_rss_kib":2140528,"moves":"B2 R2 D F' R L' U F' U R' D R2 F D L2 U' D' R2 U' L2"}
+{"seed":5386,"solved":true,"htm":18,"first_htm":22,"found_ms":56.720,"total_ms":500.123,"peak_rss_kib":2140528,"moves":"F' R2 D2 F2 D2 L U F2 L' U B' D F U B2 U' L2 F2"}
+{"seed":5670,"solved":true,"htm":21,"first_htm":25,"found_ms":29.536,"total_ms":500.097,"peak_rss_kib":2140528,"moves":"F U' F' L2 B' R' F' D2 R2 F' U' L' F U' D' R2 D' R2 L2 D' L2"}
+{"seed":6352,"solved":true,"htm":20,"first_htm":20,"found_ms":0.019,"total_ms":500.054,"peak_rss_kib":2140528,"moves":"F2 U' R2 U' B D' B2 R U' R2 L2 U B2 U' B2 D2 B2 R2 B2 U"}
+{"seed":7187,"solved":true,"htm":20,"first_htm":23,"found_ms":1.746,"total_ms":500.058,"peak_rss_kib":2140528,"moves":"F R2 D' F' L' U L' U' L' B' L D2 L2 D B2 L2 D' R2 U' L2"}
+{"seed":7355,"solved":true,"htm":21,"first_htm":23,"found_ms":38.970,"total_ms":500.086,"peak_rss_kib":2140528,"moves":"F D' F U2 L2 U' B2 U2 D F2 R' L2 F L2 U' F2 D B2 U' R2 U'"}
+{"seed":7400,"solved":true,"htm":20,"first_htm":22,"found_ms":8.980,"total_ms":500.064,"peak_rss_kib":2140528,"moves":"B D F2 B' L' U D2 R L2 D' R B U D2 L2 U2 R2 U B2 U2"}
+{"seed":7563,"solved":true,"htm":20,"first_htm":20,"found_ms":0.020,"total_ms":500.083,"peak_rss_kib":2140528,"moves":"L2 B U' R' F2 D' B U2 R B2 U F2 U F2 L2 F2 R2 D' R2 U2"}
+{"seed":7578,"solved":true,"htm":20,"first_htm":23,"found_ms":171.033,"total_ms":500.196,"peak_rss_kib":2140528,"moves":"B2 U F2 D2 B2 R B R F D2 L D F U B2 D B2 R2 F2 R2"}
+{"seed":7805,"solved":true,"htm":19,"first_htm":22,"found_ms":152.002,"total_ms":500.134,"peak_rss_kib":2140528,"moves":"B2 U' B D L' B2 U2 D R' F R2 U' D2 B' D L2 D2 F2 U2"}
+{"seed":8653,"solved":true,"htm":21,"first_htm":24,"found_ms":147.248,"total_ms":500.087,"peak_rss_kib":2140528,"moves":"B D B U R' U R2 U2 L U2 F L F2 D2 L2 B2 L2 B2 D2 R2 U2"}
+{"seed":8901,"solved":true,"htm":20,"first_htm":24,"found_ms":45.346,"total_ms":500.075,"peak_rss_kib":2140528,"moves":"F D' R' U' F B2 U' F' L B2 U B L U F2 U2 F2 R2 F2 D'"}
+{"seed":9138,"solved":true,"htm":21,"first_htm":23,"found_ms":72.243,"total_ms":500.085,"peak_rss_kib":2140528,"moves":"F2 L U F R' U' R2 L' F' D R2 F' R D2 F2 D F2 R2 B2 U' B2"}
+{"seed":11028,"solved":true,"htm":21,"first_htm":24,"found_ms":20.136,"total_ms":500.098,"peak_rss_kib":2140528,"moves":"B' L B U D' L2 B2 L' F R U R L2 D L2 U2 B2 D' L2 U' B2"}
+{"seed":11101,"solved":true,"htm":19,"first_htm":25,"found_ms":449.362,"total_ms":500.248,"peak_rss_kib":2140528,"moves":"U' D' B2 D' F2 L2 B U R' B L' U' B F2 U2 D' L2 U D"}
+{"seed":11392,"solved":true,"htm":21,"first_htm":21,"found_ms":0.075,"total_ms":500.119,"peak_rss_kib":2140528,"moves":"R L' D F R2 L D R L F2 L2 B2 R2 D2 B2 U2 D F2 L2 B2 L2"}
+{"seed":12086,"solved":true,"htm":20,"first_htm":21,"found_ms":0.892,"total_ms":500.096,"peak_rss_kib":2140528,"moves":"L' U2 B' R L2 U R' F2 D' B' R L2 U2 F2 B2 L2 U2 D' R2 U"}
+{"seed":12385,"solved":true,"htm":18,"first_htm":23,"found_ms":1.585,"total_ms":500.143,"peak_rss_kib":2140528,"moves":"U B D2 F D2 F2 U' R' B2 L B2 R2 L2 D2 B2 L2 B2 U"}
+{"seed":12439,"solved":true,"htm":20,"first_htm":24,"found_ms":43.812,"total_ms":500.097,"peak_rss_kib":2140528,"moves":"F L' D2 L' F' R2 F' B' L' F' L' B' R L2 R2 L2 B2 D' L2 F2"}
+{"seed":12449,"solved":true,"htm":21,"first_htm":24,"found_ms":327.314,"total_ms":500.125,"peak_rss_kib":2140528,"moves":"L U R B2 L F' R' B' L U D2 R U' F2 L2 D' F2 U B2 D' B2"}
+{"seed":13331,"solved":true,"htm":20,"first_htm":21,"found_ms":212.266,"total_ms":500.105,"peak_rss_kib":2140528,"moves":"L R2 B L' B D' F B U2 R' D F D' B2 D' L2 B2 D' L2 D"}
+{"seed":13483,"solved":true,"htm":18,"first_htm":19,"found_ms":0.085,"total_ms":500.083,"peak_rss_kib":2140528,"moves":"F D' B D F2 R B2 U2 L2 B2 L2 B2 U F2 B2 U F2 D"}
+{"seed":13785,"solved":true,"htm":19,"first_htm":22,"found_ms":44.062,"total_ms":500.149,"peak_rss_kib":2140528,"moves":"F D F' U' L F' R' F2 R' F' R D' R2 U' R2 F2 L2 F2 R2"}
+{"seed":14910,"solved":true,"htm":20,"first_htm":24,"found_ms":11.804,"total_ms":500.074,"peak_rss_kib":2140528,"moves":"B2 L2 F' D2 L D2 F2 B' R F' D2 R F2 B2 D B2 D2 F2 U' F2"}
+{"seed":15499,"solved":true,"htm":20,"first_htm":23,"found_ms":392.892,"total_ms":500.067,"peak_rss_kib":2140528,"moves":"F R U2 B' L' B2 U L2 D L F B R L2 B2 D' L2 D2 F2 B2"}
+{"seed":16083,"solved":true,"htm":20,"first_htm":24,"found_ms":131.765,"total_ms":500.142,"peak_rss_kib":2140528,"moves":"L F R B R' U' B2 U2 R' F2 B R U' F2 L2 D' F2 B2 D2 F2"}
+{"seed":16471,"solved":true,"htm":20,"first_htm":22,"found_ms":27.219,"total_ms":500.100,"peak_rss_kib":2140528,"moves":"F R D2 R' L F L F' B2 D2 R F' R L2 U' D R2 B2 U2 D2"}
+{"seed":16879,"solved":true,"htm":21,"first_htm":24,"found_ms":10.432,"total_ms":500.219,"peak_rss_kib":2140528,"moves":"L F' D' B' R F2 R D2 L2 U R B' U' R2 B2 U' F2 D' L2 U' B2"}
+{"seed":17226,"solved":true,"htm":19,"first_htm":25,"found_ms":41.337,"total_ms":500.165,"peak_rss_kib":2140528,"moves":"F D2 B R2 U F2 D L D R F B' R' F' R2 B2 U D' F2"}
+{"seed":17668,"solved":true,"htm":21,"first_htm":21,"found_ms":0.036,"total_ms":500.086,"peak_rss_kib":2140528,"moves":"U2 B' R F2 B2 U' B D2 L' D2 R2 B2 L2 B2 D' L2 D B2 U R2 F2"}
+{"seed":17820,"solved":true,"htm":20,"first_htm":22,"found_ms":0.297,"total_ms":500.173,"peak_rss_kib":2140528,"moves":"U R U2 B D' F U B2 R2 U2 L D2 R2 U D F2 D' B2 R2 U'"}
+{"seed":17833,"solved":true,"htm":21,"first_htm":24,"found_ms":45.021,"total_ms":500.289,"peak_rss_kib":2140528,"moves":"D' B2 D2 B2 R F D' L' B2 R2 U' R B U2 F2 R2 U' D L2 F2 D"}
+{"seed":17875,"solved":true,"htm":20,"first_htm":22,"found_ms":24.120,"total_ms":500.132,"peak_rss_kib":2140528,"moves":"B L2 U F' B R' F' D2 L2 B2 D' R U D2 F2 L2 F2 L2 B2 D"}
+{"seed":18275,"solved":true,"htm":21,"first_htm":22,"found_ms":173.621,"total_ms":500.279,"peak_rss_kib":2140528,"moves":"F2 D' F2 U' R F2 L D2 B' L D R' D B U' R2 L2 U R2 L2 U2"}
+{"seed":18609,"solved":true,"htm":21,"first_htm":24,"found_ms":44.216,"total_ms":500.122,"peak_rss_kib":2140528,"moves":"D' B L2 U D2 R L' D R F' D2 L F2 U' L2 U' L2 D' B2 R2 D2"}
+{"seed":18654,"solved":true,"htm":21,"first_htm":23,"found_ms":0.183,"total_ms":500.070,"peak_rss_kib":2140528,"moves":"L2 F2 R' F2 B R U D L' F D F2 U L2 D2 L2 B2 D' L2 B2 U2"}
+{"seed":18698,"solved":true,"htm":21,"first_htm":24,"found_ms":41.815,"total_ms":500.053,"peak_rss_kib":2140528,"moves":"F2 L' U' L2 F' D L2 D B2 R L2 F' B2 R D2 B2 L2 U' B2 D F2"}
+{"seed":18788,"solved":true,"htm":20,"first_htm":24,"found_ms":15.640,"total_ms":500.090,"peak_rss_kib":2140528,"moves":"D F' U R2 U2 R2 F' U L2 B2 U' R B2 D2 R2 U2 D F2 L2 U"}
+{"seed":19090,"solved":true,"htm":21,"first_htm":21,"found_ms":0.084,"total_ms":500.116,"peak_rss_kib":2140528,"moves":"U' F R2 U D2 R U2 R L2 F2 U D2 L2 D B2 R2 B2 U' L2 B2 U'"}
+{"seed":19878,"solved":true,"htm":21,"first_htm":22,"found_ms":17.734,"total_ms":500.105,"peak_rss_kib":2140528,"moves":"U' F' L' F2 R2 D F' L' B R F2 L F L2 B2 D F2 L2 U B2 U2"}
+{"seed":20014,"solved":true,"htm":21,"first_htm":22,"found_ms":0.230,"total_ms":500.160,"peak_rss_kib":2140528,"moves":"B R D' B U2 B R F U D L U' D' F2 B2 R2 D F2 U' F2 L2"}
+{"seed":20152,"solved":true,"htm":19,"first_htm":23,"found_ms":122.296,"total_ms":500.068,"peak_rss_kib":2140528,"moves":"L2 R2 F B R2 F B' L' D R' D B D' L' U2 D' L2 B2 U'"}
+{"seed":20198,"solved":true,"htm":21,"first_htm":21,"found_ms":0.048,"total_ms":500.110,"peak_rss_kib":2140528,"moves":"B2 R' F2 R' U' F L F B F2 B2 L2 F2 B2 U F2 D2 F2 U D2 B2"}
+{"seed":20434,"solved":true,"htm":20,"first_htm":23,"found_ms":360.686,"total_ms":500.120,"peak_rss_kib":2140528,"moves":"D' R' F L' F2 R2 D' R B R2 U2 L' B L2 D2 L2 B2 R2 U' R2"}
+{"seed":20700,"solved":true,"htm":20,"first_htm":21,"found_ms":75.958,"total_ms":500.068,"peak_rss_kib":2140528,"moves":"F' R' F R' F' U L F' B2 U2 R F' L D2 R2 B2 U2 D B2 D2"}
+{"seed":20904,"solved":true,"htm":20,"first_htm":25,"found_ms":165.716,"total_ms":500.070,"peak_rss_kib":2140528,"moves":"L2 U2 B' D2 L D F2 R F' L2 U B F2 D' R2 U R2 F2 U2 R2"}
+{"seed":21103,"solved":true,"htm":19,"first_htm":20,"found_ms":5.903,"total_ms":500.074,"peak_rss_kib":2140528,"moves":"F' B' L2 U' R2 U' B U2 B D' R F2 U F2 U2 R2 D' F2 U2"}
+{"seed":21251,"solved":true,"htm":21,"first_htm":21,"found_ms":0.037,"total_ms":500.088,"peak_rss_kib":2140528,"moves":"R L' B R' B2 U L' U B' L2 D' R2 U F2 D' R2 U R2 B2 D B2"}
+{"seed":21372,"solved":true,"htm":20,"first_htm":21,"found_ms":320.719,"total_ms":500.148,"peak_rss_kib":2140528,"moves":"U R2 D L2 D2 R L F' D' R' D2 B F2 L2 U2 F2 U B2 D' B2"}
+{"seed":21586,"solved":true,"htm":21,"first_htm":23,"found_ms":0.622,"total_ms":500.089,"peak_rss_kib":2140528,"moves":"L B R D' R F L' B' R B D B F2 U' F2 D B2 U2 F2 D' F2"}
+{"seed":23025,"solved":true,"htm":19,"first_htm":24,"found_ms":30.230,"total_ms":500.081,"peak_rss_kib":2140528,"moves":"U2 B' U' R U L2 U F R' U2 D F L U2 L2 D2 F2 U2 F2"}
+{"seed":23337,"solved":true,"htm":20,"first_htm":23,"found_ms":11.541,"total_ms":500.091,"peak_rss_kib":2140528,"moves":"L2 U2 D' R2 B L F' B' U' F' R' B U2 B2 U' F2 B2 D F2 U"}
+{"seed":23886,"solved":true,"htm":19,"first_htm":25,"found_ms":77.988,"total_ms":500.136,"peak_rss_kib":2140528,"moves":"F2 U2 R2 B' D' L' F B' L' F R' F' R U2 L2 F2 D2 B2 D'"}
+{"seed":24452,"solved":true,"htm":19,"first_htm":22,"found_ms":333.509,"total_ms":500.142,"peak_rss_kib":2140528,"moves":"D F' B2 L2 U F U2 B' D R' U' D' F U' F2 L2 F2 U B2"}
+{"seed":24618,"solved":true,"htm":21,"first_htm":24,"found_ms":128.967,"total_ms":500.131,"peak_rss_kib":2140528,"moves":"L R' B D' F' B R2 D' L2 F B2 R D F2 R2 U L2 D' B2 D' L2"}
+{"seed":25173,"solved":true,"htm":19,"first_htm":22,"found_ms":1.659,"total_ms":500.087,"peak_rss_kib":2140528,"moves":"B2 L2 F2 U2 L U2 D' B' D2 L' U B2 R2 L2 D' R2 B2 D R2"}
+{"seed":25765,"solved":true,"htm":20,"first_htm":23,"found_ms":16.216,"total_ms":500.206,"peak_rss_kib":2140528,"moves":"U2 R D' L' F B D2 R' U' B F2 B2 R2 L2 U L2 U D2 R2 U'"}
+{"seed":27268,"solved":true,"htm":19,"first_htm":23,"found_ms":22.829,"total_ms":500.081,"peak_rss_kib":2140528,"moves":"U' F' U B U' L2 F R L2 D F R D B2 L2 D R2 F2 B2"}
+{"seed":27345,"solved":true,"htm":21,"first_htm":25,"found_ms":5.584,"total_ms":500.097,"peak_rss_kib":2140528,"moves":"F2 D' L2 B U2 B2 L' D B D F L U B2 L2 U' B2 D' F2 R2 D'"}
+{"seed":27460,"solved":true,"htm":21,"first_htm":24,"found_ms":0.375,"total_ms":500.185,"peak_rss_kib":2140528,"moves":"L' F R' D2 B L' F U2 F L F2 R2 D2 B2 U' R2 U2 B2 R2 D' L2"}
+{"seed":27635,"solved":true,"htm":20,"first_htm":23,"found_ms":357.118,"total_ms":500.448,"peak_rss_kib":2140528,"moves":"U F' D' R' L U' R2 U F2 U2 L' B F2 B2 R2 L2 D' R2 F2 U'"}
+{"seed":27759,"solved":true,"htm":20,"first_htm":21,"found_ms":1.719,"total_ms":500.098,"peak_rss_kib":2140528,"moves":"D2 F' R F2 U B2 L' U2 D' L U D L2 D' R2 D L2 F2 D2 F2"}
+{"seed":27982,"solved":true,"htm":21,"first_htm":22,"found_ms":0.437,"total_ms":500.072,"peak_rss_kib":2140528,"moves":"F' B' R F L2 B2 U R' D2 F L2 U F2 L2 U F2 D2 F2 B2 L2 D2"}
+{"seed":29138,"solved":true,"htm":18,"first_htm":18,"found_ms":0.029,"total_ms":500.077,"peak_rss_kib":2140528,"moves":"R2 B' D2 R F2 U2 F B2 D B2 L2 D2 B2 U L2 B2 U' R2"}
+{"seed":29565,"solved":true,"htm":20,"first_htm":22,"found_ms":4.910,"total_ms":500.206,"peak_rss_kib":2140528,"moves":"F2 D L2 D R2 D2 F' D2 L2 D' B L' B2 R2 U F2 U2 L2 F2 U'"}
+{"seed":30098,"solved":true,"htm":19,"first_htm":23,"found_ms":165.854,"total_ms":500.121,"peak_rss_kib":2140528,"moves":"L B' R2 D2 L' F' U L U2 D B F2 R2 L2 U' B2 U R2 U"}
+{"seed":30240,"solved":true,"htm":19,"first_htm":25,"found_ms":2.311,"total_ms":500.085,"peak_rss_kib":2140528,"moves":"U' D R' U' F U2 R D2 L F2 U B' D L2 F2 L2 U R2 D"}
+{"seed":30268,"solved":true,"htm":21,"first_htm":24,"found_ms":10.830,"total_ms":500.135,"peak_rss_kib":2140528,"moves":"F B' D' L U2 F' U' F2 B2 R' D L B2 R2 D B2 U' F2 L2 F2 U"}
+{"seed":30610,"solved":true,"htm":19,"first_htm":25,"found_ms":197.505,"total_ms":500.091,"peak_rss_kib":2140528,"moves":"L' B D B R2 U L' D2 F L2 B D R2 U D' L2 F2 B2 D2"}
+{"seed":30661,"solved":true,"htm":21,"first_htm":21,"found_ms":0.049,"total_ms":500.100,"peak_rss_kib":2140528,"moves":"L' B R B' L' F2 U' F U F2 D2 R2 L2 B2 D B2 R2 D' R2 U B2"}
+{"seed":30963,"solved":true,"htm":20,"first_htm":26,"found_ms":0.513,"total_ms":500.407,"peak_rss_kib":2140528,"moves":"L F B2 L B D' F R2 U2 D R D' F2 D' R2 U' R2 U2 R2 U'"}
+{"seed":31784,"solved":true,"htm":20,"first_htm":24,"found_ms":31.361,"total_ms":500.106,"peak_rss_kib":2140528,"moves":"U2 R2 L F2 B2 L D' R2 F L' U' L U D2 R2 U D2 F2 U2 F2"}
+{"seed":31793,"solved":true,"htm":20,"first_htm":20,"found_ms":0.041,"total_ms":500.091,"peak_rss_kib":2140528,"moves":"F' L U2 F2 U2 F U R F' D' F2 U' L2 U B2 R2 D R2 L2 B2"}
+{"seed":32096,"solved":true,"htm":21,"first_htm":25,"found_ms":0.305,"total_ms":500.132,"peak_rss_kib":2140528,"moves":"B R' D2 R' D' L' B2 U L F B D2 F2 R2 F2 U' R2 L2 U R2 D2"}
+{"seed":32333,"solved":true,"htm":18,"first_htm":23,"found_ms":293.083,"total_ms":500.156,"peak_rss_kib":2140528,"moves":"B2 L' D L R F2 U' F2 B' U' R U2 B' D F2 B2 U' L2"}
+{"seed":32527,"solved":true,"htm":20,"first_htm":23,"found_ms":0.225,"total_ms":500.089,"peak_rss_kib":2140528,"moves":"U2 B2 U R' F2 D2 F B' U R B2 D F2 B2 D R2 L2 F2 B2 D"}
+{"seed":33039,"solved":true,"htm":21,"first_htm":23,"found_ms":1.648,"total_ms":500.220,"peak_rss_kib":2140528,"moves":"U' F' R' U D' B D R F2 U' D2 R U' R2 L2 U' R2 L2 U' L2 D'"}
+{"seed":33307,"solved":true,"htm":17,"first_htm":23,"found_ms":18.643,"total_ms":500.089,"peak_rss_kib":2140528,"moves":"B' L2 U L2 B R' U2 F2 U' F' D2 B U F2 B2 L2 D'"}
+{"seed":33655,"solved":true,"htm":20,"first_htm":23,"found_ms":3.918,"total_ms":500.095,"peak_rss_kib":2140528,"moves":"F2 B2 R' U2 L2 F L D2 B L F L2 D2 L2 D R2 L2 B2 U D2"}
+{"seed":33693,"solved":true,"htm":21,"first_htm":24,"found_ms":24.219,"total_ms":500.114,"peak_rss_kib":2140528,"moves":"B' D F2 R' L B' D2 R2 L F2 D B U L2 D' L2 B2 U F2 R2 F2"}
+{"seed":33955,"solved":true,"htm":21,"first_htm":23,"found_ms":46.025,"total_ms":500.096,"peak_rss_kib":2140528,"moves":"F B' U' F R' D2 F' L B2 U L2 U L F2 L2 U2 R2 L2 D' B2 L2"}
+{"seed":34020,"solved":true,"htm":21,"first_htm":21,"found_ms":0.050,"total_ms":500.150,"peak_rss_kib":2140528,"moves":"F' U L' U2 B R2 B' D F L2 B2 D2 R2 D F2 D' R2 D' F2 D2 R2"}
+{"seed":34100,"solved":true,"htm":20,"first_htm":21,"found_ms":11.625,"total_ms":500.244,"peak_rss_kib":2140528,"moves":"L' U L2 F' U D' B' R2 L' B' D' R B2 U' R2 U2 D' L2 B2 R2"}
+{"seed":34220,"solved":true,"htm":19,"first_htm":24,"found_ms":0.411,"total_ms":500.123,"peak_rss_kib":2140528,"moves":"D2 R F R B D' B2 R F R L' U2 B2 D2 L2 D' R2 F2 L2"}
+{"seed":35046,"solved":true,"htm":20,"first_htm":23,"found_ms":4.628,"total_ms":500.903,"peak_rss_kib":2140528,"moves":"F L2 B2 D' B' L2 B2 R B' D' F U F2 L2 F2 U' F2 U' L2 U2"}
+{"seed":35769,"solved":true,"htm":20,"first_htm":23,"found_ms":234.875,"total_ms":500.073,"peak_rss_kib":2140528,"moves":"B U L U' R2 B2 U B' L2 D' F2 R' F' L D' F2 R2 U2 R2 D"}
+{"seed":36011,"solved":true,"htm":20,"first_htm":23,"found_ms":15.495,"total_ms":500.076,"peak_rss_kib":2140528,"moves":"B' R B U F D2 F2 U' L U B L2 U2 F2 U F2 B2 D B2 D"}
+{"seed":36164,"solved":true,"htm":21,"first_htm":24,"found_ms":432.982,"total_ms":500.179,"peak_rss_kib":2140528,"moves":"D R2 B L' R2 B U' R U F L' B' D' R U2 D L2 D R2 B2 U"}
+{"seed":36484,"solved":true,"htm":20,"first_htm":24,"found_ms":151.264,"total_ms":500.086,"peak_rss_kib":2140528,"moves":"L2 R2 F B R2 U' R2 L D' F R' B' R D' B2 R2 U' D L2 B2"}
+{"seed":36731,"solved":true,"htm":21,"first_htm":22,"found_ms":1.305,"total_ms":500.096,"peak_rss_kib":2140528,"moves":"B' D L2 B' R F2 U L D L2 F U L2 U F2 U D2 B2 D F2 U'"}
+{"seed":36901,"solved":true,"htm":21,"first_htm":24,"found_ms":418.494,"total_ms":500.080,"peak_rss_kib":2140528,"moves":"U' R' L2 D' R L F' B L' D R D F U B2 L2 U L2 D' B2 L2"}
+{"seed":37264,"solved":true,"htm":21,"first_htm":26,"found_ms":1.010,"total_ms":500.106,"peak_rss_kib":2140528,"moves":"L' D U' F D2 R2 L' D2 L' U' L B2 R2 B2 R2 U2 F2 L2 U' D2 R2"}
+{"seed":37635,"solved":true,"htm":20,"first_htm":23,"found_ms":19.977,"total_ms":500.112,"peak_rss_kib":2140528,"moves":"B2 D L F' D R D2 L' U2 D' F L' B2 U D R2 U' B2 D' B2"}
+{"seed":37668,"solved":true,"htm":21,"first_htm":24,"found_ms":19.614,"total_ms":500.139,"peak_rss_kib":2140528,"moves":"L' F D B2 R2 U' B2 L' B R F2 L U' L2 B2 L2 B2 U' D2 L2 U2"}
+{"seed":38414,"solved":true,"htm":20,"first_htm":22,"found_ms":258.427,"total_ms":500.088,"peak_rss_kib":2140528,"moves":"L' D L2 F' B' U F' R2 U2 L' U' B U R2 U2 L2 U2 D' L2 B2"}
+{"seed":38515,"solved":true,"htm":21,"first_htm":24,"found_ms":0.319,"total_ms":500.129,"peak_rss_kib":2140528,"moves":"B L2 F' D R L' D' R' B' L D F2 B2 R2 D F2 D2 R2 L2 D' B2"}
+{"seed":38571,"solved":true,"htm":19,"first_htm":22,"found_ms":0.300,"total_ms":500.153,"peak_rss_kib":2140528,"moves":"B' L F B U' L' F' U2 B D2 F2 B2 R2 B2 U D' F2 U' B2"}
+{"seed":38830,"solved":true,"htm":20,"first_htm":21,"found_ms":38.773,"total_ms":500.091,"peak_rss_kib":2140528,"moves":"D' R' U L D' F D' L2 U2 L' D2 B R D B2 L2 F2 U2 B2 D"}
+{"seed":39282,"solved":true,"htm":19,"first_htm":21,"found_ms":2.512,"total_ms":500.099,"peak_rss_kib":2140528,"moves":"D L D' L' B' R' D' L' F D' L F2 B2 U2 D2 L2 D F2 D'"}
+{"seed":39379,"solved":true,"htm":18,"first_htm":25,"found_ms":0.285,"total_ms":500.085,"peak_rss_kib":2140528,"moves":"B2 R' L' D' R' D2 R2 F U2 B' L D F2 L2 U' B2 U' F2"}
+{"seed":39392,"solved":true,"htm":19,"first_htm":24,"found_ms":194.797,"total_ms":500.333,"peak_rss_kib":2140528,"moves":"L2 F R2 F R' D' L2 D2 F' L F' B' R' F' D F2 U2 B2 U2"}
+{"seed":39501,"solved":true,"htm":19,"first_htm":22,"found_ms":476.601,"total_ms":500.086,"peak_rss_kib":2140528,"moves":"D2 R2 B U2 D' L' B R' F L B2 U R U' D F2 D B2 D"}
+{"seed":39593,"solved":true,"htm":21,"first_htm":22,"found_ms":3.350,"total_ms":500.086,"peak_rss_kib":2140528,"moves":"F D' L' D' B R2 B' L U D2 B U B2 U' R2 U R2 U2 F2 B2 D"}
+{"seed":39858,"solved":true,"htm":21,"first_htm":23,"found_ms":4.270,"total_ms":500.126,"peak_rss_kib":2140528,"moves":"F2 B2 L2 D' R' D' B R' D F' U B U D2 L2 U B2 L2 B2 U' L2"}
+{"seed":40505,"solved":true,"htm":21,"first_htm":24,"found_ms":1.552,"total_ms":500.085,"peak_rss_kib":2140528,"moves":"U' B R2 F2 U R2 D2 F' U' D' L U2 L2 D L2 D B2 D' R2 B2 U'"}
+{"seed":40527,"solved":true,"htm":19,"first_htm":22,"found_ms":7.011,"total_ms":500.150,"peak_rss_kib":2140528,"moves":"F2 U' L R D2 R' B U R2 L' D L' U2 B2 R2 B2 U L2 D2"}
+{"seed":42207,"solved":true,"htm":19,"first_htm":22,"found_ms":4.093,"total_ms":500.097,"peak_rss_kib":2140528,"moves":"F2 R' U L2 D2 B' D F2 D2 L B R U R2 U2 L2 B2 R2 U'"}
+{"seed":42555,"solved":true,"htm":19,"first_htm":23,"found_ms":35.811,"total_ms":500.153,"peak_rss_kib":2140528,"moves":"D B' U R' L2 U' R L U2 D' B' D2 F2 U F2 D L2 B2 R2"}
+{"seed":42873,"solved":true,"htm":20,"first_htm":20,"found_ms":0.044,"total_ms":500.094,"peak_rss_kib":2140528,"moves":"L' D2 L B R2 B D2 L' F2 U' L2 F2 U R2 F2 D L2 F2 L2 U'"}
+{"seed":43068,"solved":true,"htm":21,"first_htm":22,"found_ms":159.693,"total_ms":500.144,"peak_rss_kib":2140528,"moves":"F' D' B R2 U' L' B R2 F' D' L' D L U2 F2 L2 U' F2 U2 B2 D'"}
+{"seed":43135,"solved":true,"htm":18,"first_htm":23,"found_ms":428.093,"total_ms":503.087,"peak_rss_kib":2140528,"moves":"U' D' B D' L F' R2 F R' F U F L' D' F2 B2 D' L2"}
+{"seed":43511,"solved":true,"htm":21,"first_htm":23,"found_ms":0.209,"total_ms":500.213,"peak_rss_kib":2140528,"moves":"L2 U R2 F L2 U2 L' F U L' D' B2 R2 D2 L2 D2 L2 D R2 B2 R2"}
+{"seed":43512,"solved":true,"htm":20,"first_htm":24,"found_ms":476.640,"total_ms":500.237,"peak_rss_kib":2140528,"moves":"D R2 D L2 F' R U2 L U2 F B D' F L2 D2 B2 U R2 F2 L2"}
+{"seed":43519,"solved":true,"htm":20,"first_htm":20,"found_ms":0.057,"total_ms":500.099,"peak_rss_kib":2140528,"moves":"F2 L' F L2 B2 R U2 D' R L2 D2 R2 U R2 F2 R2 U D B2 R2"}
+{"seed":43869,"solved":true,"htm":20,"first_htm":23,"found_ms":487.589,"total_ms":500.088,"peak_rss_kib":2140528,"moves":"D B' L2 D R F2 U2 R2 U L B L B L2 D F2 B2 L2 D R2"}
+{"seed":44265,"solved":true,"htm":21,"first_htm":21,"found_ms":0.054,"total_ms":500.093,"peak_rss_kib":2140528,"moves":"U' R' F U D F' D' R F2 D' B2 U' B2 D2 F2 U L2 D L2 B2 R2"}
+{"seed":44638,"solved":true,"htm":20,"first_htm":22,"found_ms":18.936,"total_ms":500.102,"peak_rss_kib":2140528,"moves":"B' L F R' U' D' L' F' B2 R' U' B L2 U' B2 D F2 R2 U2 B2"}
+{"seed":45017,"solved":true,"htm":20,"first_htm":23,"found_ms":108.438,"total_ms":500.111,"peak_rss_kib":2140528,"moves":"F2 D R' D2 R' U' B' R2 D F U B R B2 R2 D L2 U' B2 U2"}
+{"seed":45127,"solved":true,"htm":19,"first_htm":25,"found_ms":119.404,"total_ms":500.266,"peak_rss_kib":2140528,"moves":"L F L B' F' L2 F D2 B' R B2 L D B2 U2 L2 D' L2 U"}
+{"seed":45145,"solved":true,"htm":20,"first_htm":22,"found_ms":14.273,"total_ms":500.139,"peak_rss_kib":2140528,"moves":"F2 B U F L' D2 B2 L B' L' U' L' U' D2 F2 B2 L2 D' L2 B2"}
+{"seed":45257,"solved":true,"htm":20,"first_htm":24,"found_ms":477.312,"total_ms":500.137,"peak_rss_kib":2140528,"moves":"U' B2 L D B' L U' R2 B' R2 U2 L D2 B2 D2 L2 F2 R2 F2 D2"}
+{"seed":46526,"solved":true,"htm":20,"first_htm":23,"found_ms":0.822,"total_ms":500.117,"peak_rss_kib":2140528,"moves":"L R B' R2 F' D R' F U' D B' U D B2 U' F2 R2 B2 D' B2"}
+{"seed":46762,"solved":true,"htm":20,"first_htm":22,"found_ms":40.633,"total_ms":500.142,"peak_rss_kib":2140528,"moves":"D' R' U' R2 U' F2 U B L' B2 L' B' U' L2 B2 U B2 L2 B2 U2"}
+{"seed":46809,"solved":true,"htm":20,"first_htm":24,"found_ms":0.775,"total_ms":500.237,"peak_rss_kib":2140528,"moves":"F D2 L2 B2 D2 L2 B D L2 U' L' D R2 L2 D F2 D' R2 U' L2"}
+{"seed":47269,"solved":true,"htm":21,"first_htm":21,"found_ms":0.053,"total_ms":500.437,"peak_rss_kib":2140528,"moves":"R L2 U D' B R F U2 B L2 D' R2 L2 B2 L2 U' F2 D2 L2 B2 D'"}
+{"seed":47291,"solved":true,"htm":20,"first_htm":22,"found_ms":0.617,"total_ms":500.176,"peak_rss_kib":2140528,"moves":"F2 R' B L F2 D' B L' B2 U' F' U2 B2 D' F2 U L2 D L2 F2"}
+{"seed":47310,"solved":true,"htm":21,"first_htm":23,"found_ms":16.276,"total_ms":500.138,"peak_rss_kib":2140528,"moves":"B R' B' L' F L2 F B D' B' U' R L2 U D2 B2 D2 L2 U' B2 L2"}
+{"seed":48310,"solved":true,"htm":20,"first_htm":24,"found_ms":407.455,"total_ms":500.102,"peak_rss_kib":2140528,"moves":"U2 B' R' L2 F R2 F2 B U' L' D2 B L D' F2 R2 U' L2 U' D2"}
+{"seed":48631,"solved":true,"htm":21,"first_htm":22,"found_ms":16.001,"total_ms":500.172,"peak_rss_kib":2140528,"moves":"F' R B2 U L B2 U B2 R' U2 D F B2 D2 R2 U' F2 R2 B2 D B2"}
+{"seed":48695,"solved":true,"htm":20,"first_htm":23,"found_ms":65.196,"total_ms":505.942,"peak_rss_kib":2140528,"moves":"D R F' L' F' L2 F R U2 L2 F U B2 U' L2 U2 D' B2 R2 D2"}
+{"seed":49050,"solved":true,"htm":20,"first_htm":23,"found_ms":3.782,"total_ms":500.152,"peak_rss_kib":2140528,"moves":"D2 R2 B2 U2 L F' U' B L D2 B U' B2 D L2 D R2 U' B2 U'"}
+{"seed":49125,"solved":true,"htm":21,"first_htm":24,"found_ms":16.682,"total_ms":500.223,"peak_rss_kib":2140528,"moves":"B L' F U' D' F B2 R D F2 U B D' L2 F2 U L2 U R2 U2 D"}
+{"seed":50275,"solved":true,"htm":21,"first_htm":24,"found_ms":1.004,"total_ms":500.127,"peak_rss_kib":2140528,"moves":"F' D2 R2 U L2 B' D2 B R U2 B U2 F2 B2 D L2 B2 U' F2 B2 U"}
+{"seed":51013,"solved":true,"htm":21,"first_htm":24,"found_ms":1.241,"total_ms":500.304,"peak_rss_kib":2140528,"moves":"L D2 F2 B L' F' D' R U' F B2 U2 B2 U' L2 U B2 D' F2 D F2"}
+{"seed":51586,"solved":true,"htm":20,"first_htm":23,"found_ms":2.287,"total_ms":500.243,"peak_rss_kib":2140528,"moves":"B U2 B L2 D R' U' R F B U2 R D F2 B2 R2 B2 D F2 U'"}
+{"seed":51849,"solved":true,"htm":20,"first_htm":21,"found_ms":0.103,"total_ms":500.122,"peak_rss_kib":2140528,"moves":"F D L F' R F B' D' F U2 F2 U F2 L2 F2 D2 L2 U F2 D'"}
+{"seed":51980,"solved":true,"htm":19,"first_htm":22,"found_ms":206.348,"total_ms":500.164,"peak_rss_kib":2140528,"moves":"L B' L D2 L2 U F' D' F B2 L U D2 R2 U' D2 F2 U2 B2"}
+{"seed":52560,"solved":true,"htm":20,"first_htm":20,"found_ms":0.090,"total_ms":500.139,"peak_rss_kib":2140528,"moves":"R B U L B' R2 B' R' D2 L' R2 U D2 B2 U2 F2 R2 U2 R2 B2"}
+{"seed":52704,"solved":true,"htm":20,"first_htm":25,"found_ms":13.932,"total_ms":500.218,"peak_rss_kib":2140528,"moves":"L2 B U' F U' L U R U2 F2 D R' B D B2 U R2 F2 R2 D"}
+{"seed":52969,"solved":true,"htm":20,"first_htm":23,"found_ms":20.634,"total_ms":500.285,"peak_rss_kib":2140528,"moves":"L R2 B' L2 U F' R D' B U2 F' L U' L2 B2 L2 D' F2 L2 D2"}
+{"seed":52973,"solved":true,"htm":20,"first_htm":25,"found_ms":13.521,"total_ms":500.154,"peak_rss_kib":2140528,"moves":"L' R D' R L' U' F' D' F' R' B' L' D L2 F2 R2 F2 D R2 D'"}
+{"seed":53097,"solved":true,"htm":19,"first_htm":24,"found_ms":63.974,"total_ms":500.200,"peak_rss_kib":2140528,"moves":"F R2 B' R' L U L' B' D2 F R F' R U' B2 R2 U' L2 F2"}
+{"seed":53114,"solved":true,"htm":21,"first_htm":22,"found_ms":54.135,"total_ms":500.105,"peak_rss_kib":2140528,"moves":"F L2 B2 D R2 U D R F' D' F2 B' U R B2 U2 B2 U R2 U D"}
+{"seed":53145,"solved":true,"htm":21,"first_htm":22,"found_ms":21.033,"total_ms":500.266,"peak_rss_kib":2140528,"moves":"B' D2 F B U' R' B D' L' B' U' B U R2 U2 L2 U' B2 D' L2 D"}
+{"seed":53606,"solved":true,"htm":21,"first_htm":23,"found_ms":20.195,"total_ms":501.041,"peak_rss_kib":2140528,"moves":"F2 U' D2 B' U' B R' U' L U2 L' F D R2 U D2 F2 U' R2 F2 D'"}
+{"seed":53792,"solved":true,"htm":20,"first_htm":23,"found_ms":85.863,"total_ms":500.217,"peak_rss_kib":2140528,"moves":"F U2 D' B2 U F U B L D2 F L F2 U2 B2 D F2 D2 F2 L2"}
+{"seed":54578,"solved":true,"htm":21,"first_htm":25,"found_ms":2.377,"total_ms":500.110,"peak_rss_kib":2140528,"moves":"U2 B R2 B D L' F U' L D' F L2 D' R2 U L2 U2 B2 D' R2 L2"}
+{"seed":55009,"solved":true,"htm":21,"first_htm":21,"found_ms":0.063,"total_ms":500.112,"peak_rss_kib":2140528,"moves":"U R2 F' U L2 B' D2 L B2 U F2 D L2 F2 D R2 D F2 B2 U F2"}
+{"seed":55942,"solved":true,"htm":21,"first_htm":25,"found_ms":0.215,"total_ms":500.141,"peak_rss_kib":2140528,"moves":"F' R' B U R2 D2 F R' L2 F U' F2 R2 U' F2 U R2 B2 R2 B2 U"}
+{"seed":56208,"solved":true,"htm":19,"first_htm":24,"found_ms":24.856,"total_ms":500.113,"peak_rss_kib":2140528,"moves":"B' R2 B2 L F2 B D R U2 L F' L' R2 U' L2 U' D2 L2 D"}
+{"seed":56360,"solved":true,"htm":19,"first_htm":21,"found_ms":77.324,"total_ms":500.134,"peak_rss_kib":2140528,"moves":"F' R' F U2 F' B2 R2 F2 B' U' F B L' B2 U' B2 U' B2 U"}
+{"seed":56377,"solved":true,"htm":17,"first_htm":22,"found_ms":0.600,"total_ms":500.093,"peak_rss_kib":2140528,"moves":"F2 R' U R U' F2 B2 L U2 B L' R2 L2 B2 D' F2 U2"}
+{"seed":56739,"solved":true,"htm":20,"first_htm":24,"found_ms":64.135,"total_ms":500.091,"peak_rss_kib":2140528,"moves":"F2 R B R F' R' D2 R2 B' R2 U D R' B D2 F2 L2 U2 L2 B2"}
+{"seed":56821,"solved":true,"htm":20,"first_htm":24,"found_ms":13.075,"total_ms":500.123,"peak_rss_kib":2140528,"moves":"L D2 L2 U2 L F U2 L2 D' R' L2 B D B2 R2 B2 U L2 D2 F2"}
+{"seed":56885,"solved":true,"htm":20,"first_htm":21,"found_ms":1.409,"total_ms":500.153,"peak_rss_kib":2140528,"moves":"B U2 F L2 F D2 B2 R' U' F' R L2 U' F2 U L2 U B2 U2 B2"}
+{"seed":57343,"solved":true,"htm":20,"first_htm":24,"found_ms":61.255,"total_ms":500.127,"peak_rss_kib":2140528,"moves":"F B2 L D' B' R' B' U' F' R F' B L U' F2 L2 F2 R2 U2 D'"}
+{"seed":57400,"solved":true,"htm":19,"first_htm":22,"found_ms":368.261,"total_ms":500.165,"peak_rss_kib":2140528,"moves":"B' U R2 U' F D' F R' L2 F2 D' B' R U2 L2 U2 D' R2 B2"}
+{"seed":57693,"solved":true,"htm":21,"first_htm":23,"found_ms":211.364,"total_ms":500.145,"peak_rss_kib":2140528,"moves":"L2 U R F L' F B L2 U D' R U B U' D2 B2 U' R2 B2 R2 B2"}
+{"seed":57728,"solved":true,"htm":21,"first_htm":23,"found_ms":0.584,"total_ms":500.152,"peak_rss_kib":2140528,"moves":"F U' B2 R D R B' L' D' F' L2 U F2 D2 F2 U2 L2 U2 R2 D B2"}
+{"seed":57954,"solved":true,"htm":21,"first_htm":24,"found_ms":4.412,"total_ms":500.106,"peak_rss_kib":2140528,"moves":"F B' D' F R U2 L' B' L' F D' R B U L2 D' B2 U' D2 R2 U'"}
+{"seed":58689,"solved":true,"htm":21,"first_htm":24,"found_ms":0.792,"total_ms":500.111,"peak_rss_kib":2140528,"moves":"F2 R2 F' R' U2 B R F2 U' F D2 L2 F2 U R2 U' R2 F2 U2 B2 U'"}
+{"seed":59077,"solved":true,"htm":20,"first_htm":23,"found_ms":8.085,"total_ms":500.225,"peak_rss_kib":2140528,"moves":"F' R2 D F R' F2 B2 U' D' B' D R U2 L2 B2 D2 B2 D2 L2 U"}
+{"seed":59425,"solved":true,"htm":20,"first_htm":23,"found_ms":12.775,"total_ms":500.105,"peak_rss_kib":2140528,"moves":"L B L2 R' B2 R2 D L2 B' L D2 B' U' F2 U' F2 D R2 D2 F2"}
+{"seed":59429,"solved":true,"htm":20,"first_htm":21,"found_ms":175.180,"total_ms":500.095,"peak_rss_kib":2140528,"moves":"L2 R2 B L F' U2 F' R2 B2 R' D' L D2 L2 F2 B2 U' F2 D2 F2"}
+{"seed":60108,"solved":true,"htm":20,"first_htm":23,"found_ms":0.100,"total_ms":500.206,"peak_rss_kib":2140528,"moves":"L R F U' B R' U F' R2 F' B2 L2 F2 R2 F2 U L2 F2 U' B2"}
+{"seed":60161,"solved":true,"htm":20,"first_htm":24,"found_ms":2.067,"total_ms":500.154,"peak_rss_kib":2140528,"moves":"F2 D2 L' D R' U F2 B2 R' B R' F L2 B2 U' D' B2 R2 L2 U2"}
+{"seed":60208,"solved":true,"htm":20,"first_htm":23,"found_ms":1.446,"total_ms":500.110,"peak_rss_kib":2140528,"moves":"F' D R2 D B' U' F R L D2 F' R2 U2 F2 D2 R2 U2 D2 F2 L2"}
+{"seed":60296,"solved":true,"htm":20,"first_htm":20,"found_ms":0.037,"total_ms":500.087,"peak_rss_kib":2140528,"moves":"D2 B' L B' R U' B R L2 B2 U F2 L2 D2 B2 D' B2 R2 B2 R2"}
+{"seed":60356,"solved":true,"htm":20,"first_htm":24,"found_ms":73.390,"total_ms":500.262,"peak_rss_kib":2140528,"moves":"F2 R U' D2 F' L' D R' F R U' B R L2 D2 R2 B2 D L2 F2"}
+{"seed":60549,"solved":true,"htm":21,"first_htm":24,"found_ms":295.731,"total_ms":500.107,"peak_rss_kib":2140528,"moves":"L2 D' R D L F2 L' B U2 R' U D L B U' R2 U' D R2 L2 U"}
+{"seed":61225,"solved":true,"htm":19,"first_htm":25,"found_ms":2.120,"total_ms":500.161,"peak_rss_kib":2140528,"moves":"L' U F' B L B' R' F' D' B2 L F2 U2 R2 B2 R2 L2 U2 D2"}
+{"seed":61277,"solved":true,"htm":20,"first_htm":23,"found_ms":366.556,"total_ms":500.617,"peak_rss_kib":2140528,"moves":"B L' B' D' R L' U F R2 F R2 B U2 L2 F2 U' D' F2 D2 L2"}
+{"seed":61668,"solved":true,"htm":19,"first_htm":24,"found_ms":5.623,"total_ms":500.964,"peak_rss_kib":2140528,"moves":"F L2 B R' B2 U2 R2 B D' L2 F' L' D2 B2 L2 U' R2 L2 U2"}
+{"seed":62348,"solved":true,"htm":20,"first_htm":24,"found_ms":7.093,"total_ms":500.169,"peak_rss_kib":2140528,"moves":"F2 U2 D2 R2 D B2 R L2 B' R2 D' L B2 L2 D2 F2 R2 U R2 U'"}
+{"seed":62923,"solved":true,"htm":20,"first_htm":24,"found_ms":35.424,"total_ms":500.361,"peak_rss_kib":2140528,"moves":"U2 F2 D' F2 R L2 U2 B U L F' D R L2 U' R2 F2 R2 F2 U2"}
+{"seed":62965,"solved":true,"htm":21,"first_htm":24,"found_ms":110.184,"total_ms":500.165,"peak_rss_kib":2140528,"moves":"F2 D' B' R' U L' D2 B' D B2 L F' U' B U2 D2 L2 U' B2 U D'"}
+{"seed":63315,"solved":true,"htm":20,"first_htm":22,"found_ms":8.473,"total_ms":500.091,"peak_rss_kib":2140528,"moves":"L F L' D2 F' R' L' F R' U2 D' R U R2 U L2 F2 D' R2 D2"}
+{"seed":63456,"solved":true,"htm":22,"first_htm":22,"found_ms":0.038,"total_ms":500.157,"peak_rss_kib":2140528,"moves":"D' B D' R U' F D' B' L U' F2 B2 R2 U' L2 D' F2 D R2 D2 B2 R2"}
+{"seed":63968,"solved":true,"htm":19,"first_htm":22,"found_ms":35.312,"total_ms":500.630,"peak_rss_kib":2140528,"moves":"D2 B' U' B' L2 B U' L' F B' D F U2 F2 B2 R2 U2 L2 D2"}
