@@ -22,7 +22,7 @@
 | 파일 | 관계 |
 |---|---|
 | `stemil-rephase/src/cube.*`, `tables.*`, `solver.*`, `kernel.*`, `tests/test.cpp` | stemil 헤더(`coordinates.hpp`, `moves.hpp`, `pruning_tables.hpp`, `search.hpp`)를 include하고, stemil의 `.cpp`와 함께 빌드한다(`Makefile`의 `UPSTREAM`). `kernel.hpp`는 stemil의 탐색 순서를 **재현한 자체 구현**이며, 테이블 형식은 원본과 같다. |
-| `rephase/boundary_repair/backends.py`, `stemil-rephase/compare/py_solvers.py` | 위 pip 패키지의 API를 호출하는 어댑터이다. |
+| `rephase/boundary_repair/backends.py`, `stemil-rephase/compare/py_solvers.py` | 위 pip 패키지의 API를 호출하는 어댑터이다. `py_solvers.py`의 `rephase` 모드는 pip `kociemba`의 첫 해에 내 rephase를 적용한다. |
 
 ## 4. 직접 만든 것
 
